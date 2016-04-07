@@ -1,9 +1,28 @@
 name: "my-website"
-output_dir: "."
 navbar:
-  title: "My Website"
+  title: "竹林由武 Ph.D"
+  type: inverse
   left:
     - text: "Home"
+      icon: fa-home
       href: index.html
     - text: "About"
+      icon: fa-info
       href: about.html
+    - text: "More"
+      icon: fa-gear
+      menu:
+        - text: "Activity"
+        - text: "Publications"
+          href: Publication.html
+        - text: "Conference"
+          href: page_b.html
+        - text: "---------"
+        - text: "Lecture"
+        - text: "Course"
+          href: page_c.html
+        - text: "R and Statistcs"
+          href: page_d.html
+  right:
+    - icon: fa-question fa-lg
+      href: https://example.com

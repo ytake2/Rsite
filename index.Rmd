@@ -1,5 +1,8 @@
 ---
-title: "My Website"
+title: "竹林由武 Ph.D"
 ---
 
-Hello, Website!
+
+
+## 統計数理研究所解析戦略研究センター 竹林由武のHP
+## googlePageからぼちぼち移植中
