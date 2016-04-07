@@ -20,7 +20,7 @@ navbar:
         - text: "---------"
         - text: "Lecture"
         - text: "Course"
-          href: page_c.html
+          href: Course.html
         - text: "R and Statistcs"
           href: page_d.html
   right:

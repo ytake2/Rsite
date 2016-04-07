@@ -1,11 +1,37 @@
 ---
 title: " "
+date: "`r Sys.Date()`"
+author: ytake2 [at] ism.ac.jp
+output: #word_document
+ rmdformats::readthedown:
+  self_contained: true
+  thumbnails: false
+  lightbox: false
 ---
+
+
+```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+library(knitr)
+library(rmdformats)
+library(DT)
+
+## Global options
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+	             cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
+```
+
 
 <img src="img/IMG_0188.JPG" height="600px" width="1200px" align="center"  />
   
   
-# 現所属
+# A.現所属
 > 大学共同利用法人情報・システム研究機構  
   統計数理研究所 リスク解析戦略研究センター  
   特任助教
@@ -16,7 +42,7 @@ title: " "
 
 ---
 
-# 研究テーマ
+# B.研究テーマ
 > - 自殺念慮の重篤化を予測するモデルの構築
 - 残遺症状のある感情障害患者の生活機能の改善
 - Well-beingの向上による感情障害の予防
@@ -25,7 +51,7 @@ title: " "
 
 ---
 
-# 学位
+# C.学位
 - 2014年　広島大学大学院総合科学研究科総合科学専攻博士後期課程 修了 博士 (学術)  
 博士号学位論文『心理的ウェルビーングの向上が全般性不安症状の増悪を防止するプロセスの検討』 (指導教官　杉浦義典)
 - 2010年　北海道医療大学大学院心理科学研究科臨床心理学専攻修士課程修了 修士 (臨床心理学) (指導教官　坂野雄二)  
@@ -35,7 +61,7 @@ title: " "
 
 ---
 
-# 職歴
+# D.職歴
 - 2009年04月〜2010年03月　留萌市立病院　非常勤心理士
 - 2009年04月〜2010年03月　岩内協会病院　非常勤心理士
 - 2011年12月〜2013年03月　広島大学大学院医歯薬保健学研究科研究員
@@ -44,7 +70,7 @@ title: " "
 
 ---
 
-# 教育歴
+# E.教育歴
 - 2008年5月〜2010年2月　北海道医療大学心理科学部 Teaching Assistant
 - 2010年4月〜2010年8月　北海道ハイテクノロジー専門学校　非常勤講師 (心理学)
 - 2011年4月〜2014年3月　広島大学大学院総合科学研究科 Teaching Assistant
@@ -58,7 +84,7 @@ title: " "
 
 ---
 
-# 受賞歴　
+# F.受賞歴　
 - 2010年　行動療法学会 WCBCT2010記念若手研究奨励基金
 - 2012年　認知療法学会 若手奨励基金
 - 2012年　広島大学校友会　第6回ドリームチャレンジ賞  

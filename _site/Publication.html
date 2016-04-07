@@ -8,158 +8,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
+<meta name="author" content="ytake2 [at] ism.ac.jp" />
 
-
+<meta name="date" content="2016-04-08" />
 
 <title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/default.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
 
-
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-</style>
 
 
 </head>
 
 <body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-  height: auto;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-</style>
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-
-<div class="container-fluid main-container">
-
-<!-- tabsets -->
-<script src="site_libs/navigation-1.0/tabsets.js"></script>
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
-
-<!-- code folding -->
-
-
-
-
 
 
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -207,7 +77,7 @@ $(document).ready(function () {
     <li class="divider"></li>
     <li class="dropdown-header">Lecture</li>
     <li>
-      <a href="page_c.html">Course</a>
+      <a href="Course.html">Course</a>
     </li>
     <li>
       <a href="page_d.html">R and Statistcs</a>
@@ -227,19 +97,34 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="content" data-toggle="wy-nav-shift">
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
 
 
 
-
+<div id="table-of-contents">
+    <h2><a href="#content"></a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#section">　</a></li>
+      <li><a href="#a.">A.委託研究</a></li>
+      <li><a href="#b.">B.著書</a></li>
+      <li><a href="#c.-">C.学術論文 (筆頭著者・査読あり)</a></li>
+      <li><a href="#d.-">D.学術論文 (筆頭著者・査読なし)</a></li>
+      <li><a href="#e.-">E.共同研究論文 (共著)</a></li>
+      </ul>  
+    </div>
 </div>
 
-
-<div id="section" class="section level2">
-<h2>　</h2>
+<div id="main">
+<div id="section" class="section level1">
+<h1>　</h1>
 </div>
-<div class="section level2">
-<h2>委託研究</h2>
+<div id="a." class="section level1">
+<h1>A.委託研究</h1>
 <hr />
 <ul>
 <li>自殺対策のための自殺死亡の地域統計-手段・配偶関係・職業別統計1983-2012-の作成 (2015) 国立精神・神経医療研究センター 精神保健研究所 自殺予防総合対策センターより委託</li>
@@ -248,8 +133,8 @@ $(document).ready(function () {
 <a href="http://ikiru.ncnp.go.jp/genjo/toukei/index2.html" class="uri">http://ikiru.ncnp.go.jp/genjo/toukei/index2.html</a></p>
 <hr />
 </div>
-<div class="section level2">
-<h2>著書</h2>
+<div id="b." class="section level1">
+<h1>B.著書</h1>
 <hr />
 <ul>
 <li><p>竹林由武 (2014). 「第9章 順序データのパス解析」，小杉考司•清水裕士 (編著)<br />
@@ -264,8 +149,8 @@ $(document).ready(function () {
 </div>
 <hr />
 </div>
-<div id="-" class="section level1">
-<h1>学術論文 (筆頭著者・査読あり)</h1>
+<div id="c.-" class="section level1">
+<h1>C.学術論文 (筆頭著者・査読あり)</h1>
 <hr />
 <ul>
 <li>竹林由武・高垣耕企・広瀬慎一・大野哲也・小幡昌志・川崎友也・シールズ久美・杉浦義典・坂野雄二 (2013) Anxiety control questionnaire日本語版の開発，行動療法研究，39, 145-154.<br />
@@ -275,8 +160,9 @@ $(document).ready(function () {
 <li>竹林由武・富家直明・坂野雄二 (2009) 自殺念慮の強い抑うつ患者の精神科受療開始に成功した訪問相談の経験, 北海道医療大学心理科学部心理臨床・発達支援センター研究　第5巻1号，61-67.</li>
 </ul>
 <hr />
-<div id="-" class="section level2">
-<h2>学術論文 (筆頭著者・査読なし)</h2>
+</div>
+<div id="d.-" class="section level1">
+<h1>D.学術論文 (筆頭著者・査読なし)</h1>
 <hr />
 <ul>
 <li>竹林由武・杉浦義典 (2015) 「PART II 第一章全般性不安症」，『こころの科学別冊「不安症の辞典」』，日本評論社, pp46-49.　</li>
@@ -286,8 +172,8 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-<div id="-" class="section level2">
-<h2>共同研究論文 (共著)</h2>
+<div id="e.-" class="section level1">
+<h1>E.共同研究論文 (共著)</h1>
 <hr />
 <ul>
 <li><p>Ito, M., Horikoshi, M., Kato, N., Oe, Y., Fujisato, H., Nakajima, S., Kanie, A., Miyamae, M., Takebayashi, Y., Horita, R., Usuki, M., Nakagawa, A., &amp; Ono, Y. (in press). Transdiagnostic and transcultural: pilot study of unified protocol for depressive and anxiety disorders in Japan. Behavior Therapy.</p></li>
@@ -300,18 +186,19 @@ $(document).ready(function () {
 </div>
 
 
-
-
 </div>
 
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> ytake2 [at] ism.ac.jp</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> 2016-04-08</p>
+</div>
+
+
 <script>
-
-// add bootstrap table styles to pandoc tables
 $(document).ready(function () {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
+ 	  });
 </script>
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

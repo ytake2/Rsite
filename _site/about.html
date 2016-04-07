@@ -8,158 +8,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
+<meta name="author" content="ytake2 [at] ism.ac.jp" />
 
-
+<meta name="date" content="2016-04-08" />
 
 <title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/default.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
 
-
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-</style>
 
 
 </head>
 
 <body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-  height: auto;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-</style>
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-
-<div class="container-fluid main-container">
-
-<!-- tabsets -->
-<script src="site_libs/navigation-1.0/tabsets.js"></script>
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
-
-<!-- code folding -->
-
-
-
-
 
 
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -207,7 +77,7 @@ $(document).ready(function () {
     <li class="divider"></li>
     <li class="dropdown-header">Lecture</li>
     <li>
-      <a href="page_c.html">Course</a>
+      <a href="Course.html">Course</a>
     </li>
     <li>
       <a href="page_d.html">R and Statistcs</a>
@@ -227,17 +97,32 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="content" data-toggle="wy-nav-shift">
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
 
 
 
-
+<div id="table-of-contents">
+    <h2><a href="#content"></a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#a.">A.現所属</a></li>
+      <li><a href="#b.">B.研究テーマ</a></li>
+      <li><a href="#c.">C.学位</a></li>
+      <li><a href="#d.">D.職歴</a></li>
+      <li><a href="#e.">E.教育歴</a></li>
+      <li><a href="#f.">F.受賞歴　</a></li>
+      </ul>  
+    </div>
 </div>
 
-
+<div id="main">
 <p><img src="img/IMG_0188.JPG" height="600px" width="1200px" align="center"  /></p>
-<div class="section level1">
-<h1>現所属</h1>
+<div id="a." class="section level1">
+<h1>A.現所属</h1>
 <blockquote>
 <p>大学共同利用法人情報・システム研究機構<br />
  統計数理研究所 リスク解析戦略研究センター<br />
@@ -250,8 +135,8 @@ $(document).ready(function () {
 </blockquote>
 <hr />
 </div>
-<div class="section level1">
-<h1>研究テーマ</h1>
+<div id="b." class="section level1">
+<h1>B.研究テーマ</h1>
 <blockquote>
 <ul>
 <li>自殺念慮の重篤化を予測するモデルの構築</li>
@@ -263,8 +148,8 @@ $(document).ready(function () {
 </blockquote>
 <hr />
 </div>
-<div class="section level1">
-<h1>学位</h1>
+<div id="c." class="section level1">
+<h1>C.学位</h1>
 <ul>
 <li>2014年　広島大学大学院総合科学研究科総合科学専攻博士後期課程 修了 博士 (学術)<br />
 博士号学位論文『心理的ウェルビーングの向上が全般性不安症状の増悪を防止するプロセスの検討』 (指導教官　杉浦義典)</li>
@@ -275,8 +160,8 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-<div class="section level1">
-<h1>職歴</h1>
+<div id="d." class="section level1">
+<h1>D.職歴</h1>
 <ul>
 <li>2009年04月〜2010年03月　留萌市立病院　非常勤心理士</li>
 <li>2009年04月〜2010年03月　岩内協会病院　非常勤心理士</li>
@@ -286,8 +171,8 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-<div class="section level1">
-<h1>教育歴</h1>
+<div id="e." class="section level1">
+<h1>E.教育歴</h1>
 <ul>
 <li>2008年5月〜2010年2月　北海道医療大学心理科学部 Teaching Assistant</li>
 <li>2010年4月〜2010年8月　北海道ハイテクノロジー専門学校　非常勤講師 (心理学)</li>
@@ -302,8 +187,8 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-<div class="section level1">
-<h1>受賞歴　</h1>
+<div id="f." class="section level1">
+<h1>F.受賞歴　</h1>
 <ul>
 <li>2010年　行動療法学会 WCBCT2010記念若手研究奨励基金</li>
 <li>2012年　認知療法学会 若手奨励基金</li>
@@ -311,20 +196,22 @@ $(document).ready(function () {
 活動テーマ：「心理学研究の立案・成果報告に役立つ実践的データ解析法の普及」</li>
 </ul>
 </div>
-
-
+</div>
 
 
 </div>
 
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> ytake2 [at] ism.ac.jp</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> 2016-04-08</p>
+</div>
+
+
 <script>
-
-// add bootstrap table styles to pandoc tables
 $(document).ready(function () {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
+ 	  });
 </script>
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
