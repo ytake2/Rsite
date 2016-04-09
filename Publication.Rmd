@@ -1,10 +1,5 @@
 ---
 title: " "
-date: "`r Sys.Date()`"
-author: ytake2 [at] ism.ac.jp
-output: #word_document
- rmdformats::readthedown
-
 ---
 
 

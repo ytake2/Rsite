@@ -1,7 +1,6 @@
 name: "my-website"
 navbar:
   title: "竹林由武 Ph.D"
-  type: inverse
   left:
     - text: "Home"
       icon: fa-home
@@ -9,8 +8,8 @@ navbar:
     - text: "About"
       icon: fa-info
       href: about.html
-    - text: "More"
-      icon: fa-gear
+    - text: "Archive"
+      icon: fa-archive
       menu:
         - text: "Activity"
         - text: "Publications"
@@ -20,9 +19,19 @@ navbar:
         - text: "---------"
         - text: "Lecture"
         - text: "Course"
-          href: Course.html
+          menu:
+            - text: "心理学講読" 
+              href: Course.html
+            - text: "確率統計" 
+              href: lec1.html
         - text: "R and Statistcs"
           href: page_d.html
   right:
-    - icon: fa-question fa-lg
-      href: https://example.com
+    - icon: fa-github fa-lg
+      href: https://github.com/ytake2/Rsite
+output:
+  html_document:
+    theme: flatly
+    highlight: espresso
+    include:
+      after_body: footer.html

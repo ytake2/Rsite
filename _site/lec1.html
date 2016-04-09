@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="竹林由武" />
+
+<meta name="date" content="2016-04-10" />
+
+<title>資料の整理</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
+<script src="site_libs/htmlwidgets-0.6/htmlwidgets.js"></script>
+<script src="site_libs/d3-3.3.8/d3.min.js"></script>
+<script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="site_libs/chromatography-0.1/chromatography.js"></script>
+<script src="site_libs/DiagrammeR-binding-0.8.2/DiagrammeR.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">竹林由武 Ph.D</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-info"></span>
+     
+    About
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-archive"></span>
+     
+    Archive
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Activity</li>
+    <li>
+      <a href="Publication.html">Publications</a>
+    </li>
+    <li>
+      <a href="page_b.html">Conference</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Lecture</li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+        Course
+         
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="Course.html">心理学講読</a>
+        </li>
+        <li>
+          <a href="lec1.html">確率統計</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="page_d.html">R and Statistcs</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/ytake2/Rsite">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="content" data-toggle="wy-nav-shift">
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
+
+<div id="header">
+<h1 class="title">資料の整理</h1>
+</div>
+
+
+<div id="table-of-contents">
+    <h2><a href="#content">資料の整理</a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#a.">a.度数分布表</a><ul>
+      <li><a href="#-statistical-data-">統計資料 (statistical data, データ)</a></li>
+      </ul></li>
+      <li><a href="#b.">b.度数分布表の作成</a></li>
+      <li><a href="#c.">c.ヒストグラムの作成</a></li>
+      </ul>  
+    </div>
+</div>
+
+<div id="main">
+<div id="a." class="section level1">
+<h1>a.度数分布表</h1>
+<div id="-statistical-data-" class="section level2">
+<h2>統計資料 (statistical data, データ)</h2>
+<ul>
+<li>調査、実験、既存の資料を調べて得られたデータ</li>
+</ul>
+<blockquote>
+<p>例) ある小学校1年生の身長, 体重, 性別, 学校での満足度を知りたい</p>
+</blockquote>
+<div class="section level3">
+<h3>集団と個体</h3>
+<ul>
+<li>調査対象となる集団 = 小学校</li>
+<li>集団を構成する個体 = 児童</li>
+</ul>
+</div>
+<div id="-variate-attribute" class="section level3">
+<h3>変量 (variate)と属性 (attribute)</h3>
+<blockquote>
+<p>変量 = 個体ごとに変動する数量的な特性</p>
+</blockquote>
+<ul>
+<li>変量= 身長, 体重</li>
+</ul>
+<blockquote>
+<p>属性 = 個体ごとに変動する質的な特性</p>
+</blockquote>
+<ul>
+<li>属性= 性別, 学校での満足度</li>
+</ul>
+</div>
+<div id="continuous-variate--discrete-variable" class="section level3">
+<h3>連続変数(continuous variate) と離散変数 (discrete variable)</h3>
+<blockquote>
+<p>　連続変量 = 測定値が実数値で表される - 目盛りに句切れがなく連続している (小数点がつく)</p>
+</blockquote>
+<blockquote>
+<p>離散変数 = 測定値が整数でしか表せない - 目盛りに句切れがある　(小数点がつかない)</p>
+</blockquote>
+<p><div id="htmlwidget-4716" style="width:768px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4716">{"x":{"diagram":"\ngraph TB\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-3631" style="width:768px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3631">{"x":{"diagram":"\ngraph LR\n  A-->B\n  A-->C\n  C-->E\n  B-->D\n  C-->D\n  D-->F\n  E-->F\n"},"evals":[],"jsHooks":[]}</script></p>
+</div>
+<div class="section level3">
+<h3>度数分布表とヒストグラム</h3>
+</div>
+</div>
+</div>
+<div id="b." class="section level1">
+<h1>b.度数分布表の作成</h1>
+<div class="section level3">
+<h3>級</h3>
+</div>
+<div class="section level3">
+<h3>級限界と級間隔</h3>
+</div>
+<div class="section level3">
+<h3>級代表値</h3>
+</div>
+<div class="section level3">
+<h3>度数</h3>
+</div>
+</div>
+<div id="c." class="section level1">
+<h1>c.ヒストグラムの作成</h1>
+</div>
+</div>
+
+
+</div>
+
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> 竹林由武</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> 2016-04-10</p>
+</div>
+
+
+<script>
+$(document).ready(function () {
+ 	  });
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
