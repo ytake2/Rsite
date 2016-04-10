@@ -18,12 +18,11 @@ navbar:
           href: page_b.html
         - text: "---------"
         - text: "Lecture"
-        - text: "Course"
-          menu:
-            - text: "心理学講読" 
-              href: Course.html
-            - text: "確率統計" 
-              href: lec1.html
+        - text: "心理学講読" 
+          href: Course.html
+        - text: "確率統計" 
+          href: lec1.html
+        - text: "---------"
         - text: "R and Statistcs"
           href: refs.html
   right:

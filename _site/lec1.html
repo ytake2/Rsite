@@ -8,20 +8,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-<meta name="author" content="竹林由武" />
 
-<meta name="date" content="2016-04-10" />
 
-<title>資料の整理</title>
+
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
-<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
-<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
-<script src="site_libs/readthedown-0.1/readthedown.js"></script>
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/htmlwidgets-0.6/htmlwidgets.js"></script>
 <script src="site_libs/d3-3.3.8/d3.min.js"></script>
 <script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
@@ -35,9 +32,125 @@
 
 
 
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+</style>
+
+
 </head>
 
 <body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="site_libs/navigation-1.0/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -84,21 +197,13 @@
     </li>
     <li class="divider"></li>
     <li class="dropdown-header">Lecture</li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-        Course
-         
-        <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="Course.html">心理学講読</a>
-        </li>
-        <li>
-          <a href="lec1.html">確率統計</a>
-        </li>
-      </ul>
+    <li>
+      <a href="Course.html">心理学講読</a>
     </li>
+    <li>
+      <a href="lec1.html">確率統計</a>
+    </li>
+    <li class="divider"></li>
     <li>
       <a href="refs.html">R and Statistcs</a>
     </li>
@@ -117,31 +222,14 @@
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div id="content" data-toggle="wy-nav-shift">
+<div class="fluid-row" id="header">
 
-<nav id="nav-top" role="navigation" aria-label="top navigation">
-    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-</nav>
 
-<div id="header">
-<h1 class="title">資料の整理</h1>
+
+
 </div>
 
 
-<div id="table-of-contents">
-    <h2><a href="#content">資料の整理</a></h2>
-    <div id="text-table-of-contents">
-      <ul>
-      <li><a href="#a.">a.度数分布表</a><ul>
-      <li><a href="#-statistical-data-">統計資料 (statistical data, データ)</a></li>
-      </ul></li>
-      <li><a href="#b.">b.度数分布表の作成</a></li>
-      <li><a href="#c.">c.ヒストグラムの作成</a></li>
-      </ul>  
-    </div>
-</div>
-
-<div id="main">
 <div id="a." class="section level1">
 <h1>a.度数分布表</h1>
 <div id="-statistical-data-" class="section level2">
@@ -182,9 +270,9 @@
 <blockquote>
 <p>離散変数 = 測定値が整数でしか表せない - 目盛りに句切れがある　(小数点がつかない)</p>
 </blockquote>
-<p><div id="htmlwidget-9526" style="width:768px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9526">{"x":{"diagram":"\ngraph TB\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-5774" style="width:768px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5774">{"x":{"diagram":"\ngraph LR\n  A-->B\n  A-->C\n  C-->E\n  B-->D\n  C-->D\n  D-->F\n  E-->F\n"},"evals":[],"jsHooks":[]}</script></p>
+<p><div id="htmlwidget-415" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-415">{"x":{"diagram":"\ngraph TB\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script><div id="htmlwidget-7601" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7601">{"x":{"diagram":"\ngraph LR\n  A-->B\n  A-->C\n  C-->E\n  B-->D\n  C-->D\n  D-->F\n  E-->F\n"},"evals":[],"jsHooks":[]}</script></p>
 </div>
 <div class="section level3">
 <h3>度数分布表とヒストグラム</h3>
@@ -209,22 +297,21 @@
 <div id="c." class="section level1">
 <h1>c.ヒストグラムの作成</h1>
 </div>
+
+<p>Copyright &copy; 2016 竹林由武. All rights reserved.</p>
+
+
+
 </div>
-
-
-</div>
-
-<div id="postamble" data-toggle="wy-nav-shift" class="status">
-<p class="author"><span class="glyphicon glyphicon-user"></span> 竹林由武</p>
-<p class="date"><span class="glyphicon glyphicon-calendar"></span> 2016-04-10</p>
-</div>
-
 
 <script>
-$(document).ready(function () {
- 	  });
-</script>
 
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

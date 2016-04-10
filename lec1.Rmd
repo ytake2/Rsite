@@ -1,10 +1,5 @@
 ---
-title: "資料の整理"
-date: "`r Sys.Date()`"
-author: "竹林由武"
-output:
-  rmdformats::readthedown:
-    highlight: kate
+title: " "
 ---
 
 
