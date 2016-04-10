@@ -1,6 +1,9 @@
 ---
 title: " "
-
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 
@@ -21,9 +24,6 @@ opts_chunk$set(echo = FALSE,
 opts_knit$set(width = 75)
 ```
 
-
-<img src="img/IMG_0188.JPG" height="600px" width="1200px" align="center"  />
-  
   
 # A.現所属
 > 大学共同利用法人情報・システム研究機構  

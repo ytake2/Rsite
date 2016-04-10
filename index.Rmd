@@ -1,8 +1,8 @@
 ---
-title: "竹林由武 Ph.D"
+title: " "
 ---
 
-
+<img src="img/IMG_0188.JPG" height="600px" width="1200px" align="center"  />
 
 ## 統計数理研究所解析戦略研究センター 竹林由武のHP
 ## [googlePage](https://sites.google.com/site/yoshitake2bayashi/home)からぼちぼち移植中

@@ -15,7 +15,7 @@ navbar:
         - text: "Publications"
           href: Publication.html
         - text: "Conference"
-          href: page_b.html
+          href: conference.html
         - text: "---------"
         - text: "Lecture"
         - text: "心理学講読" 
@@ -24,7 +24,13 @@ navbar:
           href: lec1.html
         - text: "---------"
         - text: "R and Statistcs"
+        - text: "DARM"
+          href: https://sites.google.com/site/studygroup13csrm/
+        - text: "Github"
+          href: https://github.com/ytake2
+        - text: "SlideShare"
           href: refs.html
+
   right:
     - icon: fa-github fa-lg
       href: https://github.com/ytake2/Rsite
