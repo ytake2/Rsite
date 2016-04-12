@@ -18,7 +18,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -138,34 +138,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 60px;
+  padding-top: 61px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 
 .section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 </style>
 
@@ -384,91 +384,165 @@ div.tocify {
 
 
 <div class="section level1">
-<h1>1.1 度数分布表</h1>
+<h1>本日の目標</h1>
+<blockquote>
+<ul>
+<li>大まかなデータの種類を理解する</li>
+<li>度数分布表の作成する</li>
+<li>度数分布表からヒストグラムを作成する</li>
+<li>代表値と散布度の算出方法を理解する</li>
+</ul>
+</blockquote>
+<hr />
+</div>
+<div class="section level1">
+<h1>1.1 統計資料の整理</h1>
+<hr />
 <div id="-statistical-data-" class="section level3">
 <h3>統計資料 (statistical data, データ)</h3>
-<ul>
-<li>調査、実験、既存の資料を調べて得られたデータ</li>
-</ul>
 <blockquote>
-<p>例) ある小学校1年生の身長, 体重, 性別, 学校での満足度を知りたい</p>
+<p>調査、実験、既存の資料を調べて得られたデータ</p>
 </blockquote>
+<p>例) ある小学校1年生の身長, 体重, 性別, 学校での満足度を知りたい</p>
 </div>
 <div class="section level3">
 <h3>集団と個体</h3>
 <ul>
-<li>調査対象となる集団 = 小学校</li>
-<li>集団を構成する個体 = 児童</li>
+<li>調査対象となる<code>集団</code> = 小学校<br />
+</li>
+<li>集団を構成する<code>個体</code> = 児童 <img src="fig_lec/group.png" width="200" align="center"></li>
 </ul>
 </div>
-<div id="-variate-attribute" class="section level3">
-<h3>変量 (variate)と属性 (attribute)</h3>
+<div class="section level3">
+<h3>変量と属性</h3>
 <blockquote>
-<p>変量 = 個体ごとに変動する数量的な特性</p>
+<p><code>変量(variate)</code> : 個体ごとに変動する数量的な特性<br />
+ 例) 身長, 体重<br />
+ (Aさんは150cm, Bさんは160cm, Cさんは155cm…)<br />
+ (Aさんは50kg, Bさんは60kg, Cさんは55kg…)</p>
 </blockquote>
-<ul>
-<li>変量= 身長, 体重</li>
-</ul>
 <blockquote>
-<p>属性 = 個体ごとに変動する質的な特性</p>
+<p><code>属性 (attribute)</code>: 個体ごとに変動する質的な特性<br />
+ 例) 性別 (男, 女), 学校での満足度(満足, 不満足) (Aさんは男, Bさんは女, Cさんは男…)<br />
+ (Aさんは満足, Bさんは満足, Cさんは不満…)</p>
 </blockquote>
-<ul>
-<li>属性= 性別, 学校での満足度</li>
-</ul>
+<div class="columns-2">
+<p><img src="fig_lec/variate1.png" width="400" align="left"> <img src="fig_lec/attribute.png" width="400" align="right"></p>
 </div>
-<div id="continuous-variate--discrete-variable" class="section level3">
-<h3>連続変数(continuous variate) と離散変数 (discrete variable)</h3>
+</div>
+<div id="section" class="section level3">
+<h3>　</h3>
+</div>
+<div id="section-1" class="section level3">
+<h3>　</h3>
+</div>
+<div class="section level3">
+<h3>変数の種類</h3>
 <blockquote>
-<p>　連続変量 = 測定値が実数値で表される - 目盛りに句切れがなく連続している (小数点がつく)</p>
+<p><code>連続変量</code>: 測定値が実数値で表される<br />
+ - 目盛りに句切れがなく連続している (小数点がつく)<br />
+ - 例)　身長, 体重</p>
 </blockquote>
 <blockquote>
-<p>離散変数 = 測定値が整数でしか表せない - 目盛りに句切れがある　(小数点がつかない)</p>
+<p><code>離散変数</code>: 測定値が整数でしか表せない<br />
+ - 目盛りに句切れがある　(小数点がつかない)<br />
+ - 例) 満足度(満足してない=o, 満足している=1)</p>
 </blockquote>
+</div>
+<div id="section-2" class="section level3">
+<h3>　</h3>
 </div>
 <div class="section level3">
 <h3>得られた資料の整理手順</h3>
+<blockquote>
 <ol style="list-style-type: decimal">
-<li>度数分布表の作成</li>
-<li>ヒストグラムを作成し, 視覚的に資料の分布を把握</li>
-<li>代表値, 散布度等の特性値を求め、資料の分布の特徴を数量的に把握</li>
+<li>統計資料の入手</li>
+<li><code>度数分布表</code>の作成</li>
+<li><code>ヒストグラム</code>を作成し, 視覚的に資料の分布を把握</li>
+<li><code>代表値</code>, <code>散布度</code>等の特性値を求め、資料の分布の特徴を数量的に把握</li>
 </ol>
-<p><div id="htmlwidget-3971" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3971">{"x":{"diagram":"\ngraph LR\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script></p>
+</blockquote>
+<p><div id="htmlwidget-8531" style="width:600px;height:100px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8531">{"x":{"diagram":"\ngraph LR\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script></p>
+<hr />
 </div>
 </div>
 <div class="section level1">
 <h1>1.1.1 度数分布表の作成</h1>
 <blockquote>
-<p><span class="math inline">\(n\)</span>個のデータ<span class="math inline">\(x_1,x_2,\dots,x_n\)</span> を得たときの度数分布表を作成する</p>
+<ol style="list-style-type: decimal">
+<li><code>最小値</code>と<code>最大値</code>をみつける。<br />
+</li>
+<li><code>級の数</code><span class="math inline">\(k\)</span>を決める。</li>
+<li><code>級限界</code>を求める。</li>
+<li><code>級代表値</code>を求める。</li>
+<li>各級の<code>度数</code>と<code>合計</code>を求める.</li>
+</ol>
 </blockquote>
+<hr />
+<blockquote>
+<h2 id="nx_1x_2dotsx_n-"><span class="math inline">\(n\)</span>個のデータ<span class="math inline">\(x_1,x_2,\dots,x_n\)</span> を得たときの度数分布表を作成を考える</h2>
+</blockquote>
+<ul>
+<li>例えば, 20~60の値をとる計40個体のデータXだと<br />
+<span class="math inline">\(x_1=20, x_2=21, x_3=22, \dots, x_{60}=60\)</span></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 20から60の整数をxに格納</span>
+X &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">21</span>:<span class="dv">60</span>)</code></pre></div>
 <div class="section level3">
 <h3>1. 最小値と最大値をみつける。</h3>
-<p>最小値を<span class="math inline">\(\alpha_0\)</span>、最大値を<span class="math inline">\(\alpha_n\)</span>とする</p>
+<p>　最小値を <span class="math inline">\(\alpha_0\)</span> 、最大値を <span class="math inline">\(\alpha_n\)</span> とする</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 最大値と最小値をみつける</span>
+Xmax &lt;-<span class="st"> </span><span class="kw">max</span>(X)
+Xmin &lt;-<span class="st"> </span><span class="kw">min</span>(X)
+Xmax</code></pre></div>
+<pre><code>[1] 60</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Xmin</code></pre></div>
+<pre><code>[1] 21</code></pre>
 </div>
 <div id="k" class="section level3">
 <h3>2. 級の数<span class="math inline">\(k\)</span>を決める</h3>
 <ul>
-<li>最大値から最小値を引き, <span class="math inline">\(k\)</span>等分</li>
-<li>その分点を, <span class="math inline">\(\alpha_1,\alpha_2,\dots,\alpha_{k-1}\)</span></li>
-<li>級の数(<span class="math inline">\(k\)</span>)が大きすぎると分布の特性が表しにくく、小さすぎると部分的な特性が消されるが、データの大きさ(個数)<span class="math inline">\(n\)</span>に関連して定める。</li>
-<li>級の数の目安</li>
+<li><p>最大値から最小値を引き, <span class="math inline">\(k\)</span>等分し、分点を, <span class="math inline">\(\alpha_1,\alpha_2,\dots,\alpha_{k-1}\)</span>とする。</p>
+<p><span class="math inline">\(k\)</span>を4とすると…</p></li>
 </ul>
-<p><div id="htmlwidget-8875" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8875">{"x":{"filter":"none","data":[["1","2","3"],["50前後","100前後","100以上"],["5≦k≦7","8≦k≦12","10≦k≦20"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>nの大きさ\u003c/th>\n      <th>級数の目安\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"dom":"t","scrollX":true,"fixedColumns":true,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># (最大値 - 最小値) / 級の数</span>
+k =<span class="st"> </span><span class="dv">4</span>
+
+<span class="co"># 20~60を10ごと区切ると4等分になる</span>
+(Xmax -<span class="st"> </span>(Xmin -<span class="st"> </span><span class="dv">1</span>))/k</code></pre></div>
+<pre><code>[1] 10</code></pre>
+<p>　先の例の分点は, 以下のようになる。<br />
+ 　- <span class="math inline">\(\alpha_1 = 30\)</span><br />
+ 　- <span class="math inline">\(\alpha_2 = 40\)</span><br />
+ 　- <span class="math inline">\(\alpha_3 = 50\)</span></p>
+<p>級の数(<span class="math inline">\(k\)</span>)が大きすぎると分布の特性が表しにくく、小さすぎると部分的な特性が消されるが、データの大きさ(個数)<span class="math inline">\(n\)</span>に関連して定める。</p>
+<p><div id="htmlwidget-7804" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7804">{"x":{"filter":"none","caption":"<caption>級数の目安\u003c/caption>","data":[["1","2","3"],["50前後","100前後","100以上"],["5≦k≦7","8≦k≦12","10≦k≦20"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>nの大きさ\u003c/th>\n      <th>級数の目安\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"dom":"t","scrollX":true,"fixedColumns":true,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
 </div>
 <div class="section level3">
 <h3>3. 級限界を決める。</h3>
 <ul>
-<li><p>級：<span class="math inline">\(\alpha_0\sim\alpha_1,\alpha_1\sim\alpha_2,\dots, \alpha_{k-1}\sim\alpha_k(\alpha_k=\alpha_n)\)</span></p></li>
-<li>第1の級: <span class="math inline">\(\alpha_0\sim\alpha_1\)</span></li>
+<li><p>級： <span class="math display">\[
+\begin{align}
+\alpha_0\sim\alpha_1,\alpha_1\sim\alpha_2,\dots, \alpha_{k-1}\sim\alpha_k(\alpha_k=\alpha_n)
+\end{align}
+\]</span></p></li>
+<li>第1の級: <span class="math inline">\(\alpha_0\sim\alpha_1\)</span>
+<ul>
 <li>第1の級の級下限界<span class="math inline">\(\alpha_0\)</span></li>
 <li>第1の級の級上限界<span class="math inline">\(\alpha_1\)</span></li>
-<li><p>これらを単に級限界と呼ぶ。</p></li>
+<li>これらを単に級限界と呼ぶ。</li>
+</ul></li>
 </ul>
 </div>
 <div class="section level3">
 <h3>4. 級代表値を求める。</h3>
-<p>第<span class="math inline">\(i\)</span>の級代表値：<span class="math inline">\(x^*_i=\frac{\alpha_i+\alpha_{i-1}}{2} (i=1,\dots,k)\)</span></p>
+<p>第<span class="math inline">\(i\)</span>の級代表値： <span class="math display">\[
+\begin{align}
+x^*_i=\frac{\alpha_i+\alpha_{i-1}}{2} (i=1,\dots,k)
+\end{align}
+\]</span></p>
 </div>
 <div id="." class="section level3">
 <h3>5. 各級の度数と合計を求める.</h3>
@@ -515,26 +589,111 @@ div.tocify {
 </tr>
 </tbody>
 </table>
+<table>
+<thead>
+<tr class="header">
+<th align="right">級</th>
+<th align="right">級代表値<span class="math inline">\(x^*\)</span></th>
+<th align="right">度数<span class="math inline">\(f\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><span class="math inline">\(20\sim 30\)</span></td>
+<td align="right"><span class="math inline">\(25\)</span></td>
+<td align="right"><span class="math inline">\(10\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(30\sim 40\)</span></td>
+<td align="right"><span class="math inline">\(35\)</span></td>
+<td align="right"><span class="math inline">\(10\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(40\sim 50\)</span></td>
+<td align="right"><span class="math inline">\(45\)</span></td>
+<td align="right"><span class="math inline">\(10\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(50\sim 60\)</span></td>
+<td align="right"><span class="math inline">\(55\)</span></td>
+<td align="right"><span class="math inline">\(10\)</span></td>
+</tr>
+</tbody>
+</table>
 </div>
-</div>
-<div class="section level1">
-<h1>1.1.2 ヒストグラムの作成</h1>
-<p>中学1年生100人の英語のテストの得点 (表1.2)</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">english &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">20</span>, <span class="dv">29</span>, <span class="dv">83</span>, <span class="dv">50</span>, <span class="dv">33</span>, <span class="dv">44</span>, <span class="dv">41</span>, <span class="dv">60</span>, <span class="dv">66</span>, <span class="dv">74</span>, <span class="dv">38</span>, <span class="dv">83</span>, <span class="dv">46</span>, <span class="dv">33</span>, <span class="dv">77</span>, <span class="dv">57</span>, 
+<div class="section level2">
+<h2>度数分布を図示し視覚的に理解する</h2>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li>度数分布表を作成 (級ごとの度数を求める)</li>
+<li>得点を横軸、度数を縦軸にとる</li>
+<li>各階級の度数をプロットする</li>
+</ol>
+</blockquote>
+<div id="1100-1.2" class="section level3">
+<h3>中学1年生100人の英語のテストの得点 (表1.2)</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 100人の得点をenglishに格納</span>
+english &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">20</span>, <span class="dv">29</span>, <span class="dv">83</span>, <span class="dv">50</span>, <span class="dv">33</span>, <span class="dv">44</span>, <span class="dv">41</span>, <span class="dv">60</span>, <span class="dv">66</span>, <span class="dv">74</span>, <span class="dv">38</span>, <span class="dv">83</span>, <span class="dv">46</span>, <span class="dv">33</span>, <span class="dv">77</span>, <span class="dv">57</span>, 
     <span class="dv">50</span>, <span class="dv">77</span>, <span class="dv">73</span>, <span class="dv">61</span>, <span class="dv">41</span>, <span class="dv">15</span>, <span class="dv">39</span>, <span class="dv">45</span>, <span class="dv">56</span>, <span class="dv">67</span>, <span class="dv">63</span>, <span class="dv">86</span>, <span class="dv">84</span>, <span class="dv">84</span>, <span class="dv">54</span>, <span class="dv">50</span>, <span class="dv">59</span>, <span class="dv">58</span>, 
     <span class="dv">63</span>, <span class="dv">70</span>, <span class="dv">78</span>, <span class="dv">50</span>, <span class="dv">64</span>, <span class="dv">59</span>, <span class="dv">63</span>, <span class="dv">75</span>, <span class="dv">63</span>, <span class="dv">60</span>, <span class="dv">76</span>, <span class="dv">89</span>, <span class="dv">85</span>, <span class="dv">62</span>, <span class="dv">68</span>, <span class="dv">75</span>, <span class="dv">77</span>, <span class="dv">68</span>, 
     <span class="dv">78</span>, <span class="dv">79</span>, <span class="dv">87</span>, <span class="dv">65</span>, <span class="dv">63</span>, <span class="dv">77</span>, <span class="dv">72</span>, <span class="dv">61</span>, <span class="dv">87</span>, <span class="dv">30</span>, <span class="dv">24</span>, <span class="dv">80</span>, <span class="dv">67</span>, <span class="dv">61</span>, <span class="dv">70</span>, <span class="dv">30</span>, <span class="dv">71</span>, <span class="dv">64</span>, 
     <span class="dv">99</span>, <span class="dv">94</span>, <span class="dv">37</span>, <span class="dv">31</span>, <span class="dv">37</span>, <span class="dv">71</span>, <span class="dv">71</span>, <span class="dv">69</span>, <span class="dv">63</span>, <span class="dv">56</span>, <span class="dv">17</span>, <span class="dv">41</span>, <span class="dv">46</span>, <span class="dv">47</span>, <span class="dv">76</span>, <span class="dv">61</span>, <span class="dv">87</span>, <span class="dv">51</span>, 
     <span class="dv">73</span>, <span class="dv">69</span>, <span class="dv">34</span>, <span class="dv">31</span>, <span class="dv">53</span>, <span class="dv">24</span>, <span class="dv">50</span>, <span class="dv">77</span>, <span class="dv">68</span>, <span class="dv">62</span>, <span class="dv">56</span>, <span class="dv">76</span>)</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(english)</code></pre></div>
-<pre><code> [1] 20 29 83 50 33 44 41 60 66 74 38 83 46 33 77 57 50 77 73 61 41 15 39
-[24] 45 56 67 63 86 84 84 54 50 59 58 63 70 78 50 64 59 63 75 63 60 76 89
-[47] 85 62 68 75 77 68 78 79 87 65 63 77 72 61 87 30 24 80 67 61 70 30 71
-[70] 64 99 94 37 31 37
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 小さい順に並び替えると</span>
+<span class="kw">sort</span>(english)</code></pre></div>
+<pre><code> [1] 15 17 20 24 24 29 30 30 31 31 33 33 34 37 37 38 39 41 41 41 44 45 46
+[24] 46 47 50 50 50 50 50 51 53 54 56 56 56 57 58 59 59 60 60 61 61 61 61
+[47] 62 62 63 63 63 63 63 63 64 64 65 66 67 67 68 68 68 69 69 70 70 71 71
+[70] 71 72 73 73 74 75
  [ reached getOption(&quot;max.print&quot;) -- omitted 25 entries ]</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">h1 &lt;-<span class="st"> </span><span class="kw">hist</span>(english, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="fl">9.5</span>, <span class="fl">99.5</span>, <span class="dv">10</span>), <span class="dt">plot =</span> F)
+</div>
+</div>
+<div class="section level2">
+<h2>度数分布表を作成</h2>
+<ul>
+<li>今回は, 教科書に合わせて, 最小値を9.5, 最大値を99.5とし, 級数を9とする。</li>
+<li>今回は, 10ごとの分点となり, 各級の級代表値は級の区間の中点になる。</li>
+<li>各級の度数をカウントする</li>
+</ul>
+<p><div id="htmlwidget-8076" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8076">{"x":{"filter":"none","extensions":["Responsive"],"data":[["1","2","3","4","5","6","7","8","9"],["9.5 ～ 19.5","19.5 ～ 29.5","29.5 ～ 39.5","39.5 ～ 49.5","49.5 ～ 59.5","59.5 ～ 69.5","69.5 ～ 79.5","79.5 ～ 89.5","89.5 ～ 99.5"],[14.5,24.5,34.5,44.5,54.5,64.5,74.5,84.5,94.5],[2,4,11,8,15,25,22,11,2]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>級\u003c/th>\n      <th>級代表値\u003c/th>\n      <th>度数\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"responsive":true},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
+<div class="section level3">
+<h3>地道に度数をカウントするコード</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級1の度数</span>
+<span class="kw">length</span>(english[english &lt;=<span class="st"> </span><span class="fl">19.5</span>])</code></pre></div>
+<pre><code>[1] 2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級2の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">19.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">29.5</span>])</code></pre></div>
+<pre><code>[1] 4</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級3の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">29.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">39.5</span>])</code></pre></div>
+<pre><code>[1] 11</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級4の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">39.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">49.5</span>])</code></pre></div>
+<pre><code>[1] 8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級5の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">49.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">59.5</span>])</code></pre></div>
+<pre><code>[1] 15</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級6の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">59.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">69.5</span>])</code></pre></div>
+<pre><code>[1] 25</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級7の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">69.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">79.5</span>])</code></pre></div>
+<pre><code>[1] 22</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級8の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">79.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">89.5</span>])</code></pre></div>
+<pre><code>[1] 11</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級9の度数</span>
+<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">89.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">99.5</span>])</code></pre></div>
+<pre><code>[1] 2</code></pre>
+</div>
+<div id="hist" class="section level3">
+<h3>ヒストグラム作成関数(hist)から度数分布表を抜き出すコード</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 最大値を99.5, 最小値を9.5とし、9階級で整理する</span>
+h1 &lt;-<span class="st"> </span><span class="kw">hist</span>(english, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="fl">9.5</span>, <span class="fl">99.5</span>, <span class="dv">10</span>), <span class="dt">plot =</span> F)
 
-k &lt;-<span class="st"> </span><span class="kw">length</span>(h1$counts)  <span class="co"># 級の数</span>
+<span class="co"># 級の数</span>
+k &lt;-<span class="st"> </span><span class="kw">length</span>(h1$counts)
 
 class_names &lt;-<span class="st"> </span><span class="ot">NULL</span>  <span class="co"># 級の名前格納用</span>
 rep_k &lt;-<span class="st"> </span><span class="ot">NULL</span>  <span class="co"># 級の代表値格納用</span>
@@ -543,17 +702,36 @@ for (i in <span class="dv">1</span>:k) {
     rep_k[i] &lt;-<span class="st"> </span>(h1$breaks[i +<span class="st"> </span><span class="dv">1</span>] +<span class="st"> </span>h1$breaks[i])/<span class="dv">2</span>
 }
 
-frequency_table &lt;-<span class="st"> </span><span class="kw">data.frame</span>(級 =<span class="st"> </span>class_names, 級代表値 =<span class="st"> </span>rep_k, 度数 =<span class="st"> </span>h1$counts)</code></pre></div>
-<p><div id="htmlwidget-4588" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4588">{"x":{"filter":"none","extensions":["Responsive"],"data":[["1","2","3","4","5","6","7","8","9"],["9.5 ～ 19.5","19.5 ～ 29.5","29.5 ～ 39.5","39.5 ～ 49.5","49.5 ～ 59.5","59.5 ～ 69.5","69.5 ～ 79.5","79.5 ～ 89.5","89.5 ～ 99.5"],[14.5,24.5,34.5,44.5,54.5,64.5,74.5,84.5,94.5],[2,4,11,8,15,25,22,11,2]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>級\u003c/th>\n      <th>級代表値\u003c/th>\n      <th>度数\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"responsive":true},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
-<p><img src="lec1_files/figure-html/unnamed-chunk-7-1.png" alt="" /><!-- --></p>
+frequency_table &lt;-<span class="st"> </span><span class="kw">data.frame</span>(級 =<span class="st"> </span>class_names, 級代表値 =<span class="st"> </span>rep_k, 度数 =<span class="st"> </span>h1$counts)
+frequency_table</code></pre></div>
+<pre><code>            級 級代表値 度数
+1  9.5 ～ 19.5     14.5    2
+2 19.5 ～ 29.5     24.5    4
+3 29.5 ～ 39.5     34.5   11
+4 39.5 ～ 49.5     44.5    8
+5 49.5 ～ 59.5     54.5   15
+6 59.5 ～ 69.5     64.5   25
+7 69.5 ～ 79.5     74.5   22
+8 79.5 ～ 89.5     84.5   11
+9 89.5 ～ 99.5     94.5    2</code></pre>
+</div>
+</div>
+<div class="section level2">
+<h2>ヒストグラムをプロット</h2>
+<ul>
+<li>赤線は<code>度数折線</code> (各級の代表値を直線結んだ線)</li>
+<li>柱状グラフは<code>ヒストグラム</code> (各級の度数を柱状グラフで表現)</li>
+</ul>
+<p><img src="lec1_files/figure-html/unnamed-chunk-12-1.png" alt="" /><!-- --></p>
+</div>
 </div>
 <div class="section level1">
 <h1>1.2代表値と散布度</h1>
-<p>代表値= データの中心的な位置を表す量</p>
-</div>
-<div class="section level1">
-<h1>1.2.1 代表値</h1>
+<blockquote>
+<p><code>代表値</code>= データの中心的な位置を表す量 <code>散布度</code>= データの分布のバラツキの程度を表す量</p>
+</blockquote>
+<div class="section level2">
+<h2>1.2.1 代表値</h2>
 <div class="section level3">
 <h3>平均値</h3>
 <ul>
@@ -573,11 +751,9 @@ frequency_table &lt;-<span class="st"> </span><span class="kw">data.frame</span>
 </ul>
 </div>
 </div>
+</div>
 <div class="section level1">
 <h1>1.2.2 散布度</h1>
-<ul>
-<li>データの分布のバラツキの程度を表す量</li>
-</ul>
 <div class="section level3">
 <h3>分散</h3>
 <p><span class="math inline">\(s^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\dots+(x_n-\bar{x})^2}{n}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})^2\)</span></p>
@@ -601,8 +777,8 @@ frequency_table &lt;-<span class="st"> </span><span class="kw">data.frame</span>
 <blockquote>
 <p>数学の同一問題をA, B 2クラスのそれぞれ生徒20人を対象に試験を行い, その結果をもとに次の度数分布表を得た。</p>
 </blockquote>
-<p><div id="htmlwidget-8682" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8682">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7"],["20~30","30~40","40~50","50~60","60~70","70~80","80~90"],[25,35,45,55,65,75,85],[0,2,3,10,3,2,0],[1,3,3,5,5,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>得点\u003c/th>\n      <th>代表値\u003c/th>\n      <th>Aクラス\u003c/th>\n      <th>Bクラス\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
+<p><div id="htmlwidget-4164" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4164">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7"],["20~30","30~40","40~50","50~60","60~70","70~80","80~90"],[25,35,45,55,65,75,85],[0,2,3,10,3,2,0],[1,3,3,5,5,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>得点\u003c/th>\n      <th>代表値\u003c/th>\n      <th>Aクラス\u003c/th>\n      <th>Bクラス\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
 <blockquote>
 <p>各クラスの度数折れ線、平均、分散標準偏差を求めよ</p>
 </blockquote>
