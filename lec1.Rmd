@@ -29,7 +29,7 @@ opts_knit$set(width=75)
 
 # 本日の目標
 > - 大まかなデータの種類を理解する
-- 度数分布表の作成する
+- 度数分布表を作成する
 - 度数分布表からヒストグラムを作成する
 - 代表値と散布度の算出方法を理解する
 
@@ -69,7 +69,7 @@ opts_knit$set(width=75)
 
 > `属性 (attribute)`:
   個体ごとに変動する質的な特性   
-  例) 性別 (男, 女), 学校での満足度(満足, 不満足)
+  例) 性別 (男, 女), 学校での満足度(満足, 不満足)  
     (Aさんは男, Bさんは女, Cさんは男...)  
     (Aさんは満足, Bさんは満足, Cさんは不満...)
 
@@ -84,6 +84,7 @@ opts_knit$set(width=75)
 
 ###　
 
+###　
 
 
 ### 変数の種類
@@ -130,14 +131,15 @@ graph LR
 
 ---
 
-> ## $n$個のデータ$x_1,x_2,\dots,x_n$ を得たときの度数分布表を作成を考える
+> ### $n$個のデータ$x_1,x_2,\dots,x_n$ を得たときの度数分布表の作成を考える
 
 - 例えば, 20~60の値をとる計40個体のデータXだと  
 $x_1=20, x_2=21, x_3=22, \dots, x_{60}=60$
 
-```{r, echo=T}
+```{r, echo=F}
 #20から60の整数をxに格納
 X<-rep(21:60)
+X
 ```
 
 
@@ -148,9 +150,9 @@ X<-rep(21:60)
 #最大値と最小値をみつける
 Xmax<-max(X) 
 Xmin<-min(X)
-Xmax; Xmin
 ```
 
+最大値$X_{max}$は`r Xmax`, 最小値$X_{min}$は`r Xmin`
 
 
 ### 2. 級の数$k$を決める  
@@ -202,7 +204,7 @@ $$
     - これらを単に級限界と呼ぶ。
 
 ### 4. 級代表値を求める。  
-第$i$の級代表値：
+第$i$の級の代表値：
 $$
 \begin{align}
 x^*_i=\frac{\alpha_i+\alpha_{i-1}}{2} (i=1,\dots,k)
@@ -234,7 +236,9 @@ $$
 
 
 ---
+
 # 1.1.2 ヒストグラムの作成
+
 ---
 
 ## 度数分布を図示し視覚的に理解する
@@ -295,7 +299,41 @@ datatable(frequency_table, extensions="Responsive",
 ```
 
 
-### 地道に度数をカウントするコード
+## ヒストグラムをプロット
+- 赤線は`度数折線` (各級の代表値を直線結んだ線)
+- 柱状グラフは`ヒストグラム` (各級の度数を柱状グラフで表現)
+
+```{r,cache=FALSE}
+par(family="HiraMaruProN-W4")
+plot(h1, xlab="英語のテスト得点(x)", ylab="度数(f)", main="", bty="l")
+par(new=T)
+plot(frequency_table[,2],frequency_table[,3],
+     type="l",xlim=c(9.5,99.5),ylim=c(0,25),
+     xlab="英語のテスト得点(x)", ylab="度数(f)", main="",col="red",bty="l")
+```
+
+
+### ヒストグラム作成関数(hist)から度数分布表を抜き出すコード (おまけ)
+
+```{r, echo=T,cache=FALSE}
+# 最大値を99.5, 最小値を9.5とし、9階級で整理する
+h1<-hist(english,breaks=seq(9.5, 99.5, 10),plot=F)
+
+# 級の数
+k <- length(h1$counts) 
+
+class_names <- NULL # 級の名前格納用
+rep_k <- NULL # 級の代表値格納用
+for(i in 1:k) {
+  class_names[i] <- paste(h1$breaks[i], "～", h1$breaks[i+1])
+  rep_k[i] <-(h1$breaks[i+1]+h1$breaks[i])/2
+}
+
+frequency_table <- data.frame(級=class_names,  級代表値=rep_k,度数=h1$counts)
+frequency_table
+```
+
+### 地道に度数をカウントするコード(おまけ)
 
 ```{r , echo=T}
 #級1の度数
@@ -318,87 +356,139 @@ length(english[english>=79.5&english<=89.5])
 length(english[english>=89.5&english<=99.5])
 ```
 
-### ヒストグラム作成関数(hist)から度数分布表を抜き出すコード
-
-```{r, echo=T,cache=FALSE}
-# 最大値を99.5, 最小値を9.5とし、9階級で整理する
-h1<-hist(english,breaks=seq(9.5, 99.5, 10),plot=F)
-
-# 級の数
-k <- length(h1$counts) 
-
-class_names <- NULL # 級の名前格納用
-rep_k <- NULL # 級の代表値格納用
-for(i in 1:k) {
-  class_names[i] <- paste(h1$breaks[i], "～", h1$breaks[i+1])
-  rep_k[i] <-(h1$breaks[i+1]+h1$breaks[i])/2
-}
-
-frequency_table <- data.frame(級=class_names,  級代表値=rep_k,度数=h1$counts)
-frequency_table
-```
-
-## ヒストグラムをプロット
-- 赤線は`度数折線` (各級の代表値を直線結んだ線)
-- 柱状グラフは`ヒストグラム` (各級の度数を柱状グラフで表現)
-
-```{r,cache=FALSE}
-par(family="HiraMaruProN-W4")
-plot(h1, xlab="英語のテスト得点(x)", ylab="度数(f)", main="", bty="l")
-par(new=T)
-plot(frequency_table[,2],frequency_table[,3],
-     type="l",xlim=c(9.5,99.5),ylim=c(0,25),
-     xlab="英語のテスト得点(x)", ylab="度数(f)", main="",col="red",bty="l")
-```
-
-
 # 1.2代表値と散布度
 
-> `代表値`= データの中心的な位置を表す量
+> `代表値`= データの中心的な位置を表す量  
+
 > `散布度`= データの分布のバラツキの程度を表す量
 
-## 1.2.1 代表値
+# 1.2.1 代表値
 
 ### 平均値
-- データが$x_1,x_2,\dots,x_n$の時の平均値
-$\bar{x}=\frac{x_1+x_2+\dots+x_n}{n}=\frac{1}{n}\sum_{i=1}^n x_i$
+- データが$x_1,x_2,\dots,x_n$の時の平均値:  
 
-- $k$個の級に分けて、その級代表値を$x^*_1,x^*_2,\dots,x^*_k$の時の平均値  
-$\bar{x}=\frac{x^*_1 f_1+x^*_2 f_2+\dots+x^*_k f_k}{n}=\frac{1}{n}\sum_{i=1}^k x^*_i f_i$
 
-- 加重平均
 
+$$
+\begin{align}
+\bar{x}=\frac{x_1+x_2+\dots+x_n}{n}=\frac{1}{n}\sum_{i=1}^n x_i
+\end{align}
+$$
+
+
+- $k$個の級に分けて、その級代表値を$x^*_1,x^*_2,\dots,x^*_k$の時の平均値:
+
+$$
+\begin{align}
+\bar{x}=\frac{x^*_1 f_1+x^*_2 f_2+\dots+x^*_k f_k}{n}=\frac{1}{n}\sum_{i=1}^k x^*_i f_i
+\end{align}
+$$
+
+- 加重平均:  
+$x_1$が$f_1$個,$x_2$が$f_2$個,$\dots$,$x_k$が$f_k$個あるときに上式を用いて算出する平均値
+
+###　
 
 ### 中央値
 - データ$x_1,x_2,\dots,x_n$を小さい順に並べたものを以下で表す。
-$x^{(1)}≦x^{(2)}≦\dots≦x^{(n-1)}≦x^{(n)}$
+$$
+\begin{align}
+x^{(1)}≦x^{(2)}≦\dots≦x^{(n-1)}≦x^{(n)}
+\end{align}
+$$
 
 - この時、中央の値を`中央値(median)`といい$\tilde{x}$で表す。  
 
-    $n$が奇数の時, 中央値$\tilde{x}=x^{((n+1)/2)}$  
+    $n$が奇数の時の中央値
+      $$
+      \begin{align}
+      \tilde{x}=x^{((n+1)/2)}
+      \end{align}
+      $$
 
-    $n$が偶数の時,中央値$\tilde{x}=\frac{1}{2}(x^{(n/2)}+x^{(n/2+1)})$  
+    $n$が偶数の時の中央値
+      $$
+      \begin{align}
+      \tilde{x}=\frac{1}{2}(x^{(n/2)}+x^{(n/2+1)})
+      \end{align}
+      $$
     
     
 # 1.2.2 散布度
 
 ### 分散
-$s^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\dots+(x_n-\bar{x})^2}{n}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})^2$
+$$
+\begin{align}
+s^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\dots+(x_n-\bar{x})^2}{n}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})^2
+\end{align}
+$$
+
+$s^2$が小さとき、データは$\bar{x}$付近に密集し、バラツキが大きいと$s^2$はでかくなる。
+
+
+    左図: 平均=15, 分散=1, 右図: 平均=15, 分散=5 
+
+```{r, echo=F,cache=FALSE}
+a<-rnorm(50,15,1)
+b<-rnorm(50,15,5)
+
+ab<-c(a,b)
+ab2<-as.data.frame(ab)
+c<-c("a","b")
+
+ab2$c<-rep(c,each=50)
+ab2$id<-c(1:(nrow(ab2)/2),1:(nrow(ab2)/2))
+
+library(ggplot2)
+old = theme_set(theme_gray(base_family="HiraKakuProN-W3"))
+
+p<-ggplot(ab2,aes(x=id,y=ab))+geom_point(size=2)+geom_hline(aes(yintercept=15))+facet_wrap(~c)+theme_bw()+ylab("value")
+p
+```
+
 
 ### 標準偏差
--$s^2$が小さとき、データは$\bar{x}$付近に密集し、バラツキが大きいと$s^2$はでかくなる。  
-$s^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\dots+(x_n-\bar{x})^2}{n}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})^2$  
 
-$s^2=\frac{1}{n}\sum_{i=1}^n (x^2_i)-(\bar{x})^2$  
+- 分散の平方根
 
-$s=\sqrt{s^2}$
+$$
+\begin{align}
+s^2=\frac{(x_1-\bar{x})^2+(x_2-\bar{x})^2+\dots+(x_n-\bar{x})^2}{n}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})^2
+\end{align}
+$$
+
+$$
+\begin{align}
+s^2=\frac{1}{n}\sum_{i=1}^n (x^2_i)-(\bar{x})^2
+\end{align}
+$$
+
+
+$$
+\begin{align}
+s=\sqrt{s^2}
+\end{align}
+$$
+
 
 - 級に分けられたデータ  
-$s^2=\frac{1}{n}\sum_{i=1}^n (x^*_i-\bar{x})^2 f_i=\frac{1}{n}\sum_{i=1}^n (x^*_i)^2 f_i-(\bar{x})^2$  
+$$
+\begin{align}
+s^2=\frac{1}{n}\sum_{i=1}^n (x^*_i-\bar{x})^2 f_i=\frac{1}{n}\sum_{i=1}^n (x^*_i)^2 f_i-(\bar{x})^2
+\end{align}
+$$
 
-$s=\sqrt{s^2}$
+$$
+\begin{align}
+s=\sqrt{s^2}
+\end{align}
+$$
 
-$n=f_1+f_2+\dots+f_k$
+$$
+\begin{align}
+n=f_1+f_2+\dots+f_k
+\end{align}
+$$
 
 
 # 例題1.1
@@ -412,16 +502,175 @@ value_rep<-c(25,35,45,55,65,75,85)
 A<-c(0,2,3,10,3,2,0)
 B<-c(1,3,3,5,5,2,1)
 
-tab2<-data.frame(得点=class,代表値=value_rep,Aクラス=A,Bクラス=B)
+tab2<-data.frame(得点=class,代表値=value_rep,Aクラス度数=A,Bクラス度数=B)
 
-datatable(tab2)
+datatable(tab2,options=list(dom="t"))
 ```
 
-> 各クラスの度数折れ線、平均、分散標準偏差を求めよ
+> 各クラスの度数折れ線、平均、分散、標準偏差を求めよ
 
-```{r,cache=F, echo=T}
-#plot(tab2[,1],tab2[,3],type="l",ylim=c(0,10))
-#plot(tab2[,1],tab2[,4],type="l",ylim=c(0,10))
+### 度数折れ線
+
+- 赤がクラスA, 青がクラスB
+
+```{r,cache=FALSE}
+library(ggplot2)
+old = theme_set(theme_gray(base_family="HiraKakuProN-W3"))
+q<-ggplot(tab2, aes(x=代表値, y=Aクラス度数,group=1))+geom_line(col="red",size=2)+geom_point(size=3)+xlim(0,100)+xlab("")+ylab("度数")+theme_bw()
+q+geom_line(aes(y=Bクラス度数),col="blue",size=2)+geom_point(aes(y=Bクラス度数),size=3)
+```
+
+
+### 平均: 級代表値を使用
+
+$$
+\begin{align}
+\bar{x}=\frac{x^*_1 f_1+x^*_2 f_2+\dots+x^*_k f_k}{n}=\frac{1}{n}\sum_{i=1}^k x^*_i f_i
+\end{align}
+$$
+
+- クラスAの平均
+
+$$
+\begin{align}
+\bar{x}=\frac{25\times 0+35\times 2+45\times 3+55\times 10+65\times 3+75\times 2+85\times 0}{20} = 55
+\end{align}
+$$
+
+```{r, echo=T}
+#手計算
+((25*0)+(35*2)+(45*3)+(55*10)+(65*3)+(75*2)+(85*0))/20
+```
+
+
+```{r, echo=T}
+# 合計を算出するsum関数を使う
+代表値<-c(25,35,45,55,65,75,85)
+Aクラスの度数<-c(0,2,3,10,3,2,0)
+Aクラスの人数<-20
+sum(代表値*Aクラスの度数)/Aクラスの人数
+```
+
+- クラスBの平均
+
+$$
+\begin{align}
+\bar{x}=\frac{25\times 1+35\times 3+45\times 3+55\times 5+65\times 5+75\times 2+85\times 1}{20} = 55
+\end{align}
+$$
+
+```{r, echo=T}
+#手計算
+((25*1)+(35*3)+(45*3)+(55*5)+(65*5)+(75*2)+(85*1))/20
+```
+
+
+```{r, echo=T}
+# 合計を算出するsum関数を使う
+代表値<-c(25,35,45,55,65,75,85)
+Bクラスの度数<-c(1,3,3,5,5,2,1)
+Bクラスの人数<-20
+sum(代表値*Bクラスの度数)/Bクラスの人数
+```
+
+
+
+### 分散: 級代表値を使用
+
+$$
+\begin{align}
+s^2=\frac{1}{n}\sum_{i=1}^n (x^*_i-\bar{x})^2 f_i=\frac{1}{n}\sum_{i=1}^n (x^*_i)^2 f_i-(\bar{x})^2
+\end{align}
+$$
+
+- 標準偏差
+
+$$
+\begin{align}
+s=\sqrt{s^2}
+\end{align}
+$$
+
+- クラスAの分散
+
+$$
+\begin{align}
+s^2=\frac{(25-55)^2\times 0+(35-55)^2\times 2+(45-55)^2\times 3+(55-55)^2\times 10+(65-55)^2\times 3+(75-55)^2\times 2+(85-55)^2\times 0}{20}= 110
+\end{align}
+$$
+
+
+```{r, echo=T}
+#手計算
+(((25-55)^2)*0+((35-55)^2)*2+((45-55)^2)*3+((55-55)^2)*10+((65-55)^2)*3+((75-55)^2)*2+((85-55)^2)*0)/20
+```
+
+
+```{r, echo=T}
+# 合計を算出するsum関数を使う
+代表値<-c(25,35,45,55,65,75,85)
+Aクラスの度数<-c(0,2,3,10,3,2,0)
+Aクラスの人数<-20
+Aクラスの平均<-55
+
+sum(((代表値-Aクラスの平均)^2)*Aクラスの度数)/Aクラスの人数
+```
+
+- クラスAの標準偏差
+
+$$
+\begin{align}
+s=\sqrt{110}\risingdotseq 10.488
+\end{align}
+$$
+
+```{r, echo=T}
+print(sqrt(110),digits=5)
+```
+
+- クラスBの分散
+
+$$
+\begin{align}
+s^2=\frac{(25-55)^2\times 1+(35-55)^2\times 3+(45-55)^2\times 3+(55-55)^2\times 5+(65-55)^2\times 5+(75-55)^2\times 2+(85-55)^2\times 1}{20}= 230
+\end{align}
+$$
+
+
+```{r, echo=T}
+#手計算
+(((25-55)^2)*1+((35-55)^2)*3+((45-55)^2)*3+((55-55)^2)*5+((65-55)^2)*5+((75-55)^2)*2+((85-55)^2)*1)/20
+```
+
+
+```{r, echo=T}
+# 合計を算出するsum関数を使う
+代表値<-c(25,35,45,55,65,75,85)
+Bクラスの度数<-c(1,3,3,5,5,2,1)
+Bクラスの人数<-20
+Bクラスの平均<-55
+
+sum(((代表値-Bクラスの平均)^2)*Bクラスの度数)/Bクラスの人数
+```
+
+- クラスBの標準偏差
+
+$$
+\begin{align}
+s=\sqrt{230}\risingdotseq 15.166
+\end{align}
+$$
+
+```{r, echo=T}
+print(sqrt(230),digits=5)
+```
+
+
+```{r,cache=F, echo=F, results='hide'}
+value_rep<-c(25,35,45,55,65,75,85)
+A<-c(0,2,3,10,3,2,0)
+B<-c(1,3,3,5,5,2,1)
+
 
 # Aクラスの平均
 M_A=(1/sum(tab2[,3]))*sum((tab2[,2]*tab2[,3]))
@@ -440,15 +689,35 @@ S2_B=(1/sum(tab2[,4]))*(sum(((tab2[,2]-M_A)^2)*tab2[,4]))
 S2_B
 
 # Aクラスの標準偏差
-sqrt(S2_A)
+S_A<-sqrt(S2_A)
 
 # Bクラスの標準偏差
-sqrt(S2_B)
+S_B<-sqrt(S2_B)
+```
+
+### 例題の回答まとめ
+
+```{r, cache=FALSE}
+summary1<-matrix(3,3,2)
+
+Ms<-c(M_A,M_B)
+Vars<-c(S2_A,S2_B)
+SDs<-c(S_A,S_B)
+summary1[1,]<-Ms
+summary1[2,]<-Vars
+summary1[3,]<-SDs
+
+summary1<-round(summary1,digits=3)
+
+colnames(summary1)<-c("クラスA", "クラスB")
+rownames(summary1)<-c("平均", "分散", "標準偏差")
+
+datatable(summary1, options=list(dom="t"))
 ```
 
 
 
-> この結果、両クラスの平均点は等しいが、Bクラスの方が標準編が大きいので、BクラスはAクラスよりもデータの散らばりの度合いが大きいと言える。
+> この結果、両クラスの平均点は等しいが、Bクラスの方が標準偏差が大きいので、BクラスはAクラスよりもデータの散らばりの度合いが大きいと言える。
 
 
 
