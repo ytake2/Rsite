@@ -69,7 +69,7 @@ $$
 
 $$
 \begin{align}
-S_{xy}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})-(y_i-\bar{y})
+S_{xy}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})
 \end{align}
 $$
 
@@ -112,7 +112,7 @@ $$
 $y_i^*$は$y$の級代表値, $f_{j}$は各級の度数
 
 
-分子は$S_{xy}$は$x$と$y$の`共分散` (<-NEW!!)
+分子は$S_{xy}$は$x$と$y$の`共分散`
 級代表値に基づくと,
 
 $$
@@ -165,7 +165,7 @@ S_{xy}=(x_1-\bar{x})(y_1-\bar{y})+(x_2-\bar{x})(y_2-\bar{y})+\dots+(x_n-\bar{x})
 \end{align}
 $$
 
-```{r}
+```{r,cache=FALSE}
 r_st_bibnorm <- function (N = 10, rho = .8) 
 {
   Z <- matrix (c (rnorm (N), rnorm (N)), nrow = N, ncol = 2)
@@ -177,37 +177,66 @@ r_st_bibnorm <- function (N = 10, rho = .8)
 
 
 cordat<-round(r_st_bibnorm()$values,2)
-
-plot(cordat, xlab="X" ,ylab="Y")
-mean(cordat[,1])
-mean(cordat[,2])
-abline(h=-0.34,v=-0.34)
-abline(lm(cordat[,2]~cordat[,1]),col="red"
-)
-
 cordat<-data.frame(X=cordat[,1],Y=cordat[,2])
 
 library(ggplot2)
 ggplot(cordat,aes(x=X,y=Y))+geom_point()+theme_bw()+
   geom_vline(xintercept=mean(cordat$X)) +
   geom_hline(yintercept=mean(cordat$Y))
-
 ```
 
-第I象限にあるデータ: $(x_1-\bar{x})(y_1-\bar{y})$は正
-第III象限にあるデータ: $(x_1-\bar{x})(y_1-\bar{y})$は正
-第II象限にあるデータ: $(x_1-\bar{x})(y_1-\bar{y})$は負
-第IV象限にあるデータ: $(x_1-\bar{x})(y_1-\bar{y})$は負
+第I象限にあるデータ: $(x_i-\bar{x})(y_i-\bar{y})$は正  
+第III象限にあるデータ: $(x_i-\bar{x})(y_i-\bar{y})$は正  
+第II象限にあるデータ: $(x_i-\bar{x})(y_i-\bar{y})$は負  
+第IV象限にあるデータ: $(x_i-\bar{x})(y_i-\bar{y})$は負  
 
-正の相関の場合は, 第I象限と第III象限に属するデータが多い
-負の相関の場合は, 第II象限と第IV象限に属するデータが多い 
+正の相関の場合は, 第I象限と第III象限に属するデータが多い  
+負の相関の場合は, 第II象限と第IV象限に属するデータが多い   
 
-#例題1.2 
-- 相関の範囲が$-1 \leq r \leq 1$である証明
 
 #例題1.3
-- 
+```{r,cache=FALSE}
+student<-1:20
+english<-c(80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67)
+math<-c(52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83)
+dat<-data.frame(生徒番号=student,英語=english,数学=math)
 
+library(DT)
+datatable(dat,option=list(scrollY = TRUE))
+```
+
+- 相関係数の算出に必要な情報
+
+
+- 各変数の平均, 標準偏差
+
+```{r,cache=FALSE}
+英語平均<-mean(dat$英語)
+英語平均
+
+数学平均<-mean(dat$数学)
+数学平均
+
+英語分散<-sum((dat$英語-英語平均)^2)/20
+英語分散
+
+数学分散<-sum((dat$数学-数学平均)^2)/20
+数学分散
+
+英語標準偏差<-sqrt(英語分散)
+英語標準偏差
+
+数学標準偏差<-sqrt(数学分散)
+数学標準偏差
+
+英語と数学の共分散<-sum((dat$英語-英語平均)*(dat$数学-数学平均))/20
+英語と数学の共分散
+
+
+英語と数学の共分散/(英語標準偏差*数学標準偏差)
+
+qplot(data=dat,x=英語, y=数学)
+```
 
 
 
