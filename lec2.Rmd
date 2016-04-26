@@ -195,7 +195,7 @@ ggplot(cordat,aes(x=X,y=Y))+geom_point()+theme_bw()+
 
 
 #例題1.3
-```{r,cache=FALSE}
+```{r,cache=FALSE, echo=T}
 student<-1:20
 english<-c(80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67)
 math<-c(52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83)
@@ -210,7 +210,7 @@ datatable(dat,option=list(scrollY = TRUE))
 
 - 各変数の平均, 標準偏差
 
-```{r,cache=FALSE}
+```{r,cache=FALSE, echo=T}
 英語平均<-mean(dat$英語)
 英語平均
 
@@ -235,6 +235,7 @@ datatable(dat,option=list(scrollY = TRUE))
 
 英語と数学の共分散/(英語標準偏差*数学標準偏差)
 
+library(ggplot2)
 qplot(data=dat,x=英語, y=数学)
 ```
 
