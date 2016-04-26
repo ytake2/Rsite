@@ -20,8 +20,11 @@ navbar:
         - text: "Lecture"
         - text: "心理学講読" 
           href: Course.html
-        - text: "確率統計" 
+        - text: "確率統計"
+        - text: "1" 
           href: lec1.html
+        - text: "2" 
+          href: lec2.html
         - text: "---------"
         - text: "R and Statistcs"
         - text: "DARM"

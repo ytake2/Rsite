@@ -1,0 +1,169 @@
+---
+title: " "
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+
+# International conference
+
+## Talk Session
+
+---
+
+Takebayashi, Y., & Kubota, T. (2015). Spatial epidemiology of suicide in Japan and well-being for suicide prevention. Kyoto international Conference on Modern Statistics in the 21st Century, Kyoto, Japan.
+
+Takebayashi, Y., Yokomitsu, K., Koda, M. Tanaka, K. & Sugiura, Y. (2012). Post treatment effectiveness of cognitive-behavioral treatment for bipolar disorder: A meta-analysis. The 2nd Meeting of East Asian Bipolar Forum, Fukuoka, Japan
+
+Yokomitsu, K., Koda, M., Takebayashi, Y., Tanaka, K. & Sugiura, Y. (2012). The problems on therapeutic approach of cognitive behavioral therapy for bipolar disorder: Through the perspective of component of treatment. The 2nd Meeting of East Asian Bipolar Forum, Fukuoka, Japan
+
+Takebayashi, Y., Tanaka, K., Sugiura, Y. (2012). Longitudinal buffering effects of psychological well-being on the relationship between negative appraisals for internal state and generalize anxiety disorder symptom. 42nd Annual  European Association for Behavioural and Cognitive Therapies Congress, Geneva, Swiss.
+
+Takebayashi, Y.,  Tanaka, K., & Sugiura, Y. (2011). Negative beliefs about worry partially mediate the relationship between intolerance of uncertainty and excessive worry. 3rd Asian Cognitive Behavioral Therapy Conference, Seoul.
+
+Yokomitsu, K., Takagaki. K., Takebayashi, Y., Sakai, T., Sekiguchi, M., & Sakano, Y. (2011). Evaluation of the high-risk situations in Japanese gamblers. 3rd Asian Cognitive Behavior Therapy Conference, Seoul.
+
+Yokomitsu, K., Takagaki. K., Takebayashi, Y., Sakai, T., Sekiguchi, M., & Sakano, Y. (2011). The relationship between cravings for gambling in high-risk situations and gambling symptoms in Japanese gamblers. 7th International Congress of Cognitive Psychotherapy, Istanbul.
+
+
+## Poster presentation
+
+---
+
+Takebayashi, Y., Ito, M., Kato, N., Nakajima, S., Fujisato, H., Oe, Y., Miyamae, M., Kanie, A., & Horikoshi, M. ( 2015). Cognitive behavioral factors that increase suicidal ideation among patients with depressive and anxiety disorders: Classification and Regression Tree Analysis.  Association for Behavioral and Cognitive Therapy49th Annual Convention, Chicago, USA.
+
+Takebayashi, Y., & Sugiura, Y. (2014). The Relationship between Self-Control and Psychological Well-Being: Moderation by Generalized Anxiety Symptoms. 8th International Congress of Cognitive Psychotherapy, Hong-Kong, China.
+
+
+Takebayashi, Y., Kunisato Y., & Sugiura, Y. (2013). Delay and probability discounting in analogue generalized anxiety disorder sample. Association for Behavioral and Cognitive Therapy 47th Annual Convention, Nashville, USA.
+
+Tamura, A., Takata, K., Sugiura, Y., Moriya, J., Takebayashi, Y., & Tanaka, K. (2013). Moderation of the relationship between psychopathy and empathy by attention. International Society for the Study of Individual Differences Meeting, Barcelona, Spain.
+Takebayashi, Y., Tanaka, K., Sugiura, Y. (2012). Negative Appraisals for Internal State Mediate the Relationship between Intolerance of Uncertainty and Excessive Worry: Evidence from Three Wave Longitudinal Study. Association for Behavioral and Cognitive Therapy 46th Annual Convention, National harbor, USA.
+
+Tanaka, K., Takebayashi, Y., Sugiura, Y., Kamimura, E. (2012). The Effects of Concentrative Meditation on Attention Network and Decentering in a Non-Clinical Student Population. 42nd Annual  European Association for Behavioural and Cognitive Therapies Congress, Geneva, Swiss.
+
+Takebayashi, Y., Tanaka, K., Tukue, R., Okamoto, Y, Kunisato, Y., Okada, G., Tsukue, I., Shimohara, C., Konuma, K., Sugiura, Y., Yamawaki, S. (2012). Impairments of attentional function relates to depressive symptom during abstinence in patients with alcohol dependence. The 16th International Society for Biomedical Research on Alcoholism World Congress, Sapporo, Japan.
+
+Tanaka, K., Takebayashi, Y., Tukue, R., Okamoto, Y., Kunisato, Y., Okada, G., Tsukue, I., Shimohara, C., Konuma, K., Sugiura, Y., Yamawaki, S. (2012). Relationship Between Attention Control and Emotion Dysregulation in Alcohol Dependent Patients. The 16th International Society for Biomedical Research on Alcoholism World Congress, Sapporo, Jappan.
+
+Tsukue, R., Okamoto, Y., Kunisato, Y., Takebayashi, Y.,  Tanaka, K., Tsukue, I., Shimohara, C.,  Konuma, K., Okada, G., Sugiura, Y., Yamawaki, S. (2012). Relationship Between Delay Discounting, Attention Control and Emotional Regulation in Alcoholism. The 16th International Society for Biomedical Research on Alcoholism World Congress, Sapporo, Japan.
+
+Takebayashi, Y., Sugiura, Y., & Sakano, Y. (2011). The mediating effect of intolerance of uncertainty on the relationship between stressor and excessive worry. 3rd Asian Cognitive Behavioral Therapy Conference, Seoul.
+
+Yamauchi, G., Motoya, R., Ando, T., Irie, T., Takebayashi, Y., Takeda, M., & Sakano, Y. (2009). Relationship between sex-related beliefs and male sexual dysfunction: A meta-analysis. The 43rd annual convention of the Association for Behavioral and Cognitive Therapies, New York, USA.
+
+Takebayashi, Y.,  Yamauchi, G., & Sakano, Y. (2010). The effects of interaction between stressor and intolerance of uncertainty on worry.   The 6th World Congress of Behavioural & Cognitive Therapies, Boston, USA.
+
+# Japanese conference
+
+## Workshop & Symposium
+
+---
+
+
+竹林由武・椿広計・久保田貴文 (2016). 「自殺手段の経年変化 -潜在成長曲線モデルによるパターン抽出-」, 第6回自殺リスクに関する研究会, 統計数理研究所, 東京
+
+竹林由武・伊藤正哉・藤里紘子・細越寛樹・加藤典子・中島 俊・大江悠樹・宮前光宏・蟹江絢子・堀越 勝 (2015). 「感情障害に対する診断横断的治療のための統一プロトコル:感情調節の観点から」,   井合真海子 (企画)『感情調整に対するアプローチ― 診断をこえて ―』, 日本認知•行動療法学会第41回大会，自主企画シンポジウム，仙台国際センター，宮城県.
+
+
+竹林由武・久保田貴文・椿広計 (2015). 「自殺死亡の地域統計を政策決定に生かすための機械学習的アプローチ-手段・配偶関係・職業別統計の決定木分析-」 平成27年度統計関連学会連合大会連合大会, 岡山大学, 岡山
+
+
+竹林由武・久保田貴文 (2015). 「自殺予防の政策決定に向けたデータ基盤の構築−自殺リスク研究におけるビックデータの利活用−第7回国際ワークショップ」,『政策科学とデータ』, 社会イノベーションを誘発する情報・システム, セッション3,一ツ橋講堂, 東京
+
+竹林由武 (2014). (話題提供)「観察研究の質の評価」，竹林由武 (企画)『失敗しない研究計画入門：エビデンスの「質」を評価する国際基準の理解』，日本認知•行動療法学会第40会大会，自主企画シンポジウム4，富山国際会議場，富山.
+
+竹林由武 (2014). (話題提供) 「観察研究の必須事項」，土屋政雄•奥村泰之 (企画) 『エビデンスの「質」を意識した研究計画への誘い：研究を始める前に知っておきたい研究報告の国際基準．』，日本心理学会第78回大会，SS067 (自主企画シンポジウム)，同志社大学，京都．
+
+竹林由武 (2014). 「マルコフ連鎖モンテカルロ法」，竹林由武 (主催)，『ベイズ推定による多変量解析入門』，RとMplusを使用した医療・心理データ解析勉強会第5回ワークショップ，広島大学，広島．
+
+竹林由武 (2014)．「全般性不安症状の増悪を防止するプロセス」，第49回広島CBT勉強会，広島大学，広島．
+
+竹林由武 (2013). (話題提供) 「観察研究の必須事項」，奥村泰之 (企画) 『失敗しない研究計画入門：観察研究，尺度研究，非薬物療法の介入研究の研究報告の質向上のためのガイドラインの理解．』，日本行動療法学会第39回大会，帝京平成大学，東京．
+
+竹林由武 (2012). (話題提供) 「双極性障害の認知行動モデル」，甲田宗良・横光健吾・竹林由武・田中圭介（企画）『双極性障害に対する心理学的アプローチの最前線（ 1 ）－認知・行動論的観点から－』，日本心理学会第76大会，WS064，専修大学，神奈川．
+
+竹林由武 (2012).「内容的妥当性，構造的妥当性，仮説検定の評価」，奥村泰之 (主催)『患者報告式アウトカム尺度の評価法: 信頼性と妥当性の新しい国際基準: COSMINチェックリストの使い方』，臨床疫学研究における報告の質向上のための統計学の研究会第10回研究集会，東京医科歯科大学，東京．
+
+竹林由武 (2011)．「気分・不安障害に対する診断横断的プロトコル」，第28回広島CBT勉強会，広島大学，広島．
+
+
+
+## Talk session
+
+---
+
+竹林由武 (2014). 「メンタルヘルス予防におけるウェルビーイングの役割」，『地域におけるメンタルヘルス対策シンポジウム』，多摩大学，東京．
+
+竹林由武 (2014). 「心理的ウェルビーイングの向上が全般性不安症状を緩和するプロセス」，日本心理学会第78回大会，L-008 (小講演)，同志社大学，京都．
+
+竹林由武・田中圭介・杉浦義典　(2012)　身体症状への注意と生理的反応に対するコントロール感の関連一非判断的態度と体験の描写による調整効果―，第53回日本心身医学会総会ならびに学術講演会プログラム，O1-D-9，鹿児島．
+
+西郷達雄・吉田英未・竹林由武・坂野雄二 (2011). マインドフルネススキルと怒りの関連　日本心身医学会北海道支部会第36回例会プログラム・抄録集，21．
+
+竹林由武・山内　剛・坂野雄二 (2011)． 大学生におけるストレッサーおよび不確実さ不耐性と過剰な心配の関連　不安障害研究，第３巻１号，112．
+
+
+## Poster presentation
+
+---
+
+竹林由武, 細越寛樹, 伊藤正哉, 藤里紘子, 加藤典子, 中島 俊, 大江悠樹, 宮前光宏, 蟹江絢子, 堀越 勝 (2015) 感情表出の抑制傾向が認知行動療法による不安症状の改善に及ぼす影響―単群パイロット試験データを用いた治療反応性の予備的検討―, 日本認知・行動療法学会第 41 回大会, 仙台国際センター, 仙台
+
+田中圭介・竹林由武・杉浦義典 (2015). 活動量，マインドフルネス，幸福感の関連　日本心理学会第79回大会，2AM-035, 名古屋国際会議場，愛知
+
+高田圭二・田中圭介・竹林由武・田村紋女・杉浦義典 (2014). サイコパシーの他者に対する感情反応に及ぼす注意の影響　日本心理学会第78回大会，3PM-1-001，同志社大学，京都
+
+田村紋女・守谷　順・竹林由武・田中圭介・高田圭二・杉浦義典 (2014). サイコパシーの他者に対する感情反応に及ぼす注意の影響　日本心理学会第78回大会，3PM-1-001，同志社大学，京都
+
+本村有理・杉浦義典・竹林由武・田中圭介・高田圭二・田村紋女 (2014). 自閉症傾向者における自己意識と幸福感　日本心理学会第78回大会，2AM-1-043 ，同志社大学，京都
+
+神人　蘭・岡本泰昌・髙垣耕企・西山佳子・山村崇尚・森　麻子・竹林由武・田中圭介・岡本百合・三宅典恵・尾形明子・下田陽樹・川上憲人・古川壽亮・山脇成人 (2014) 青年期閾値下うつのうつ病発症に関するコホート研究　第11回日本うつ病学会学術総会, 197頁.
+
+髙垣耕企・岡本泰昌・神人　蘭・森　麻子・西山佳子・山村崇尚・竹林由武・尾形明子・岡本百合・三宅典恵・山脇成人 (2014) 閾値下うつとうつ病における行動的特徴の検討-閾値下うつに対する介入ターゲットの特定に向けて-　第11回日本うつ病学会学術総会, 196頁.
+
+高田圭二・竹林由武・田中圭介・田村紋女・杉浦義典 (2013).  Difficulties in Emotion Regulation Scale （DERS）日本語版の収束妥当性の検討　日本心理学会第77回大会，札幌コンベンションセンター・札幌市産業振興センター，札幌
+
+成瀬麻夕・横光健吾・甲田宗良・竹林由武・田中圭介・杉浦義典・坂野雄二 (2013).　双極性障害に対する認知行動療法が抑うつ症状と躁症状に及ぼす影響　日本行動療法学会第39回大会，帝京平成大学，東京
+
+成瀬麻夕・横光健吾・甲田宗良・田中圭介 ・竹林由武 ・杉浦義典・坂野雄二 (2013). 双極性障害患者の生活機能の改善に対する認知行動療法の効果，第10回日本うつ病学会総会，北九州国際会議場，福岡．
+
+竹林由武・杉浦義典 (2012)．不確実さ不耐性の潜在構造－分類分析・因子混合モデリングによる検討－　日本行動療法学会第38回大会，立命館大学，京都．
+
+田中圭介・竹林由武・杉浦義典 (2012).  主観的な報酬知覚に対する日常での行動活性化レベルとマインドフルネス傾向の影響　日本行動療法学会第38回大会，立命館大学，京都．
+
+酒井貴庸・金澤潤一郎・横光健吾・竹林由武 ・設楽雅代・坂野雄二 ・園山繁樹  (2012). 自閉症スペクトラム理解度チェックリスト (C-CLAS)　実践的使用法の検討　日本行動療法学会第38回大会，立命館大学，京都．
+
+高田圭二・杉浦義典・守谷順・竹林由武・田中圭介・田村紋女 (2012). マインドフルな観察の幸福感への影響―注意の定位による調節−　日本心理学会第76回大会，神奈川．
+
+田村紋女・高田圭二・杉浦義典・守谷順・竹林由武・田中圭介 (2012). サイコパシーと共感性―注意による調節効果―　日本心理学会第76回大会，神奈川．
+
+竹林由武・高垣耕企・杉浦義典 (2012) 不確実さ不耐性が抑うつ・不安症状に与える影響  -脅威に対するコントロールの知覚による媒介効果の検討-　第４回日本不安障害学会大会発表論文集，126頁．
+
+
+竹林由武・高垣耕企・広瀬慎一・大野哲也・小幡昌志・川崎友也・シールズ久美・杉浦義典・坂野雄二 (2011)　Anxiety Control Questionnaire日本語版の開発　日本行動療法学会第37回大会発表論文集, 284-285頁．
+
+田中圭介・竹林由武・杉浦義典 (2011)　注意機能の多次元構造とマインドフルネスとの関連　日本行動療法学会第37回大会発表論文集，470-471頁．
+
+酒井貴庸・金澤潤一郎・横光健吾・竹林由武・設楽雅代・坂野雄二 (2011)　自閉症スペクトラム理解度チェックリストの開発　日本行動療法学会第37回大会発表論文集，364-365頁．
+
+竹林由武・西郷達夫・吉田英未・坂野雄二・杉浦義典 (2011)　マインドフルネスが怒りの表出傾向に影響を与えるプロセスの検討　第11回日本認知療法学会抄録集，111頁.
+
+竹林由武・山内　剛・坂野雄二 (2010)　ストレッサーの経験が不確実さ不耐性と特性不安を介して 過剰な心配と抑うつ症状に及ぼす影響　日本行動療法学会第36回大会プログラム＆抄録・発表論文集，422-423頁.
+
+入江智也・山内　剛・金澤潤一郎・髙垣耕企・竹林由武・横光健吾・坂野雄二 (2010)　ネガティブな注意バイアスの変容のトレーニングが抑うつ症状に及ぼす影響　日本行動療法学会第36回大会プログラム＆抄録・発表論文集, 412-413頁
+
+河村麻果・髙垣耕企・横光健吾・竹林由武・酒井貴庸・関口真有・高田　光・井端累・坂野雄二  (2010)　Attention Trainingが抑うつ気分とメタ認知的気づきに与える影響の検討− 抑うつ傾向者を対象としたアナログ研究　日本行動療法学会第36回大会プログラム＆抄録・発表論文集,  414-415頁
+
+竹林由武・山内　剛・笹川智子・坂野雄二  (2010)　Short version of the Intolerance of Uncertainty Scale 日本語版開発の試み　第23回日本サイコオンコロジー学会・第10回日本認知療法学会合同大会プログラム＆抄録集，137頁
+
+入江智也・山内　剛・金澤潤一郎・髙垣耕企・竹林由武・横光健吾・坂野雄二  (2010)　ネガティブな注意バイアスと抑うつ症状の関連の検討　第16回日本行動医学会学術総会抄録, 43頁.
+
+山内　剛・竹林由武・坂野雄二 (2009)　Body Vigilance Scale日本語版開発の試み　第９回日本認知療法学会   第35回日本行動療法学会プログラム＆抄録・発表論文集，558-559頁.
+
+竹林由武・菅原　翔・日下通代・坂野雄二・高橋憲男 (2009)　写真刺激の閾下反復提示による情動馴化の検討　感情心理学研究，第17巻，第3号，224頁.　
+
+竹林由武・山内　剛・坂野雄二 (2008)　脅威刺激の思考抑制が注意バイアスに与える影響—自動的処理過程と意識的処理過程における検討—　日本行動療法学会第34回大会発表論文集，448-449頁.
