@@ -234,7 +234,11 @@ datatable(dat,option=list(scrollY = TRUE))
 
 
 英語と数学の共分散/(英語標準偏差*数学標準偏差)
+```
 
+- 散布図
+
+```{r,echo=T,cache=FALSE}
 library(ggplot2)
 qplot(data=dat,x=英語, y=数学)
 ```
