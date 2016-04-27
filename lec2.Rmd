@@ -94,7 +94,7 @@ $$
 
 $$
 \begin{align}
-s=\sqrt\frac{1}{n}\sum_{i=1}^n (x_i^*-\bar{x})^2 f_{i}
+S_x=\sqrt\frac{1}{n}\sum_{i=1}^n (x_i^*-\bar{x})^2 f_{i}
 \end{align}
 $$
 
@@ -105,7 +105,7 @@ $x_i^*$は$x$の級代表値, $f_{i}$は各級の度数
 
 $$
 \begin{align}
-s=\sqrt\frac{1}{n}\sum_{i=1}^n (y_i^*-\bar{y})^2 f_{j}
+S_y=\sqrt\frac{1}{n}\sum_{i=1}^n (y_i^*-\bar{y})^2 f_{j}
 \end{align}
 $$
 
@@ -136,7 +136,7 @@ $$
 $$
 
 > $0 < r \leq 1$: `正の相関` (Xが大きくなるとYも大きくなる)  
-$-0 \leq r < 0$: `負の相関` (Xが大きくなるとYは小さくなる)  
+$-1 \leq r < 0$: `負の相関` (Xが大きくなるとYは小さくなる)  
 $r = 1$: `正の完全相関` 
 $r =-1$: `負の完全相関`
 $r = 0: `無相関` (XとYに関連がない)
