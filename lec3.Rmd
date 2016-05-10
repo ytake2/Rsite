@@ -1,8 +1,6 @@
 ---
 title: "回帰直線"
 output:
-  pdf_document:
-    toc: yes
   html_document:
     higlight: espresso
     theme: journal
