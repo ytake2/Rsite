@@ -25,6 +25,8 @@ navbar:
           href: lec1.html
         - text: "2" 
           href: lec2.html
+        - text: "3" 
+          href: lec3.html
         - text: "---------"
         - text: "R and Statistcs"
         - text: "DARM"
