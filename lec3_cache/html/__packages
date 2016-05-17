@@ -2,4 +2,6 @@ base
 knitr
 rmdformats
 DT
+DiagrammeR
+magrittr
 ggplot2

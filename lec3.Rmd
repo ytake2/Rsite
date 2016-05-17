@@ -46,6 +46,7 @@ opts_knit$set(width=75)
  }
 set.seed(123)
 mydata <- r2norm(10, 10, 2, 0.60)
+library(ggplot2)
 qplot(x=mydata$x,y=mydata$y)+theme_bw()+
     xlab("X")+ylab("Y")+xlim(7,15)+ylim(0,15)
 ```
@@ -243,7 +244,7 @@ $$
 $$
 \begin{eqnarray} 
 \displaystyle
-\s^2 &=& \frac{1}{n}n\sum_{i=1}^n (x_i^*-\bar{x})^2
+s^2 &=& \frac{1}{n}n\sum_{i=1}^n (x_i^*-\bar{x})^2
 \\
 \displaystyle &=&\frac{(35-64.75)^2\times 1+(45-64.75)^2\times 4+(55--64.75)^2\times 6+(65--64.75)^2\times 18+(75--64.75)^2\times 7+(85--64.75)^2\times 3+(95\times 1}{40}
 \\
@@ -257,7 +258,7 @@ $$
 $$
 \begin{eqnarray} 
 \displaystyle
-\s &=& \sqrt{s^2}
+s &=& \sqrt{s^2}
 \\
 \displaystyle &=&\sqrt{147.438}
 \\
@@ -285,7 +286,7 @@ $$
 $$
 \begin{eqnarray} 
 \displaystyle
-\s^2 &=& \frac{1}{n}n\sum_{i=1}^n (y_i^*-\bar{y})^2
+s^2 &=& \frac{1}{n}n\sum_{i=1}^n (y_i^*-\bar{y})^2
 \\
 \displaystyle &=&\frac{(35-64.75)^2\times 0+(45-64.75)^2\times 1+(55--64.75)^2\times 7+(65-64.75)^2\times 25+(75-64.75)^2\times 5+(85-64.75)^2\times 2+(95\times 0}{40}
 \\
@@ -299,13 +300,116 @@ $$
 $$
 \begin{eqnarray} 
 \displaystyle
-\s &=& \sqrt{s^2}
+s &=& \sqrt{s^2}
 \\
 \displaystyle &=&\sqrt{60}
 \\
 \displaystyle &=&7.746
 \end{eqnarray} 
 $$
+
+## 1.3
+> 2変量$(x,y)$を測定し、以下の結果を得た。平均、分散、標準偏差を求め、共分散、相関を求めよ。
+
+```{r,cache=FALSE}
+X<-c(5,7,4,5,8)
+Y<-c(5,6,4,4,6)
+
+d<-data.frame(X=X,Y=Y)
+library(DT)
+datatable(d)
+library(ggplot2)
+qplot(d$X,d$Y)+theme_bw()+xlab("X")+ylab("Y")
+```
+
+- 相関係数
+$$
+\begin{align}
+r=\frac{S_{xy}}{S_xS_y}
+\end{align}
+$$
+
+共分散
+$$
+\begin{align}
+S_{xy}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})
+\end{align}
+$$
+
+## 1.4
+> 社会人15人の1年間の実収入と食費支出の関係を調べ以下のデータを得た。この表をもとに回帰係数を算出し、回帰直線を図示せよ。
+
+## 1.4
+> 社会人15人の1年間の実収入と食費支出の関係を調べ以下のデータを得た。この表をもとに回帰係数を算出し、回帰直線を図示せよ。
+
+```{r,cache=FALSE}
+実収入X<-c(480,650,760,560,480,680,710,390,980,1100,880,490,760,580,925)
+食費支出Y<-c(120,190,210,200,190,230,175,165,200,320,195,170,270,150,260)
+
+X_X平均<-実収入X-mean(実収入X)
+Y_Y平均<-食費支出Y-mean(食費支出Y)
+X_X平均_Y_Y平均<-X_X平均*Y_Y平均
+X_X平均2<-(X_X平均)^2
+
+dat<-data.frame(実収入=実収入X,食費支出=食費支出Y, X_X平均,Y_Y平均,X_X平均_Y_Y平均,X_X平均2)
+
+dat[16,]<-sapply(dat,sum)
+dat[17,]<-sapply(dat[1:15,],mean)
+
+rownames(dat)[16]<-"合計"
+rownames(dat)[17]<-"平均"
+
+library(DT)
+names(dat)<-c("実収入","食費支出","X-X平均(XX)","Y-Y平均(YY)","XX*YY","X-X^2")
+datatable(dat)
+```
+
+
+> $$
+\begin{eqnarray} 
+\displaystyle 回帰係数(傾き:b)&=&\frac{XとYの共分散}{Xの分散}
+\\
+\displaystyle &=&\frac{108225}{602250}
+\\
+\displaystyle &=&0.180
+\end{eqnarray} 
+$$
+
+> $$
+\begin{eqnarray} 
+\displaystyle 切片(a)&=&Yの平均-回帰係数(b)\times Xの平均$
+\\
+\displaystyle &=&203-0.18\times 695$
+\\
+\displaystyle &=&78.103$
+\end{eqnarray} 
+$$
+
+> 回帰直線: $y=78.108+0.180x$
+
+
+```{r,cache=FALSE}
+
+X<-c(480,650,760,560,480,680,710,390,980,1100,880,490,760,580,925)
+Y<-c(120,190,210,200,190,230,175,165,200,320,195,170,270,150,260)
+
+Mx<-mean(X)
+My<-mean(Y)
+
+Vx<-sum((X-Mx)^2)
+
+
+b<-sum((X-Mx)*(Y-My))/Vx
+
+a<-My-b*Mx
+
+library(ggplot2)
+c<-qplot(x=X,y=Y)+stat_smooth(method="lm",se=F)+ylim(0,400)+xlim(0,1500)+theme_bw()
+c+annotate("text", label = "y=78.108+0.180x", x = 500, y = 350, size = 8, colour = "black")
+
+
+
+```
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "回帰直線"
+title: "相関係数"
 output:
   html_document:
     theme: journal
