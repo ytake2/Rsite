@@ -407,7 +407,7 @@ div.tocify {
 <p><span class="math inline">\(p=\frac{1}{6}\)</span></p>
 </blockquote>
 <p>N: <span class="math inline">\(サイコロの出目全ての場合の数=\{1,2,3,4,5,6\}= 6\)</span><br />
-r: <span class="math inline">\(1の目がおこる場合の数={1}= 1\)</span></p>
+r: <span class="math inline">\(1の目がおこる場合の数=\{1\}= 1\)</span></p>
 <p>目の出方が公平に作られたサイコロを投げたとき、1の目が出る確率が<span class="math inline">\(p=\frac{1}{6}\)</span>であるが、現実では、そのようなサイコロは存在しない</p>
 </div>
 </div>
@@ -433,8 +433,8 @@ r: <span class="math inline">\(1の目がおこる場合の数={1}= 1\)</span></
 <li><code>部分集合</code>: 全事象のうちの特定の事象</li>
 </ul>
 <p>さいころを投げて、出る目を全て観察した場合の全事象<br />
-<span class="math inline">\(U={1, 2, 3, 4, 5, 6}\)</span></p>
-<p>偶数が出る目の事象<span class="math inline">\(A={2, 4, 6}\)</span></p>
+<span class="math inline">\(U=\{1, 2, 3, 4, 5, 6\}\)</span></p>
+<p>偶数が出る目の事象<span class="math inline">\(A=\{2, 4, 6\}\)</span></p>
 <p>事象<span class="math inline">\(A\)</span>は全事象<span class="math inline">\(U\)</span>の<code>部分集合</code></p>
 <table>
 <thead>
@@ -523,27 +523,27 @@ v$colors &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl
 <p>標本空間<span class="math inline">\(U\)</span>の部分集合<span class="math inline">\(A\)</span>に対して、P{A}が以下の性質が満たす場合、P{A}を<span class="math inline">\(A\)</span>の確率と呼ぶ</p>
 </blockquote>
 <ol style="list-style-type: decimal">
-<li><span class="math inline">\(P{A}\geqq 0\)</span></li>
-<li><span class="math inline">\(P{U}= 1\)</span></li>
+<li><span class="math inline">\(P\{A\}\geqq 0\)</span></li>
+<li><span class="math inline">\(P\{U\}= 1\)</span></li>
 <li><span class="math inline">\(n\)</span>個の事象<span class="math inline">\(A_1, A_2, \dots, A_n\)</span>が互いに排反の時<br />
-<span class="math inline">\(A_1\cup A_2 \cup \dots \cup A_n = P{A_1}+P{A_2}+,\dots,+P{A_n}\)</span><br />
-を満たし、<span class="math inline">\(P{A}\)</span>にたいして正の実数が一意に対応されている</li>
+<span class="math inline">\(A_1\cup A_2 \cup \dots \cup A_n = P\{A_1\}+P\{A_2\}+,\dots,+P\{A_n\}\)</span><br />
+を満たし、<span class="math inline">\(P\{A\}\)</span>にたいして正の実数が一意に対応されている</li>
 </ol>
 </div>
 <div class="section level2">
 <h2>余事象の法則</h2>
 <blockquote>
-<p><span class="math inline">\(P{A^c}=1-P{A}\)</span>: 余事象の確率は、1からAの確率引く</p>
+<p><span class="math inline">\(P\{A^c\}=1-P\{A\}\)</span>: 余事象の確率は、1からAの確率引く</p>
 </blockquote>
 </div>
 <div class="section level2">
 <h2>和事象の法則</h2>
 <blockquote>
-<p>事象<span class="math inline">\(A\)</span>と事象<span class="math inline">\(B\)</span>が排反: <span class="math inline">\(P{A\cup B}=P{A}+P{B}\)</span></p>
+<p>事象<span class="math inline">\(A\)</span>と事象<span class="math inline">\(B\)</span>が排反: <span class="math inline">\(P\{A \cup B\}=P\{A\}+P\{B\}\)</span></p>
 </blockquote>
 <blockquote>
 <p>事象<span class="math inline">\(A\)</span>と事象<span class="math inline">\(B\)</span>が排反でない<br />
-<span class="math inline">\(P{A\cup B}=P{A}+P{B}-P{A\cap B}\)</span> 重なってる分(積事象)を引く</p>
+<span class="math inline">\(P\{A \cup B\}=P\{A\}+P\{B\}-P\{A \cap B\}\)</span> 重なってる分(積事象)を引く</p>
 </blockquote>
 </div>
 <div class="section level2">
@@ -552,26 +552,34 @@ v$colors &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl
 <h3>条件付き確率 (事象AとBが独立ではない場合の確率)</h3>
 <blockquote>
 <p>事象Aが起こったという条件のもとで事象Bが起こる確率<br />
-<span class="math inline">\(P{B|A}=\frac{P{A\cap B}}{P{A}}\)</span><br />
-ただし、<span class="math inline">\(P{A}\neq=0\)</span></p>
+<span class="math inline">\(P\{B|A\}=\frac{P\{A \cap B\}}{P\{A\}}\)</span><br />
+ただし、<span class="math inline">\(P\{A\}\neq 0\)</span></p>
 </blockquote>
 </div>
 <div id="ab" class="section level3">
 <h3>事象<span class="math inline">\(A\)</span>と事象<span class="math inline">\(B\)</span>が独立な場合</h3>
 <blockquote>
-<p><span class="math inline">\(P{B|A}=P{B}\)</span><br />
+<p><span class="math inline">\(P\{B|A\}=P\{B\}\)</span><br />
 独立でない場合は<code>従属</code>であるという。</p>
 </blockquote>
 <p>事象Aと事象Bが独立であるとき<br />
-(<span class="math inline">\(P{B|A}\)</span>を条件付き確率の<span class="math inline">\(P{B}\)</span>に代入すると)<br />
-<span class="math inline">\(P{A\cap B}=P{A}\dot P{B}\)</span></p>
+(<span class="math inline">\(P\{B|A\}\)</span>を条件付き確率の<span class="math inline">\(P\{B\}\)</span>に代入すると)<br />
+<span class="math display">\[ \displaystyle 
+P\{A \cap B\}=P\{A\} \cdot P\{B\}
+\]</span></p>
 </div>
 </div>
 <div class="section level2">
 <h2>積事象の法則</h2>
-<p><span class="math inline">\(P{A\cap B}=P{A}\dot P{B}\)</span> (AとBが独立)<br />
-<span class="math inline">\(P{A\cap B}=P{A}\dot P{B|A}\)</span> (<span class="math inline">\(P{A}\neq0\)</span>のとき)<br />
-<span class="math inline">\(P{A\cap B}=P{A}\dot P{A|B}\)</span> (<span class="math inline">\(P{B}\neq0\)</span>のとき)</p>
+<p><span class="math display">\[ \displaystyle 
+P\{A \cap B\}=P\{A\}\dot P\{B\}   (AとBが独立)   
+\]</span></p>
+<p><span class="math display">\[ \displaystyle 
+P\{A \cap B\}=P\{A\}\dot P\{B|A\}    (P\{A\}\neq0のとき)
+\]</span></p>
+<p><span class="math display">\[ \displaystyle
+P\{A \cap B\}=P\{A\}\dot P\{A|B\}   (P\{B\}\neq0のとき) 
+\]</span></p>
 </div>
 </div>
 
