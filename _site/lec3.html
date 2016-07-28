@@ -13,7 +13,7 @@
 
 <title>回帰直線</title>
 
-<script src="site_libs/jquery-2.2.1/jquery.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -23,11 +23,10 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/htmlwidgets-0.6/htmlwidgets.js"></script>
-<script src="site_libs/datatables-binding-0.1.55/datatables.js"></script>
-<link href="site_libs/dt-core-1.10.11/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="site_libs/dt-core-1.10.11/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="site_libs/dt-core-1.10.11/js/jquery.dataTables.min.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.1/datatables.js"></script>
+<script src="site_libs/datatables-1.10.7/jquery.dataTables.min.js"></script>
+<link href="site_libs/datatables-default-1.10.7/dataTables.extra.css" rel="stylesheet" />
+<link href="site_libs/datatables-default-1.10.7/jquery.dataTables.min.css" rel="stylesheet" />
 
 
 
@@ -53,6 +52,9 @@ h5 {
 }
 h6 {
   font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
 }
 </style>
 
@@ -82,6 +84,7 @@ button.code-folding-btn:focus {
   outline: none;
 }
 </style>
+
 
 <style type="text/css">
 /* padding for bootstrap navbar */
@@ -139,7 +142,7 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.0/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -189,6 +192,7 @@ $(document).ready(function ()  {
   width: 100%;
 }
 }
+
 
 .toc-content {
   padding-left: 30px;
@@ -356,14 +360,14 @@ div.tocify {
 <ul>
 <li>散布図をみると、直線的な傾向が見て取れる2つの変数(X, Y)があるとする</li>
 </ul>
-<p><img src="lec3_files/figure-html/unnamed-chunk-1-1.png" alt="" /><!-- --></p>
+<p><img src="lec3_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <ul>
 <li>例えば、Xが勉強時間、Yがテストの得点として、テストの得点を勉強時間で説明・予測したいとする。<br />
 (勉強時間(X)が(何点)増えるとテストの得点が(何点)上がるか?が知りたい)</li>
 </ul>
 <blockquote>
 <p><code>結果変数(目的変数)</code>: 説明・予測される変数(Y)<br />
- <code>原因変数(説明変数)</code>: 説明・予測する変数(X)</p>
+<code>原因変数(説明変数)</code>: 説明・予測する変数(X)</p>
 </blockquote>
 <div id="-1" class="section level2">
 <h2>回帰直線</h2>
@@ -371,7 +375,7 @@ div.tocify {
 <li><p>テストの得点(Y)を勉強時間(X)で説明するにあたって、ここでは、一次関数<span class="math inline">\(\displaystyle y=a+bx\)</span>を利用する</p></li>
 <li><p><span class="math inline">\(\displaystyle テストの得点(y)=a+b\times 勉強時間(x)\)</span></p></li>
 </ul>
-<p><img src="lec3_files/figure-html/unnamed-chunk-2-1.png" alt="" /><!-- --></p>
+<p><img src="lec3_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <blockquote>
 <p><code>回帰直線</code>: この一次関数から得られる直線<br />
 <code>切片(a)</code>: 説明変数が最小の場合のYの値<br />
@@ -392,7 +396,7 @@ div.tocify {
 <blockquote>
 <p><code>残差</code>: <span class="math inline">\(\varepsilon_i(i=1,\dots, n)\)</span></p>
 </blockquote>
-<p><img src="lec3_files/figure-html/unnamed-chunk-3-1.png" alt="" /><!-- --></p>
+<p><img src="lec3_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>図の赤線が残差<br />
 残差の二乗和が最小二乗基準(D)</p>
 </div>
@@ -438,14 +442,7 @@ div.tocify {
 <ul>
 <li>以下の表のように、必要になる値をまとめると、回帰係数(b)は<span class="math inline">\(A/B\)</span>で簡単に求められる</li>
 </ul>
-<table style="width:99%;">
-<colgroup>
-<col width="12%" />
-<col width="11%" />
-<col width="11%" />
-<col width="40%" />
-<col width="23%" />
-</colgroup>
+<table>
 <thead>
 <tr class="header">
 <th align="right">ペア番号</th>
@@ -650,7 +647,7 @@ s &amp;=&amp; \sqrt{s^2}
 <p>2変量<span class="math inline">\((x,y)\)</span>を測定し、以下の結果を得た。平均、分散、標準偏差を求め、共分散、相関を求めよ。</p>
 </blockquote>
 <p><div id="htmlwidget-1428" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1428">{"x":{"filter":"none","data":[["1","2","3","4","5"],[5,7,4,5,8],[5,6,4,4,6]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>X\u003c/th>\n      <th>Y\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script><img src="lec3_files/figure-html/unnamed-chunk-4-1.png" alt="" /><!-- --></p>
+<script type="application/json" data-for="htmlwidget-1428">{"x":{"data":[["1","2","3","4","5"],[5,7,4,5,8],[5,6,4,4,6]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>X\u003c/th>\n      <th>Y\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none","selection":"multiple"},"evals":[],"jsHooks":[]}</script><img src="lec3_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <ul>
 <li>相関係数 <span class="math display">\[
 \begin{align}
@@ -675,8 +672,8 @@ S_{xy}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})
 <blockquote>
 <p>社会人15人の1年間の実収入と食費支出の関係を調べ以下のデータを得た。この表をもとに回帰係数を算出し、回帰直線を図示せよ。</p>
 </blockquote>
-<p><div id="htmlwidget-4146" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4146">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","合計","平均"],[480,650,760,560,480,680,710,390,980,1100,880,490,760,580,925,10425,695],[120,190,210,200,190,230,175,165,200,320,195,170,270,150,260,3045,203],[-215,-45,65,-135,-215,-15,15,-305,285,405,185,-205,65,-115,230,0,0],[-83,-13,7,-3,-13,27,-28,-38,-3,117,-8,-33,67,-53,57,0,0],[17845,585,455,405,2795,-405,-420,11590,-855,47385,-1480,6765,4355,6095,13110,108225,7215],[46225,2025,4225,18225,46225,225,225,93025,81225,164025,34225,42025,4225,13225,52900,602250,40150]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>実収入\u003c/th>\n      <th>食費支出\u003c/th>\n      <th>X-X平均(XX)\u003c/th>\n      <th>Y-Y平均(YY)\u003c/th>\n      <th>XX*YY\u003c/th>\n      <th>X-X^2\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
+<div id="htmlwidget-4146" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4146">{"x":{"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","合計","平均"],[480,650,760,560,480,680,710,390,980,1100,880,490,760,580,925,10425,695],[120,190,210,200,190,230,175,165,200,320,195,170,270,150,260,3045,203],[-215,-45,65,-135,-215,-15,15,-305,285,405,185,-205,65,-115,230,0,0],[-83,-13,7,-3,-13,27,-28,-38,-3,117,-8,-33,67,-53,57,0,0],[17845,585,455,405,2795,-405,-420,11590,-855,47385,-1480,6765,4355,6095,13110,108225,7215],[46225,2025,4225,18225,46225,225,225,93025,81225,164025,34225,42025,4225,13225,52900,602250,40150]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>実収入\u003c/th>\n      <th>食費支出\u003c/th>\n      <th>X-X平均(XX)\u003c/th>\n      <th>Y-Y平均(YY)\u003c/th>\n      <th>XX*YY\u003c/th>\n      <th>X-X^2\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none","selection":"multiple"},"evals":[],"jsHooks":[]}</script>
 <blockquote>
 <p><span class="math display">\[
 \begin{eqnarray} 
@@ -702,7 +699,7 @@ S_{xy}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})
 <blockquote>
 <p>回帰直線: <span class="math inline">\(y=78.108+0.180x\)</span></p>
 </blockquote>
-<p><img src="lec3_files/figure-html/unnamed-chunk-6-1.png" alt="" /><!-- --></p>
+<p><img src="lec3_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 </div>
 
@@ -720,6 +717,7 @@ S_{xy}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})
 $(document).ready(function () {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
+
 
 </script>
 

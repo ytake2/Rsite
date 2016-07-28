@@ -13,7 +13,7 @@
 
 <title>相関係数</title>
 
-<script src="site_libs/jquery-2.2.1/jquery.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -23,11 +23,10 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/htmlwidgets-0.6/htmlwidgets.js"></script>
-<script src="site_libs/datatables-binding-0.1.55/datatables.js"></script>
-<link href="site_libs/dt-core-1.10.11/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="site_libs/dt-core-1.10.11/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="site_libs/dt-core-1.10.11/js/jquery.dataTables.min.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.1/datatables.js"></script>
+<script src="site_libs/datatables-1.10.7/jquery.dataTables.min.js"></script>
+<link href="site_libs/datatables-default-1.10.7/dataTables.extra.css" rel="stylesheet" />
+<link href="site_libs/datatables-default-1.10.7/jquery.dataTables.min.css" rel="stylesheet" />
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -97,6 +96,9 @@ h5 {
 h6 {
   font-size: 12px;
 }
+.table th:not([align]) {
+  text-align: left;
+}
 </style>
 
 
@@ -125,6 +127,7 @@ button.code-folding-btn:focus {
   outline: none;
 }
 </style>
+
 
 <style type="text/css">
 /* padding for bootstrap navbar */
@@ -182,7 +185,7 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.0/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -232,6 +235,7 @@ $(document).ready(function ()  {
   width: 100%;
 }
 }
+
 
 .toc-content {
   padding-left: 30px;
@@ -494,7 +498,7 @@ S_{xy}=\frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})
 S_{xy}=(x_1-\bar{x})(y_1-\bar{y})+(x_2-\bar{x})(y_2-\bar{y})+\dots+(x_n-\bar{x})(y_n-\bar{y})
 \end{align}
 \]</span></p>
-<p><img src="lec2_files/figure-html/unnamed-chunk-1-1.png" alt="" /><!-- --></p>
+<p><img src="lec2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>第I象限にあるデータ: <span class="math inline">\((x_i-\bar{x})(y_i-\bar{y})\)</span>は正<br />
 第III象限にあるデータ: <span class="math inline">\((x_i-\bar{x})(y_i-\bar{y})\)</span>は正<br />
 第II象限にあるデータ: <span class="math inline">\((x_i-\bar{x})(y_i-\bar{y})\)</span>は負<br />
@@ -518,8 +522,8 @@ dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番�
 
 <span class="kw">library</span>(DT)
 <span class="kw">datatable</span>(dat, <span class="dt">option =</span> <span class="kw">list</span>(<span class="dt">scrollY =</span> <span class="ot">TRUE</span>))</code></pre></div>
-<p><div id="htmlwidget-4139" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4139">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>生徒番号\u003c/th>\n      <th>英語\u003c/th>\n      <th>数学\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script></p>
+<div id="htmlwidget-1855" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1855">{"x":{"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>生徒番号\u003c/th>\n      <th>英語\u003c/th>\n      <th>数学\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none","selection":"multiple"},"evals":[],"jsHooks":[]}</script>
 <ul>
 <li><p>相関係数の算出に必要な情報</p></li>
 <li><p>各変数の平均, 標準偏差</p></li>
@@ -553,7 +557,7 @@ dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番�
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
 <span class="kw">qplot</span>(<span class="dt">data =</span> dat, <span class="dt">x =</span> 英語, <span class="dt">y =</span> 数学)</code></pre></div>
-<p><img src="lec2_files/figure-html/unnamed-chunk-4-1.png" alt="" /><!-- --></p>
+<p><img src="lec2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <hr />
 </div>
 </div>
@@ -572,6 +576,7 @@ dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番�
 $(document).ready(function () {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
+
 
 </script>
 
