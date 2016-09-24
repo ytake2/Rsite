@@ -17,6 +17,7 @@
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/stickytableheaders-0.1.19/jquery.stickytableheaders.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -36,6 +37,7 @@
 <link href="site_libs/datatables-default-1.10.7/jquery.dataTables.min.css" rel="stylesheet" />
 <link href="site_libs/datatables-responsive-1.10.7/dataTables.responsive.min.css" rel="stylesheet" />
 <script src="site_libs/datatables-responsive-1.10.7/dataTables.responsive.min.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -137,6 +139,33 @@ button.code-folding-btn:focus {
 }
 </style>
 
+<style type="text/css">
+.kable-table {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 20px;
+}
+
+.knitsql-table {
+  max-height: 350px;
+}
+
+.kable-table table {
+  margin-bottom: 0px;
+}
+
+.kable-table table>thead>tr>th {
+  border: none;
+  border-bottom: 2px solid #dddddd;
+}
+
+.kable-table table>thead {
+  background-color: #fff;
+}
+</style>
 
 <style type="text/css">
 /* padding for bootstrap navbar */
@@ -480,8 +509,8 @@ div.tocify {
 <li><code>代表値</code>, <code>散布度</code>等の特性値を求め、資料の分布の特徴を数量的に把握</li>
 </ol>
 </blockquote>
-<div id="htmlwidget-9735" style="width:600px;height:100px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9735">{"x":{"diagram":"\ngraph LR\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4039" style="width:600px;height:100px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4039">{"x":{"diagram":"\ngraph LR\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script>
 <hr />
 </div>
 </div>
@@ -702,16 +731,64 @@ for (i in <span class="dv">1</span>:k) {
 
 frequency_table &lt;-<span class="st"> </span><span class="kw">data.frame</span>(級 =<span class="st"> </span>class_names, 級代表値 =<span class="st"> </span>rep_k, 度数 =<span class="st"> </span>h1$counts)
 frequency_table</code></pre></div>
-<pre><code>            級 級代表値 度数
-1  9.5 ～ 19.5     14.5    2
-2 19.5 ～ 29.5     24.5    4
-3 29.5 ～ 39.5     34.5   11
-4 39.5 ～ 49.5     44.5    8
-5 49.5 ～ 59.5     54.5   15
-6 59.5 ～ 69.5     64.5   25
-7 69.5 ～ 79.5     74.5   22
-8 79.5 ～ 89.5     84.5   11
-9 89.5 ～ 99.5     94.5    2</code></pre>
+<div class="kable-table">
+<table>
+<thead>
+<tr class="header">
+<th align="left">級</th>
+<th align="center">級代表値</th>
+<th align="center">度数</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">9.5 ～ 19.5</td>
+<td align="center">14.5</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="left">19.5 ～ 29.5</td>
+<td align="center">24.5</td>
+<td align="center">4</td>
+</tr>
+<tr class="odd">
+<td align="left">29.5 ～ 39.5</td>
+<td align="center">34.5</td>
+<td align="center">11</td>
+</tr>
+<tr class="even">
+<td align="left">39.5 ～ 49.5</td>
+<td align="center">44.5</td>
+<td align="center">8</td>
+</tr>
+<tr class="odd">
+<td align="left">49.5 ～ 59.5</td>
+<td align="center">54.5</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="left">59.5 ～ 69.5</td>
+<td align="center">64.5</td>
+<td align="center">25</td>
+</tr>
+<tr class="odd">
+<td align="left">69.5 ～ 79.5</td>
+<td align="center">74.5</td>
+<td align="center">22</td>
+</tr>
+<tr class="even">
+<td align="left">79.5 ～ 89.5</td>
+<td align="center">84.5</td>
+<td align="center">11</td>
+</tr>
+<tr class="odd">
+<td align="left">89.5 ～ 99.5</td>
+<td align="center">94.5</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="section level3">
 <h3>地道に度数をカウントするコード(おまけ)</h3>
@@ -1017,6 +1094,32 @@ $(document).ready(function () {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
 
+$(document).ready(function () {
+  $('.knitsql-table').addClass('kable-table');
+  var container = $('.kable-table');
+  container.each(function() {
+
+    // move the caption out of the table
+    var table = $(this).children('table');
+    var caption = table.children('caption').detach();
+    caption.insertBefore($(this)).css('display', 'inherit');
+
+    // if there is an explicit max-height or this is a
+    // knitrsql-table then apply sticktableheaders
+    if ("none" !== "none" || $(this).hasClass('knitsql-table')) {
+
+      // apply max height
+      if ("none" !== "none")
+        $(this).css('max-height', "none");
+
+      // sticky table headers
+      table.stickyTableHeaders({
+        scrollableArea: $(this),
+        fixedOffset: 1
+      });
+    }
+  });
+});
 
 </script>
 
