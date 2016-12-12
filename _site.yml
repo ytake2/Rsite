@@ -38,8 +38,8 @@ navbar:
         - text: "Slides"
           href: refs.html
     - text: "blog"
-      icon: fa-info
-      href: blog/public/index.html
+      icon: fa-info-circle
+      href: https://ytake2.github.io/blog/
 
   right:
     - icon: fa-github fa-lg
