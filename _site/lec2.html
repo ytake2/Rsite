@@ -13,21 +13,21 @@
 
 <title>相関係数</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
-<script src="site_libs/stickytableheaders-0.1.19/jquery.stickytableheaders.min.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/htmlwidgets-0.6/htmlwidgets.js"></script>
-<script src="site_libs/datatables-binding-0.1/datatables.js"></script>
-<script src="site_libs/datatables-1.10.7/jquery.dataTables.min.js"></script>
-<link href="site_libs/datatables-default-1.10.7/dataTables.extra.css" rel="stylesheet" />
-<link href="site_libs/datatables-default-1.10.7/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="site_libs/datatables-binding-0.2/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.12/js/jquery.dataTables.min.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
@@ -130,33 +130,6 @@ button.code-folding-btn:focus {
 }
 </style>
 
-<style type="text/css">
-.kable-table {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  overflow: auto;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-bottom: 20px;
-}
-
-.knitsql-table {
-  max-height: 350px;
-}
-
-.kable-table table {
-  margin-bottom: 0px;
-}
-
-.kable-table table>thead>tr>th {
-  border: none;
-  border-bottom: 2px solid #dddddd;
-}
-
-.kable-table table>thead {
-  background-color: #fff;
-}
-</style>
 
 <style type="text/css">
 /* padding for bootstrap navbar */
@@ -214,7 +187,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -240,7 +212,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
@@ -299,8 +271,9 @@ div.tocify {
 }
 
 .tocify-subheader .tocify-item {
-  font-size: 0.9em;
-  padding-left: 5px;
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -394,6 +367,13 @@ div.tocify {
       <a href="refs.html">Slides</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="blog/public/index.html">
+    <span class="fa fa-info"></span>
+     
+    blog
+  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -551,8 +531,8 @@ dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番�
 
 <span class="kw">library</span>(DT)
 <span class="kw">datatable</span>(dat, <span class="dt">option =</span> <span class="kw">list</span>(<span class="dt">scrollY =</span> <span class="ot">TRUE</span>))</code></pre></div>
-<div id="htmlwidget-1855" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1855">{"x":{"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>生徒番号\u003c/th>\n      <th>英語\u003c/th>\n      <th>数学\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none","selection":"multiple"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-baf7d5dd0bde4c6a8ac3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-baf7d5dd0bde4c6a8ac3">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>生徒番号\u003c/th>\n      <th>英語\u003c/th>\n      <th>数学\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
 <ul>
 <li><p>相関係数の算出に必要な情報</p></li>
 <li><p>各変数の平均, 標準偏差</p></li>
@@ -602,36 +582,13 @@ dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番�
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
+}
 $(document).ready(function () {
-  $('.knitsql-table').addClass('kable-table');
-  var container = $('.kable-table');
-  container.each(function() {
-
-    // move the caption out of the table
-    var table = $(this).children('table');
-    var caption = table.children('caption').detach();
-    caption.insertBefore($(this)).css('display', 'inherit');
-
-    // if there is an explicit max-height or this is a
-    // knitrsql-table then apply sticktableheaders
-    if ("none" !== "none" || $(this).hasClass('knitsql-table')) {
-
-      // apply max height
-      if ("none" !== "none")
-        $(this).css('max-height', "none");
-
-      // sticky table headers
-      table.stickyTableHeaders({
-        scrollableArea: $(this),
-        fixedOffset: 1
-      });
-    }
-  });
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 

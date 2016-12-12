@@ -39,7 +39,7 @@ navbar:
           href: refs.html
     - text: "blog"
       icon: fa-info
-      href: blog.html
+      href: blog/public/index.html
 
   right:
     - icon: fa-github fa-lg
