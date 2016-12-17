@@ -39,7 +39,7 @@ navbar:
           href: refs.html
     - text: "blog"
       icon: fa-info-circle
-      href: https://ytake2.github.io/blog/
+      href: https://ytake2.github.io/blog2/
 
   right:
     - icon: fa-github fa-lg
