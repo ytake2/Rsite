@@ -2,13 +2,13 @@ name: "my-website"
 navbar:
   title: "竹林由武 Ph.D"
   left:
-    - text: "Home"
+    - text: "HOME"
       icon: fa-home
       href: index.html
-    - text: "About"
+    - text: "ABOUT"
       icon: fa-info
       href: about.html
-    - text: "Archive"
+    - text: "ARCHIVES"
       icon: fa-archive
       menu:
         - text: "Activity"
