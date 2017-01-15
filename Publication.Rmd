@@ -62,9 +62,9 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 
 ---
 
-- Takebayashi, T., Kubota, T., & Tsubaki, H. (2016) Risk profiles for severe mental health problem: Classification and regression tree analysis. Proceedings in Computational Statistics 2016 (COMPSTAT2016).
+- Takebayashi, Y. Tanaka, K., & Sugiura, Y. (in press). Psychological Well-being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Journal of Happiness Studies.  
 
-- Takebayashi, Y. Tanaka, K., & Sugiura, Y. (accept with revision). Psychological Well-being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Journal of Happiness Studies.  
+- Takebayashi, T., Kubota, T., & Tsubaki, H. (2016) Risk profiles for severe mental health problem: Classification and regression tree analysis. Proceedings in Computational Statistics 2016 (COMPSTAT2016).
 
 - 竹林由武・高垣耕企・広瀬慎一・大野哲也・小幡昌志・川崎友也・シールズ久美・杉浦義典・坂野雄二 (2013) Anxiety control questionnaire日本語版の開発，行動療法研究，39,  145-154.   
 
@@ -91,19 +91,20 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 # E.共同研究論文 (共著)
 
 ---
-- Jinnin, R., Okamoto, Y., Takagaki, K., Nishiyama, Y., Yamamura, T., Okamoto, Y., Miyake, Y., Takebayashi, Y., Tanaka, K., Sugiura, Y., Shimoda, H., Kawakami, N., Furukawa, Ｔ. A., & Yamawaki. (in press). Detailed course of depressive symptoms and risk for developing depression in late adolescents with subthreshold depression: cohort study. Neuropsychiatric Disease and Treatment. Neuropsychiatric Disease and Treatment.
 
-- Fujisato, H., Ito, M., Takebayashi, Y., Hosogoshi, H., Kato, N., Nakajima, S., Miyamae, M., Oe, Y., Usami, S., Kanie, A., Horikoshi, M., & Berking, M. (in press). Reliability and Validity of the Japanese Version of the Emotion Regulation Skills Questionnaire Journal: Journal of Affective Disorders.
+- Jinnin, R., Okamoto, Y., Takagaki, K., Nishiyama, Y., Yamamura, T., Okamoto, Y., Miyake, Y., Takebayashi, Y., Tanaka, K., Sugiura, Y., Shimoda, H., Kawakami, N., Furukawa, Ｔ. A., & Yamawaki. (2017). Detailed course of depressive symptoms and risk for developing depression in late adolescents with subthreshold depression: cohort study. Neuropsychiatric Disease and Treatment. Neuropsychiatric Disease and Treatment, 13, 25-33.
 
-- Saigo, T., Takebayashi, Y., Tayama, J., Bernick, P. J., Schmidt, N. B., Shirabe, S., & Sakano, Y. (2016). Validation of the Japanese Version of the Body Vigilance Scale. Psychological Reports.
+- Fujisato, H., Ito, M., Takebayashi, Y., Hosogoshi, H., Kato, N., Nakajima, S., Miyamae, M., Oe, Y., Usami, S., Kanie, A., Horikoshi, M., & Berking, M. (2016). Reliability and Validity of the Japanese Version of the Emotion Regulation Skills Questionnaire Journal: Journal of Affective Disorders, 208, 145-152.
 
-- Shinmei, I., Kobayashi, K., Oe, O., Takagishi, Y., Kanie, A., Ito, M., Takebayashi, Y., Murata, M., Horikoshi, M., & Dobkin, R. D. (2016). Cognitive Behavioral Therapy for Depression in Japanese Parkinson's Disease Patients: A Pilot Study. Neuropsychiatric Disease and Treatment.
+- Saigo, T., Takebayashi, Y., Tayama, J., Bernick, P. J., Schmidt, N. B., Shirabe, S., & Sakano, Y. (2016). Validation of the Japanese Version of the Body Vigilance Scale. Psychological Reports, 118, 918-936.
 
-- Ito, M., Horikoshi, M., Kato, N., Oe, Y., Fujisato, H., Nakajima, S., Kanie, A., Miyamae, M., Takebayashi, Y.,  Horita, R., Usuki, M., Nakagawa, A., & Ono, Y. (2016). Transdiagnostic and transcultural: pilot study of unified protocol for depressive and anxiety disorders in Japan. Behavior Therapy.
+- Shinmei, I., Kobayashi, K., Oe, O., Takagishi, Y., Kanie, A., Ito, M., Takebayashi, Y., Murata, M., Horikoshi, M., & Dobkin, R. D. (2016). Cognitive Behavioral Therapy for Depression in Japanese Parkinson's Disease Patients: A Pilot Study. Neuropsychiatric Disease and Treatment, 12, 1319-1331.
 
-- 高田圭二・田中圭介・竹林由武・杉浦義典(2016). マインドフルネスとwell-beingと注意の制御の関連 パーソナリティ研究
+- Ito, M., Horikoshi, M., Kato, N., Oe, Y., Fujisato, H., Nakajima, S., Kanie, A., Miyamae, M., Takebayashi, Y.,  Horita, R., Usuki, M., Nakagawa, A., & Ono, Y. (2016). Transdiagnostic and transcultural: pilot study of unified protocol for depressive and anxiety disorders in Japan. Behavior Therapy, 47, 416-430.
 
-- Tsukue, R., Okamoto, Y., Yoshino, A., Kunisato, Y., Takagaki, K., Takebayashi, Y., Tanaka, K., Konuma, K., Tsukue, I., & Yamawaki, S. (2015). Do individuals with alcohol dependence show higher unfairness sensitivity? The relationship between impulsivity and unfairness sensitivity in alcohol dependent adults. Alcoholism: Clinical and Experimental Research.
+- 高田圭二・田中圭介・竹林由武・杉浦義典(2016). マインドフルネスとwell-beingと注意の制御の関連, パーソナリティ研究, 25, 35-49.  
+
+- Tsukue, R., Okamoto, Y., Yoshino, A., Kunisato, Y., Takagaki, K., Takebayashi, Y., Tanaka, K., Konuma, K., Tsukue, I., & Yamawaki, S. (2015). Do individuals with alcohol dependence show higher unfairness sensitivity? The relationship between impulsivity and unfairness sensitivity in alcohol dependent adults. Alcoholism: Clinical and Experimental Research, 39, 2016-2021.
 
 - Takagaki, K., Okamoto, Y., Jinnin, R., Mori, A., Nishiyama, Y., Yamamura, T., Takebayashi, Y., Ogata, A., Okamoto, Y., Miyake, Y., Shimoda, H., Kawakami, N., & Yamawaki, S. (2014). Behavioral characteristics of subthreshold depression. Journal of Affective Disorders, 168, 472-475.
 
