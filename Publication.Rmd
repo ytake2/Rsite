@@ -31,7 +31,7 @@ opts_knit$set(width = 75)
 ---
 
 - 自殺対策のための自殺死亡の地域統計-手段・配偶関係・職業別統計1983-2012-の作成 (2015)
-  国立精神・神経医療研究センター 精神保健研究所 自殺予防総合対策センターより委託
+  国立精神・神経医療研究センター 精神保健研究所 自殺予防総合対策センターから委託
   
 <img src="img/自殺予防総合対策センター.jpg" height="300px" width="600px"  />  
 http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
@@ -62,7 +62,7 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 
 ---
 
-- Takebayashi, Y., Tanaka, K., Sugiura, Y. & Tomoko, Sugiura. (2017) Well-Being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Jornal of Happiness Studies. doi:10.1007/s10902-017-9852-3  
+- Takebayashi, Y., Tanaka, K., Sugiura, Y. & Tomoko, Sugiura. (2017) Well-Being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Jornal of Happiness Studies. doi:10.1007/s10902-017-9852-3
   
 - Takebayashi, T., Kubota, T., & Tsubaki, H. (2016) Risk profiles for severe mental health problem: Classification and regression tree analysis. Proceedings in Computational Statistics 2016 (COMPSTAT2016).
 
