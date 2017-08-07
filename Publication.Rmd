@@ -45,9 +45,9 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 ---
 
 ### 翻訳書
-- [翻訳章「第7章　マルコフ連鎖モンテカルロ法」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳) 2017, 共立出版](https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q ）
+- [翻訳章「第7章　マルコフ連鎖モンテカルロ法」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳), 2017, 共立出版 ](https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q）
 
-- [翻訳章「第13章　目標, 検定力, そしてサンプルサイズ」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳)](https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q)
+- [翻訳章「第13章　目標, 検定力, そしてサンプルサイズ」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳), 2017, 共立出版](https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q)
 
 
 ### 分担執筆
