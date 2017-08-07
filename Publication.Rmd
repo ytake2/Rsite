@@ -44,13 +44,18 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 
 ---
 
+### 翻訳書
+- [翻訳章「第7章　マルコフ連鎖モンテカルロ法」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳) 2017, 共立出版]（https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q ）
+
+- [翻訳章「第13章　目標, 検定力, そしてサンプルサイズ」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳)](https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q)
+
+
 ### 分担執筆
+- [竹林由武  (2014). 「第9章 順序データのパス解析」，小杉考司•清水裕士 (編著)  
+『MplusとRによる構造方程式モデリング』, 北大路書房](https://www.amazon.co.jp/dp/4762828254/ref=cm_sw_r_tw_dp_x_O9aIzbAB158A2)
 
-- 竹林由武  (2014). 「第9章 順序データのパス解析」，小杉考司•清水裕士 (編著)  
-『MplusとRによる構造方程式モデリング』, 北大路書房
-
-- 竹林由武  (2014).  「第15 章 潜在混合分布モデル」，小杉考司•清水裕士 (編著)   
-『MplusとRによる構造方程式モデリング』, 北大路書房    
+- [竹林由武  (2014).  「第15 章 潜在混合分布モデル」，小杉考司•清水裕士 (編著)   
+『MplusとRによる構造方程式モデリング』, 北大路書房])(https://www.amazon.co.jp/dp/4762828254/ref=cm_sw_r_tw_dp_x_O9aIzbAB158A2 )    
 サポートサイト: https://sites.google.com/site/mplusandr/
 
 
@@ -93,6 +98,12 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 # E.共同研究論文 (共著)
 
 ---
+
+- Shinmei, I, Iijima, S., Takebayashi, Y., Horikoshi, M., Kanie, A., Taekagishi, Y., Nakayama, N., Kobayashi, Y (in press). Pilot Study of Exposure and Response Prevention for Japanese Patients with Obsessive-Compulsive Disorder, Journal of Obsessive-Compulsive and Related Disorders.
+
+- Tsuchiyagaito, A., Hirano, Y., Asano, K., Oshima, F., Nagaoka, S., Takebayashi, Y.,Matsumoto, K.,Masuda, Y., Iyo, M., Shimizu, E., & Nakagawa, A. (2017). Cognitive-Behavioral Therapy for Obsessive-Compulsive Disorder with and without Autism Spectrum Disorder: Gray Matter Differences Associated with Poor Outcome. Frontiers in Psychiatry, 8, 143. 
+
+- Ito, M., Horikoshi, M., Resick, P., Katayanagi, A., Miyamae, M., Takagishi, Y., Takebayashi, Y., Kanie, A., Hirabayashi, N., & Furukawa, T. (2017). Study protocol for a randomised controlled trial of cognitive processing therapy for post-traumatic stress disorder among Japanese patients: the Safety, Power, Intimacy, Esteem, Trust (SPINET) study. BMJ open, 7(6), e014292.
 
 - Jinnin, R., Okamoto, Y., Takagaki, K., Nishiyama, Y., Yamamura, T., Okamoto, Y., Miyake, Y., Takebayashi, Y., Tanaka, K., Sugiura, Y., Shimoda, H., Kawakami, N., Furukawa, Ｔ. A., & Yamawaki. (2017). Detailed course of depressive symptoms and risk for developing depression in late adolescents with subthreshold depression: cohort study. Neuropsychiatric Disease and Treatment. Neuropsychiatric Disease and Treatment, 13, 25-33.
 
