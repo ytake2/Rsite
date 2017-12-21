@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -23,14 +23,14 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-0.9/htmlwidgets.js"></script>
 <script src="site_libs/d3-3.3.8/d3.min.js"></script>
 <script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
 <link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
 <script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
 <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
 <script src="site_libs/chromatography-0.1/chromatography.js"></script>
-<script src="site_libs/DiagrammeR-binding-0.8.4/DiagrammeR.js"></script>
+<script src="site_libs/DiagrammeR-binding-0.9.2/DiagrammeR.js"></script>
 <script src="site_libs/datatables-binding-0.2/datatables.js"></script>
 <link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
 <link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
@@ -489,8 +489,8 @@ div.tocify {
 <li><code>代表値</code>, <code>散布度</code>等の特性値を求め、資料の分布の特徴を数量的に把握</li>
 </ol>
 </blockquote>
-<div id="htmlwidget-dd47da4b37f14a6af88f" style="width:600px;height:100px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dd47da4b37f14a6af88f">{"x":{"diagram":"\ngraph LR\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-db0b71cc1f8f3420c0e5" style="width:600px;height:100px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-db0b71cc1f8f3420c0e5">{"x":{"diagram":"\ngraph LR\n  A[資料]-->B[度数分布表] \n  B[度数分布表]-->C[図的表現]\n  C[図的表現]-->D[数的表現]\n"},"evals":[],"jsHooks":[]}</script>
 <hr />
 </div>
 </div>
@@ -534,15 +534,15 @@ Xmin &lt;-<span class="st"> </span><span class="kw">min</span>(X)</code></pre></
 k =<span class="st"> </span><span class="dv">4</span>
 
 <span class="co"># 20~60を10ごと区切ると4等分になる</span>
-(Xmax -<span class="st"> </span>(Xmin -<span class="st"> </span><span class="dv">1</span>))/k</code></pre></div>
+(Xmax <span class="op">-</span><span class="st"> </span>(Xmin <span class="op">-</span><span class="st"> </span><span class="dv">1</span>))<span class="op">/</span>k</code></pre></div>
 <pre><code>[1] 10</code></pre>
 <p>　先の例の分点は, 以下のようになる。<br />
 　- <span class="math inline">\(\alpha_1 = 30\)</span><br />
 　- <span class="math inline">\(\alpha_2 = 40\)</span><br />
 　- <span class="math inline">\(\alpha_3 = 50\)</span></p>
 <p>級の数(<span class="math inline">\(k\)</span>)が大きすぎると分布の特性が表しにくく、小さすぎると部分的な特性が消されるが、データの大きさ(個数)<span class="math inline">\(n\)</span>に関連して定める。</p>
-<div id="htmlwidget-b02a4b0cf27caeed96a0" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b02a4b0cf27caeed96a0">{"x":{"filter":"none","caption":"<caption>級数の目安<\/caption>","data":[["1","2","3"],["50前後","100前後","100以上"],["5≦k≦7","8≦k≦12","10≦k≦20"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>nの大きさ<\/th>\n      <th>級数の目安<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","scrollX":true,"fixedColumns":true,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5faa186246d072cfcfcb" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5faa186246d072cfcfcb">{"x":{"filter":"none","caption":"<caption>級数の目安<\/caption>","data":[["1","2","3"],["50前後","100前後","100以上"],["5≦k≦7","8≦k≦12","10≦k≦20"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>nの大きさ<\/th>\n      <th>級数の目安<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","scrollX":true,"fixedColumns":true,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="section level3">
 <h3>3. 級限界を決める。</h3>
@@ -684,8 +684,8 @@ english &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv"
 <li>今回は, 10ごとの分点となり, 各級の級代表値は級の区間の中点になる。</li>
 <li>各級の度数をカウントする</li>
 </ul>
-<div id="htmlwidget-44c427c26c67b52442b2" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-44c427c26c67b52442b2">{"x":{"filter":"none","extensions":["Responsive"],"data":[["1","2","3","4","5","6","7","8","9"],["9.5 ～ 19.5","19.5 ～ 29.5","29.5 ～ 39.5","39.5 ～ 49.5","49.5 ～ 59.5","59.5 ～ 69.5","69.5 ～ 79.5","79.5 ～ 89.5","89.5 ～ 99.5"],[14.5,24.5,34.5,44.5,54.5,64.5,74.5,84.5,94.5],[2,4,11,8,15,25,22,11,2]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>級<\/th>\n      <th>級代表値<\/th>\n      <th>度数<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"responsive":true},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-70c1a1b5007938619c5a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-70c1a1b5007938619c5a">{"x":{"filter":"none","extensions":["Responsive"],"data":[["1","2","3","4","5","6","7","8","9"],["9.5 ～ 19.5","19.5 ～ 29.5","29.5 ～ 39.5","39.5 ～ 49.5","49.5 ～ 59.5","59.5 ～ 69.5","69.5 ～ 79.5","79.5 ～ 89.5","89.5 ～ 99.5"],[14.5,24.5,34.5,44.5,54.5,64.5,74.5,84.5,94.5],[2,4,11,8,15,25,22,11,2]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>級<\/th>\n      <th>級代表値<\/th>\n      <th>度数<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"responsive":true},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="section level2">
 <h2>ヒストグラムをプロット</h2>
@@ -700,16 +700,16 @@ english &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv"
 h1 &lt;-<span class="st"> </span><span class="kw">hist</span>(english, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="fl">9.5</span>, <span class="fl">99.5</span>, <span class="dv">10</span>), <span class="dt">plot =</span> F)
 
 <span class="co"># 級の数</span>
-k &lt;-<span class="st"> </span><span class="kw">length</span>(h1$counts)
+k &lt;-<span class="st"> </span><span class="kw">length</span>(h1<span class="op">$</span>counts)
 
 class_names &lt;-<span class="st"> </span><span class="ot">NULL</span>  <span class="co"># 級の名前格納用</span>
 rep_k &lt;-<span class="st"> </span><span class="ot">NULL</span>  <span class="co"># 級の代表値格納用</span>
-for (i in <span class="dv">1</span>:k) {
-    class_names[i] &lt;-<span class="st"> </span><span class="kw">paste</span>(h1$breaks[i], <span class="st">&quot;～&quot;</span>, h1$breaks[i +<span class="st"> </span><span class="dv">1</span>])
-    rep_k[i] &lt;-<span class="st"> </span>(h1$breaks[i +<span class="st"> </span><span class="dv">1</span>] +<span class="st"> </span>h1$breaks[i])/<span class="dv">2</span>
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>k) {
+    class_names[i] &lt;-<span class="st"> </span><span class="kw">paste</span>(h1<span class="op">$</span>breaks[i], <span class="st">&quot;～&quot;</span>, h1<span class="op">$</span>breaks[i <span class="op">+</span><span class="st"> </span><span class="dv">1</span>])
+    rep_k[i] &lt;-<span class="st"> </span>(h1<span class="op">$</span>breaks[i <span class="op">+</span><span class="st"> </span><span class="dv">1</span>] <span class="op">+</span><span class="st"> </span>h1<span class="op">$</span>breaks[i])<span class="op">/</span><span class="dv">2</span>
 }
 
-frequency_table &lt;-<span class="st"> </span><span class="kw">data.frame</span>(級 =<span class="st"> </span>class_names, 級代表値 =<span class="st"> </span>rep_k, 度数 =<span class="st"> </span>h1$counts)
+frequency_table &lt;-<span class="st"> </span><span class="kw">data.frame</span>(級 =<span class="st"> </span>class_names, 級代表値 =<span class="st"> </span>rep_k, 度数 =<span class="st"> </span>h1<span class="op">$</span>counts)
 frequency_table</code></pre></div>
 <pre><code>            級 級代表値 度数
 1  9.5 ～ 19.5     14.5    2
@@ -725,31 +725,31 @@ frequency_table</code></pre></div>
 <div class="section level3">
 <h3>地道に度数をカウントするコード(おまけ)</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級1の度数</span>
-<span class="kw">length</span>(english[english &lt;=<span class="st"> </span><span class="fl">19.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">19.5</span>])</code></pre></div>
 <pre><code>[1] 2</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級2の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">19.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">29.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">19.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">29.5</span>])</code></pre></div>
 <pre><code>[1] 4</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級3の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">29.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">39.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">29.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">39.5</span>])</code></pre></div>
 <pre><code>[1] 11</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級4の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">39.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">49.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">39.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">49.5</span>])</code></pre></div>
 <pre><code>[1] 8</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級5の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">49.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">59.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">49.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">59.5</span>])</code></pre></div>
 <pre><code>[1] 15</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級6の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">59.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">69.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">59.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">69.5</span>])</code></pre></div>
 <pre><code>[1] 25</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級7の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">69.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">79.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">69.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">79.5</span>])</code></pre></div>
 <pre><code>[1] 22</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級8の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">79.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">89.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">79.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">89.5</span>])</code></pre></div>
 <pre><code>[1] 11</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 級9の度数</span>
-<span class="kw">length</span>(english[english &gt;=<span class="st"> </span><span class="fl">89.5</span> &amp;<span class="st"> </span>english &lt;=<span class="st"> </span><span class="fl">99.5</span>])</code></pre></div>
+<span class="kw">length</span>(english[english <span class="op">&gt;=</span><span class="st"> </span><span class="fl">89.5</span> <span class="op">&amp;</span><span class="st"> </span>english <span class="op">&lt;=</span><span class="st"> </span><span class="fl">99.5</span>])</code></pre></div>
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
@@ -871,8 +871,8 @@ n=f_1+f_2+\dots+f_k
 <blockquote>
 <p>数学の同一問題をA, B 2クラスのそれぞれ生徒20人を対象に試験を行い, その結果をもとに次の度数分布表を得た。</p>
 </blockquote>
-<div id="htmlwidget-f6aa830f0b265308980a" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f6aa830f0b265308980a">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7"],["20~30","30~40","40~50","50~60","60~70","70~80","80~90"],[25,35,45,55,65,75,85],[0,2,3,10,3,2,0],[1,3,3,5,5,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>得点<\/th>\n      <th>代表値<\/th>\n      <th>Aクラス度数<\/th>\n      <th>Bクラス度数<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1c3eab6ac91a6ffce4e2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1c3eab6ac91a6ffce4e2">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7"],["20~30","30~40","40~50","50~60","60~70","70~80","80~90"],[25,35,45,55,65,75,85],[0,2,3,10,3,2,0],[1,3,3,5,5,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>得点<\/th>\n      <th>代表値<\/th>\n      <th>Aクラス度数<\/th>\n      <th>Bクラス度数<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
 <blockquote>
 <p>各クラスの度数折れ線、平均、分散、標準偏差を求めよ</p>
 </blockquote>
@@ -899,13 +899,13 @@ n=f_1+f_2+\dots+f_k
 \end{align}
 \]</span></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 手計算</span>
-((<span class="dv">25</span> *<span class="st"> </span><span class="dv">0</span>) +<span class="st"> </span>(<span class="dv">35</span> *<span class="st"> </span><span class="dv">2</span>) +<span class="st"> </span>(<span class="dv">45</span> *<span class="st"> </span><span class="dv">3</span>) +<span class="st"> </span>(<span class="dv">55</span> *<span class="st"> </span><span class="dv">10</span>) +<span class="st"> </span>(<span class="dv">65</span> *<span class="st"> </span><span class="dv">3</span>) +<span class="st"> </span>(<span class="dv">75</span> *<span class="st"> </span><span class="dv">2</span>) +<span class="st"> </span>(<span class="dv">85</span> *<span class="st"> </span><span class="dv">0</span>))/<span class="dv">20</span></code></pre></div>
+((<span class="dv">25</span> <span class="op">*</span><span class="st"> </span><span class="dv">0</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">35</span> <span class="op">*</span><span class="st"> </span><span class="dv">2</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">45</span> <span class="op">*</span><span class="st"> </span><span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">55</span> <span class="op">*</span><span class="st"> </span><span class="dv">10</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">65</span> <span class="op">*</span><span class="st"> </span><span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">75</span> <span class="op">*</span><span class="st"> </span><span class="dv">2</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">85</span> <span class="op">*</span><span class="st"> </span><span class="dv">0</span>))<span class="op">/</span><span class="dv">20</span></code></pre></div>
 <pre><code>[1] 55</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 合計を算出するsum関数を使う</span>
 代表値 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">75</span>, <span class="dv">85</span>)
 Aクラスの度数 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">10</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">0</span>)
 Aクラスの人数 &lt;-<span class="st"> </span><span class="dv">20</span>
-<span class="kw">sum</span>(代表値 *<span class="st"> </span>Aクラスの度数)/Aクラスの人数</code></pre></div>
+<span class="kw">sum</span>(代表値 <span class="op">*</span><span class="st"> </span>Aクラスの度数)<span class="op">/</span>Aクラスの人数</code></pre></div>
 <pre><code>[1] 55</code></pre>
 <ul>
 <li>クラスBの平均</li>
@@ -916,13 +916,13 @@ Aクラスの人数 &lt;-<span class="st"> </span><span class="dv">20</span>
 \end{align}
 \]</span></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 手計算</span>
-((<span class="dv">25</span> *<span class="st"> </span><span class="dv">1</span>) +<span class="st"> </span>(<span class="dv">35</span> *<span class="st"> </span><span class="dv">3</span>) +<span class="st"> </span>(<span class="dv">45</span> *<span class="st"> </span><span class="dv">3</span>) +<span class="st"> </span>(<span class="dv">55</span> *<span class="st"> </span><span class="dv">5</span>) +<span class="st"> </span>(<span class="dv">65</span> *<span class="st"> </span><span class="dv">5</span>) +<span class="st"> </span>(<span class="dv">75</span> *<span class="st"> </span><span class="dv">2</span>) +<span class="st"> </span>(<span class="dv">85</span> *<span class="st"> </span><span class="dv">1</span>))/<span class="dv">20</span></code></pre></div>
+((<span class="dv">25</span> <span class="op">*</span><span class="st"> </span><span class="dv">1</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">35</span> <span class="op">*</span><span class="st"> </span><span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">45</span> <span class="op">*</span><span class="st"> </span><span class="dv">3</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">55</span> <span class="op">*</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">65</span> <span class="op">*</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">75</span> <span class="op">*</span><span class="st"> </span><span class="dv">2</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">85</span> <span class="op">*</span><span class="st"> </span><span class="dv">1</span>))<span class="op">/</span><span class="dv">20</span></code></pre></div>
 <pre><code>[1] 55</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 合計を算出するsum関数を使う</span>
 代表値 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">75</span>, <span class="dv">85</span>)
 Bクラスの度数 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">2</span>, <span class="dv">1</span>)
 Bクラスの人数 &lt;-<span class="st"> </span><span class="dv">20</span>
-<span class="kw">sum</span>(代表値 *<span class="st"> </span>Bクラスの度数)/Bクラスの人数</code></pre></div>
+<span class="kw">sum</span>(代表値 <span class="op">*</span><span class="st"> </span>Bクラスの度数)<span class="op">/</span>Bクラスの人数</code></pre></div>
 <pre><code>[1] 55</code></pre>
 </div>
 <div id="-" class="section level3">
@@ -949,8 +949,8 @@ s^2=\frac{(25-55)^2\times 0+(35-55)^2\times 2+(45-55)^2\times 3+(55-55)^2\times 
 \end{align}
 \]</span></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 手計算</span>
-(((<span class="dv">25</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">0</span> +<span class="st"> </span>((<span class="dv">35</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">2</span> +<span class="st"> </span>((<span class="dv">45</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">3</span> +<span class="st"> </span>((<span class="dv">55</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span>
-<span class="st">    </span><span class="dv">10</span> +<span class="st"> </span>((<span class="dv">65</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">3</span> +<span class="st"> </span>((<span class="dv">75</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">2</span> +<span class="st"> </span>((<span class="dv">85</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">0</span>)/<span class="dv">20</span></code></pre></div>
+(((<span class="dv">25</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">0</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">35</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">45</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">3</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">55</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span>
+<span class="st">    </span><span class="dv">10</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">65</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">3</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">75</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">85</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">0</span>)<span class="op">/</span><span class="dv">20</span></code></pre></div>
 <pre><code>[1] 110</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 合計を算出するsum関数を使う</span>
 代表値 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">75</span>, <span class="dv">85</span>)
@@ -958,7 +958,7 @@ Aクラスの度数 &lt;-<span class="st"> </span><span class="kw">c</span>(<spa
 Aクラスの人数 &lt;-<span class="st"> </span><span class="dv">20</span>
 Aクラスの平均 &lt;-<span class="st"> </span><span class="dv">55</span>
 
-<span class="kw">sum</span>(((代表値 -<span class="st"> </span>Aクラスの平均)^<span class="dv">2</span>) *<span class="st"> </span>Aクラスの度数)/Aクラスの人数</code></pre></div>
+<span class="kw">sum</span>(((代表値 <span class="op">-</span><span class="st"> </span>Aクラスの平均)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span>Aクラスの度数)<span class="op">/</span>Aクラスの人数</code></pre></div>
 <pre><code>[1] 110</code></pre>
 <ul>
 <li>クラスAの標準偏差</li>
@@ -979,8 +979,8 @@ s^2=\frac{(25-55)^2\times 1+(35-55)^2\times 3+(45-55)^2\times 3+(55-55)^2\times 
 \end{align}
 \]</span></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 手計算</span>
-(((<span class="dv">25</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">1</span> +<span class="st"> </span>((<span class="dv">35</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">3</span> +<span class="st"> </span>((<span class="dv">45</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">3</span> +<span class="st"> </span>((<span class="dv">55</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span>
-<span class="st">    </span><span class="dv">5</span> +<span class="st"> </span>((<span class="dv">65</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">5</span> +<span class="st"> </span>((<span class="dv">75</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">2</span> +<span class="st"> </span>((<span class="dv">85</span> -<span class="st"> </span><span class="dv">55</span>)^<span class="dv">2</span>) *<span class="st"> </span><span class="dv">1</span>)/<span class="dv">20</span></code></pre></div>
+(((<span class="dv">25</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">1</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">35</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">3</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">45</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">3</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">55</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span>
+<span class="st">    </span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">65</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">75</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span>((<span class="dv">85</span> <span class="op">-</span><span class="st"> </span><span class="dv">55</span>)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span><span class="dv">1</span>)<span class="op">/</span><span class="dv">20</span></code></pre></div>
 <pre><code>[1] 230</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 合計を算出するsum関数を使う</span>
 代表値 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">55</span>, <span class="dv">65</span>, <span class="dv">75</span>, <span class="dv">85</span>)
@@ -988,7 +988,7 @@ Bクラスの度数 &lt;-<span class="st"> </span><span class="kw">c</span>(<spa
 Bクラスの人数 &lt;-<span class="st"> </span><span class="dv">20</span>
 Bクラスの平均 &lt;-<span class="st"> </span><span class="dv">55</span>
 
-<span class="kw">sum</span>(((代表値 -<span class="st"> </span>Bクラスの平均)^<span class="dv">2</span>) *<span class="st"> </span>Bクラスの度数)/Bクラスの人数</code></pre></div>
+<span class="kw">sum</span>(((代表値 <span class="op">-</span><span class="st"> </span>Bクラスの平均)<span class="op">^</span><span class="dv">2</span>) <span class="op">*</span><span class="st"> </span>Bクラスの度数)<span class="op">/</span>Bクラスの人数</code></pre></div>
 <pre><code>[1] 230</code></pre>
 <ul>
 <li>クラスBの標準偏差</li>
@@ -1003,8 +1003,8 @@ s=\sqrt{230}\risingdotseq 15.166
 </div>
 <div class="section level3">
 <h3>例題の回答まとめ</h3>
-<div id="htmlwidget-7b5d681bc86256e60eaf" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7b5d681bc86256e60eaf">{"x":{"filter":"none","data":[["平均","分散","標準偏差"],[55,110,10.488],[55,230,15.166]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>クラスA<\/th>\n      <th>クラスB<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-2c21a757a85230c81777" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2c21a757a85230c81777">{"x":{"filter":"none","data":[["平均","分散","標準偏差"],[55,110,10.488],[55,230,15.166]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>クラスA<\/th>\n      <th>クラスB<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
 <blockquote>
 <p>この結果、両クラスの平均点は等しいが、Bクラスの方が標準偏差が大きいので、BクラスはAクラスよりもデータの散らばりの度合いが大きいと言える。</p>
 </blockquote>
@@ -1037,7 +1037,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

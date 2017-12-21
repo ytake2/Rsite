@@ -69,7 +69,9 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 
 ---
 
-- Takebayashi, Y., Tanaka, K., Sugiura, Y. & Tomoko, Sugiura. (2017) Well-Being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Jornal of Happiness Studies. doi:10.1007/s10902-017-9852-3
+- [Takebayashi, Y., Lyamzina, Y., Suzuki, Y., & Murakami, M. (2017). Risk perception and anxiety regarding radiation after the 2011 Fukushima Nuclear Power Plant accident: a systematic qualitative review. International journal of environmental research and public health, 14(11), 1306.doi:10.3390/ijerph14111306](http://www.mdpi.com/1660-4601/14/11/1306)
+
+- [Takebayashi, Y., Tanaka, K., Sugiura, Y. & Tomoko, Sugiura. (2017) Well-Being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Jornal of Happiness Studies. doi:10.1007/s10902-017-9852-3](https://link.springer.com/article/10.1007/s10902-017-9852-3)
   
 - Takebayashi, T., Kubota, T., & Tsubaki, H. (2016) Risk profiles for severe mental health problem: Classification and regression tree analysis. Proceedings in Computational Statistics 2016 (COMPSTAT2016).
 

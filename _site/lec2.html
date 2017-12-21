@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -23,7 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-0.9/htmlwidgets.js"></script>
 <script src="site_libs/datatables-binding-0.2/datatables.js"></script>
 <link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
 <link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
@@ -522,7 +522,7 @@ S_{xy}=(x_1-\bar{x})(y_1-\bar{y})+(x_2-\bar{x})(y_2-\bar{y})+\dots+(x_n-\bar{x})
 <blockquote>
 <p>4, 8,10,12,16の<strong><em>平均値<span class="math inline">\(\bar{x}\)</span></em></strong>分散</p>
 </blockquote>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">student &lt;-<span class="st"> </span><span class="dv">1</span>:<span class="dv">20</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">student &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">20</span>
 english &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">80</span>, <span class="dv">82</span>, <span class="dv">88</span>, <span class="dv">45</span>, <span class="dv">44</span>, <span class="dv">66</span>, <span class="dv">42</span>, <span class="dv">88</span>, <span class="dv">80</span>, <span class="dv">75</span>, <span class="dv">76</span>, <span class="dv">74</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">25</span>, <span class="dv">28</span>, 
     <span class="dv">54</span>, <span class="dv">80</span>, <span class="dv">31</span>, <span class="dv">67</span>)
 math &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">52</span>, <span class="dv">75</span>, <span class="dv">92</span>, <span class="dv">41</span>, <span class="dv">54</span>, <span class="dv">61</span>, <span class="dv">26</span>, <span class="dv">64</span>, <span class="dv">74</span>, <span class="dv">67</span>, <span class="dv">80</span>, <span class="dv">91</span>, <span class="dv">84</span>, <span class="dv">83</span>, <span class="dv">26</span>, <span class="dv">47</span>, <span class="dv">56</span>, 
@@ -531,22 +531,22 @@ dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番�
 
 <span class="kw">library</span>(DT)
 <span class="kw">datatable</span>(dat, <span class="dt">option =</span> <span class="kw">list</span>(<span class="dt">scrollY =</span> <span class="ot">TRUE</span>))</code></pre></div>
-<div id="htmlwidget-d422967686153bdea384" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d422967686153bdea384">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>生徒番号<\/th>\n      <th>英語<\/th>\n      <th>数学<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8299557df47be3ea9b69" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8299557df47be3ea9b69">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>生徒番号<\/th>\n      <th>英語<\/th>\n      <th>数学<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
 <ul>
 <li><p>相関係数の算出に必要な情報</p></li>
 <li><p>各変数の平均, 標準偏差</p></li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語平均 &lt;-<span class="st"> </span><span class="kw">mean</span>(dat$英語)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語平均 &lt;-<span class="st"> </span><span class="kw">mean</span>(dat<span class="op">$</span>英語)
 英語平均</code></pre></div>
 <pre><code>[1] 64</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">数学平均 &lt;-<span class="st"> </span><span class="kw">mean</span>(dat$数学)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">数学平均 &lt;-<span class="st"> </span><span class="kw">mean</span>(dat<span class="op">$</span>数学)
 数学平均</code></pre></div>
 <pre><code>[1] 61</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat$英語 -<span class="st"> </span>英語平均)^<span class="dv">2</span>)/<span class="dv">20</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat<span class="op">$</span>英語 <span class="op">-</span><span class="st"> </span>英語平均)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">20</span>
 英語分散</code></pre></div>
 <pre><code>[1] 432.9</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">数学分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat$数学 -<span class="st"> </span>数学平均)^<span class="dv">2</span>)/<span class="dv">20</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">数学分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat<span class="op">$</span>数学 <span class="op">-</span><span class="st"> </span>数学平均)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">20</span>
 数学分散</code></pre></div>
 <pre><code>[1] 451.5</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語標準偏差 &lt;-<span class="st"> </span><span class="kw">sqrt</span>(英語分散)
@@ -555,11 +555,11 @@ dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番�
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">数学標準偏差 &lt;-<span class="st"> </span><span class="kw">sqrt</span>(数学分散)
 数学標準偏差</code></pre></div>
 <pre><code>[1] 21.24853</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語と数学の共分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat$英語 -<span class="st"> </span>英語平均) *<span class="st"> </span>(dat$数学 -<span class="st"> </span>
-<span class="st">    </span>数学平均))/<span class="dv">20</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語と数学の共分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat<span class="op">$</span>英語 <span class="op">-</span><span class="st"> </span>英語平均) <span class="op">*</span><span class="st"> </span>(dat<span class="op">$</span>数学 <span class="op">-</span><span class="st"> </span>
+<span class="st">    </span>数学平均))<span class="op">/</span><span class="dv">20</span>
 英語と数学の共分散</code></pre></div>
 <pre><code>[1] 297</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語と数学の共分散/(英語標準偏差 *<span class="st"> </span>数学標準偏差)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">英語と数学の共分散<span class="op">/</span>(英語標準偏差 <span class="op">*</span><span class="st"> </span>数学標準偏差)</code></pre></div>
 <pre><code>[1] 0.6717904</code></pre>
 <ul>
 <li>散布図</li>
@@ -597,7 +597,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

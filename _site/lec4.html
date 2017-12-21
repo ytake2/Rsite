@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -505,8 +505,8 @@ A_1\cap A_2 \cap \dots \cap A_n = \bigcap_{i=1}^n A_i
 (事象AとBは独立: Aの発生確率はBの発生確率に影響を与えない)</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">require</span>(venneuler)
-v &lt;-<span class="st"> </span><span class="kw">venneuler</span>(<span class="kw">c</span>(<span class="dt">A =</span> <span class="dv">450</span>, <span class="dt">B =</span> <span class="dv">450</span>, <span class="st">`</span><span class="dt">A&amp;B</span><span class="st">`</span> =<span class="st"> </span>-<span class="dv">5</span>))
-v$colors &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.66</span>, <span class="fl">0.66</span>)
+v &lt;-<span class="st"> </span><span class="kw">venneuler</span>(<span class="kw">c</span>(<span class="dt">A =</span> <span class="dv">450</span>, <span class="dt">B =</span> <span class="dv">450</span>, <span class="st">`</span><span class="dt">A&amp;B</span><span class="st">`</span> =<span class="st"> </span><span class="op">-</span><span class="dv">5</span>))
+v<span class="op">$</span>colors &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.66</span>, <span class="fl">0.66</span>)
 <span class="kw">plot</span>(v)</code></pre></div>
 <p><img src="lec4_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <ul>
@@ -522,7 +522,7 @@ A_1\cup A_2 \cup \dots \cup A_n = \bigcup_{i=1}^n A_i
 A_1\cap A_2 \cap \dots \cap A_n = \bigcap_{i=1}^n A_i
 \]</span></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">v &lt;-<span class="st"> </span><span class="kw">venneuler</span>(<span class="kw">c</span>(<span class="dt">A =</span> <span class="dv">450</span>, <span class="dt">B =</span> <span class="dv">450</span>, <span class="st">`</span><span class="dt">A&amp;B</span><span class="st">`</span> =<span class="st"> </span><span class="dv">200</span>))
-v$colors &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.66</span>, <span class="fl">0.66</span>)
+v<span class="op">$</span>colors &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.66</span>, <span class="fl">0.66</span>)
 <span class="kw">plot</span>(v)</code></pre></div>
 <p><img src="lec4_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
@@ -622,7 +622,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
