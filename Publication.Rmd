@@ -26,21 +26,77 @@ opts_knit$set(width = 75)
 
 #　    
 
-# A.委託研究
+
 
 ---
 
-- 自殺対策のための自殺死亡の地域統計-手段・配偶関係・職業別統計1983-2012-の作成 (2015)
-  国立精神・神経医療研究センター 精神保健研究所 自殺予防総合対策センターから委託
+# A.学術論文 (筆頭著者・査読あり)
+
+---
+
+- [Takebayashi, Y., Lyamzina, Y., Suzuki, Y., & Murakami, M. (2017). Risk perception and anxiety regarding radiation after the 2011 Fukushima Nuclear Power Plant accident: a systematic qualitative review. International journal of environmental research and public health, 14(11), 1306.doi:10.3390/ijerph14111306](http://www.mdpi.com/1660-4601/14/11/1306)
+
+- [Takebayashi, Y., Tanaka, K., Sugiura, Y. & Tomoko, Sugiura. (2017) Well-Being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Jornal of Happiness Studies. doi:10.1007/s10902-017-9852-3](https://link.springer.com/article/10.1007/s10902-017-9852-3)
   
-<img src="img/自殺予防総合対策センター.jpg" height="300px" width="600px"  />  
-http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
+- Takebayashi, T., Kubota, T., & Tsubaki, H. (2016) Risk profiles for severe mental health problem: Classification and regression tree analysis. Proceedings in Computational Statistics 2016 (COMPSTAT2016).
+
+- 竹林由武・高垣耕企・広瀬慎一・大野哲也・小幡昌志・川崎友也・シールズ久美・杉浦義典・坂野雄二 (2013) Anxiety control questionnaire日本語版の開発，行動療法研究，39,  145-154.   
+
+- 竹林由武・ 高垣耕企・ 杉浦義典 (2012) Generalized anxiety disorder questionnaire for DSM-IV日本語版の開発, 精神科診断学, 5, 89-98.
+
+- 竹林由武・ 笹川智子・ 坂野雄二・ 杉浦義典 (2012) The short intolerance of uncertainty scale日本語版の開発, 認知療法研究　第5巻, 179-187．
+
+- 竹林由武・富家直明・坂野雄二 (2009) 自殺念慮の強い抑うつ患者の精神科受療開始に成功した訪問相談の経験, 北海道医療大学心理科学部心理臨床・発達支援センター研究　第5巻1号，61-67.  
+
+---
+
+# B.共同研究論文 (共著)
+
+---
+
+- [Curtiss, J., Ito, M., Takebayashi, Y., & Hofmann, S. G. (2017). Longitudinal Network Stability of the Functional Impairment of Anxiety and Depression. Clinical Psychological Science, 2167702617745640.](http://journals.sagepub.com/doi/abs/10.1177/2167702617745640)
+
+- [Murakami, M., Takebayashi, Y., Takeda, Y., Sato, A., Igarashi, Y., Sano, K., ... & Ohira, T. (2018). Effect of Radiological Countermeasures on Subjective Well-Being and Radiation Anxiety after the 2011 Disaster: The Fukushima Health Management Survey. International Journal of Environmental Research and Public Health, 15(1), 124.](http://www.mdpi.com/1660-4601/15/1/124)
+
+- [Shinmei, I., Kanie, A., Kobayashi, Y., Nakayama, N., Takagishi, Y., Iijima, S., Takebayashi, Y., & Horikoshi, M. (2017). Pilot study of exposure and response prevention for Japanese patients with obsessive-compulsive disorder. Journal of Obsessive-Compulsive and Related Disorders, 15, 19-26.](https://www.sciencedirect.com/science/article/pii/S2211364917300568)
+
+- [Tsuchiyagaito, A., Hirano, Y., Asano, K., Oshima, F., Nagaoka, S., Takebayashi, Y.,Matsumoto, K.,Masuda, Y., Iyo, M., Shimizu, E., & Nakagawa, A. (2017). Cognitive-Behavioral Therapy for Obsessive-Compulsive Disorder with and without Autism Spectrum Disorder: Gray Matter Differences Associated with Poor Outcome. Frontiers in Psychiatry, 8, 143.](https://www.frontiersin.org/articles/10.3389/fpsyt.2017.00143/full) 
+
+- [Ito, M., Horikoshi, M., Resick, P., Katayanagi, A., Miyamae, M., Takagishi, Y., Takebayashi, Y., Kanie, A., Hirabayashi, N., & Furukawa, T. (2017). Study protocol for a randomised controlled trial of cognitive processing therapy for post-traumatic stress disorder among Japanese patients: the Safety, Power, Intimacy, Esteem, Trust (SPINET) study. BMJ open, 7(6), e014292.](http://bmjopen.bmj.com/content/7/6/e014292)
+
+- [Jinnin, R., Okamoto, Y., Takagaki, K., Nishiyama, Y., Yamamura, T., Okamoto, Y., Miyake, Y., Takebayashi, Y., Tanaka, K., Sugiura, Y., Shimoda, H., Kawakami, N., Furukawa, Ｔ. A., & Yamawaki. (2017). Detailed course of depressive symptoms and risk for developing depression in late adolescents with subthreshold depression: cohort study. Neuropsychiatric Disease and Treatment. Neuropsychiatric Disease and Treatment, 13, 25-33.](https://www.dovepress.com/detailed-course-of-depressive-symptoms-and-risk-for-developing-depress-peer-reviewed-article-NDT)
+
+- [Fujisato, H., Ito, M., Takebayashi, Y., Hosogoshi, H., Kato, N., Nakajima, S., Miyamae, M., Oe, Y., Usami, S., Kanie, A., Horikoshi, M., & Berking, M. (2016). Reliability and Validity of the Japanese Version of the Emotion Regulation Skills Questionnaire Journal: Journal of Affective Disorders, 208, 145-152.](linkinghub.elsevier.com/retrieve/pii/S0165-0327(16)31002-3)
+
+- [Saigo, T., Takebayashi, Y., Tayama, J., Bernick, P. J., Schmidt, N. B., Shirabe, S., & Sakano, Y. (2016). Validation of the Japanese Version of the Body Vigilance Scale. Psychological Reports, 118, 918-936.](http://journals.sagepub.com/doi/abs/10.1177/0033294116648139?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed)
+
+- [Shinmei, I., Kobayashi, K., Oe, O., Takagishi, Y., Kanie, A., Ito, M., Takebayashi, Y., Murata, M., Horikoshi, M., & Dobkin, R. D. (2016). Cognitive Behavioral Therapy for Depression in Japanese Parkinson's Disease Patients: A Pilot Study. Neuropsychiatric Disease and Treatment, 12, 1319-1331.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4908947/)
+
+- [Ito, M., Horikoshi, M., Kato, N., Oe, Y., Fujisato, H., Nakajima, S., Kanie, A., Miyamae, M., Takebayashi, Y.,  Horita, R., Usuki, M., Nakagawa, A., & Ono, Y. (2016). Transdiagnostic and transcultural: pilot study of unified protocol for depressive and anxiety disorders in Japan. Behavior Therapy, 47, 416-430.](http://www.sciencedirect.com/science/article/pii/S0005789416000216?via%3Dihub)
+
+- [高田圭二・田中圭介・竹林由武・杉浦義典(2016). マインドフルネスとwell-beingと注意の制御の関連, パーソナリティ研究, 25, 35-49.](https://www.jstage.jst.go.jp/article/personality/25/1/25_35/_article/-char/ja/)  
+
+- [Tsukue, R., Okamoto, Y., Yoshino, A., Kunisato, Y., Takagaki, K., Takebayashi, Y., Tanaka, K., Konuma, K., Tsukue, I., & Yamawaki, S. (2015). Do individuals with alcohol dependence show higher unfairness sensitivity? The relationship between impulsivity and unfairness sensitivity in alcohol dependent adults. Alcoholism: Clinical and Experimental Research, 39, 2016-2021.](http://dx.doi.org/10.1111/acer.12832)
+
+- [Takagaki, K., Okamoto, Y., Jinnin, R., Mori, A., Nishiyama, Y., Yamamura, T., Takebayashi, Y., Ogata, A., Okamoto, Y., Miyake, Y., Shimoda, H., Kawakami, N., & Yamawaki, S. (2014). Behavioral characteristics of subthreshold depression. Journal of Affective Disorders, 168, 472-475.](http://www.sciencedirect.com/science/article/pii/S0165032714004492?via%3Dihub)
+
+- [田中圭介・杉浦義典・竹林由武　(2013)　注意の定位機能とマインドフルネス傾向の関連―注意の喚起機能による調整効果―，パーソナリティ研究．22, 146-155.](https://www.jstage.jst.go.jp/article/personality/22/2/22_146/_article/-char/ja)
+
+---
+
+# C.学術論文 (筆頭著者・査読なし)
+
+---
+
+- 竹林由武・杉浦義典 (2015) 「PART II 第一章全般性不安症」，『こころの科学別冊「不安症の辞典」』，日本評論社, pp46-49.　
+- 竹林由武 (2014) 「観察研究の必須事項」，『行動療法研究』, 40, 167-175.
+- 竹林由武・杉浦義典 (2014) 「量的データの集め方・扱い方」，『臨床心理学』，増刊第6号．
+- 竹林由武 (2013)「この人をたずねて(富山大学人間発達科学部教授村上宣寛)」，『心理学ワールド』，64号，pp34-35．
 
 
 ---
 
-
-# B.著書
+# D.著書
 
 ---
 
@@ -61,66 +117,17 @@ http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 
 ![](https://images-na.ssl-images-amazon.com/images/I/81Cnv%2BR1x7L.jpg)
 
+---
 
+# E.委託研究
 
 ---
 
-# C.学術論文 (筆頭著者・査読あり)
-
----
-
-- [Takebayashi, Y., Lyamzina, Y., Suzuki, Y., & Murakami, M. (2017). Risk perception and anxiety regarding radiation after the 2011 Fukushima Nuclear Power Plant accident: a systematic qualitative review. International journal of environmental research and public health, 14(11), 1306.doi:10.3390/ijerph14111306](http://www.mdpi.com/1660-4601/14/11/1306)
-
-- [Takebayashi, Y., Tanaka, K., Sugiura, Y. & Tomoko, Sugiura. (2017) Well-Being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Jornal of Happiness Studies. doi:10.1007/s10902-017-9852-3](https://link.springer.com/article/10.1007/s10902-017-9852-3)
+- 自殺対策のための自殺死亡の地域統計-手段・配偶関係・職業別統計1983-2012-の作成 (2015)
+  国立精神・神経医療研究センター 精神保健研究所 自殺予防総合対策センターから委託
   
-- Takebayashi, T., Kubota, T., & Tsubaki, H. (2016) Risk profiles for severe mental health problem: Classification and regression tree analysis. Proceedings in Computational Statistics 2016 (COMPSTAT2016).
-
-- 竹林由武・高垣耕企・広瀬慎一・大野哲也・小幡昌志・川崎友也・シールズ久美・杉浦義典・坂野雄二 (2013) Anxiety control questionnaire日本語版の開発，行動療法研究，39,  145-154.   
-
-- 竹林由武・ 高垣耕企・ 杉浦義典 (2012) Generalized anxiety disorder questionnaire for DSM-IV日本語版の開発, 精神科診断学, 5, 89-98.
-
-- 竹林由武・ 笹川智子・ 坂野雄二・ 杉浦義典 (2012) The short intolerance of uncertainty scale日本語版の開発, 認知療法研究　第5巻, 179-187．
-
-- 竹林由武・富家直明・坂野雄二 (2009) 自殺念慮の強い抑うつ患者の精神科受療開始に成功した訪問相談の経験, 北海道医療大学心理科学部心理臨床・発達支援センター研究　第5巻1号，61-67.  
+<img src="img/自殺予防総合対策センター.jpg" height="300px" width="600px"  />  
+http://ikiru.ncnp.go.jp/genjo/toukei/index2.html
 
 
 ---
-
-# D.学術論文 (筆頭著者・査読なし)
-
----
-
-- 竹林由武・杉浦義典 (2015) 「PART II 第一章全般性不安症」，『こころの科学別冊「不安症の辞典」』，日本評論社, pp46-49.　
-- 竹林由武 (2014) 「観察研究の必須事項」，『行動療法研究』, 40, 167-175.
-- 竹林由武・杉浦義典 (2014) 「量的データの集め方・扱い方」，『臨床心理学』，増刊第6号．
-- 竹林由武 (2013)「この人をたずねて(富山大学人間発達科学部教授村上宣寛)」，『心理学ワールド』，64号，pp34-35．
-
----
-
-# E.共同研究論文 (共著)
-
----
-
-- Shinmei, I, Iijima, S., Takebayashi, Y., Horikoshi, M., Kanie, A., Taekagishi, Y., Nakayama, N., Kobayashi, Y (in press). Pilot Study of Exposure and Response Prevention for Japanese Patients with Obsessive-Compulsive Disorder, Journal of Obsessive-Compulsive and Related Disorders.
-
-- Tsuchiyagaito, A., Hirano, Y., Asano, K., Oshima, F., Nagaoka, S., Takebayashi, Y.,Matsumoto, K.,Masuda, Y., Iyo, M., Shimizu, E., & Nakagawa, A. (2017). Cognitive-Behavioral Therapy for Obsessive-Compulsive Disorder with and without Autism Spectrum Disorder: Gray Matter Differences Associated with Poor Outcome. Frontiers in Psychiatry, 8, 143. 
-
-- Ito, M., Horikoshi, M., Resick, P., Katayanagi, A., Miyamae, M., Takagishi, Y., Takebayashi, Y., Kanie, A., Hirabayashi, N., & Furukawa, T. (2017). Study protocol for a randomised controlled trial of cognitive processing therapy for post-traumatic stress disorder among Japanese patients: the Safety, Power, Intimacy, Esteem, Trust (SPINET) study. BMJ open, 7(6), e014292.
-
-- Jinnin, R., Okamoto, Y., Takagaki, K., Nishiyama, Y., Yamamura, T., Okamoto, Y., Miyake, Y., Takebayashi, Y., Tanaka, K., Sugiura, Y., Shimoda, H., Kawakami, N., Furukawa, Ｔ. A., & Yamawaki. (2017). Detailed course of depressive symptoms and risk for developing depression in late adolescents with subthreshold depression: cohort study. Neuropsychiatric Disease and Treatment. Neuropsychiatric Disease and Treatment, 13, 25-33.
-
-- Fujisato, H., Ito, M., Takebayashi, Y., Hosogoshi, H., Kato, N., Nakajima, S., Miyamae, M., Oe, Y., Usami, S., Kanie, A., Horikoshi, M., & Berking, M. (2016). Reliability and Validity of the Japanese Version of the Emotion Regulation Skills Questionnaire Journal: Journal of Affective Disorders, 208, 145-152.
-
-- Saigo, T., Takebayashi, Y., Tayama, J., Bernick, P. J., Schmidt, N. B., Shirabe, S., & Sakano, Y. (2016). Validation of the Japanese Version of the Body Vigilance Scale. Psychological Reports, 118, 918-936.
-
-- Shinmei, I., Kobayashi, K., Oe, O., Takagishi, Y., Kanie, A., Ito, M., Takebayashi, Y., Murata, M., Horikoshi, M., & Dobkin, R. D. (2016). Cognitive Behavioral Therapy for Depression in Japanese Parkinson's Disease Patients: A Pilot Study. Neuropsychiatric Disease and Treatment, 12, 1319-1331.
-
-- Ito, M., Horikoshi, M., Kato, N., Oe, Y., Fujisato, H., Nakajima, S., Kanie, A., Miyamae, M., Takebayashi, Y.,  Horita, R., Usuki, M., Nakagawa, A., & Ono, Y. (2016). Transdiagnostic and transcultural: pilot study of unified protocol for depressive and anxiety disorders in Japan. Behavior Therapy, 47, 416-430.
-
-- 高田圭二・田中圭介・竹林由武・杉浦義典(2016). マインドフルネスとwell-beingと注意の制御の関連, パーソナリティ研究, 25, 35-49.  
-
-- Tsukue, R., Okamoto, Y., Yoshino, A., Kunisato, Y., Takagaki, K., Takebayashi, Y., Tanaka, K., Konuma, K., Tsukue, I., & Yamawaki, S. (2015). Do individuals with alcohol dependence show higher unfairness sensitivity? The relationship between impulsivity and unfairness sensitivity in alcohol dependent adults. Alcoholism: Clinical and Experimental Research, 39, 2016-2021.
-
-- Takagaki, K., Okamoto, Y., Jinnin, R., Mori, A., Nishiyama, Y., Yamamura, T., Takebayashi, Y., Ogata, A., Okamoto, Y., Miyake, Y., Shimoda, H., Kawakami, N., & Yamawaki, S. (2014). Behavioral characteristics of subthreshold depression. Journal of Affective Disorders, 168, 472-475.
-
-- 田中圭介・杉浦義典・竹林由武　(2013)　注意の定位機能とマインドフルネス傾向の関連―注意の喚起機能による調整効果―，パーソナリティ研究．22, 146-155.
