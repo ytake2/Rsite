@@ -7,7 +7,7 @@ output:
 ---
 
 
-```{r knitr_init, echo=FALSE, results="hide", cache=FALSE, error=F, message=F}
+```{r knitr_init, echo=FALSE, results="hide", cache=FALSE, error=F, message=F,warning=F}
 library(knitr)
 library(rmdformats)
 library(DT)
