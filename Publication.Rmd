@@ -24,7 +24,6 @@ opts_chunk$set(echo = FALSE,
 opts_knit$set(width = 75)
 ```
 
-#　    
 
 
 
@@ -33,6 +32,8 @@ opts_knit$set(width = 75)
 # A.学術論文 (筆頭著者・査読あり)
 
 ---
+
+- 竹林由武 (in press)しなやかな臨床試験デザイン: 適応型デザインによる効率化, 心理学評論.
 
 - [Takebayashi, Y., Lyamzina, Y., Suzuki, Y., & Murakami, M. (2017). Risk perception and anxiety regarding radiation after the 2011 Fukushima Nuclear Power Plant accident: a systematic qualitative review. International journal of environmental research and public health, 14(11), 1306.doi:10.3390/ijerph14111306](http://www.mdpi.com/1660-4601/14/11/1306)
 
@@ -53,6 +54,10 @@ opts_knit$set(width = 75)
 # B.共同研究論文 (共著)
 
 ---
+
+- [Hasegawa, M., Murakami, M., Takebayashi, Y., Suzuki, S., & Ohto, H. (2018). Social Capital Enhanced Disaster Preparedness and Health Consultations after the 2011 Great East Japan Earthquake and Nuclear Power Station Accident. International journal of environmental research and public health, 15(3), 516.](http://www.mdpi.com/1660-4601/15/3/516/htm)
+
+- [Yamaguchi, K., Ito, M., & Takebayashi, Y. (2018). Positive emotion in distress as a potentially effective emotion regulation strategy for depression: A preliminary investigation. Psychology and Psychotherapy: Theory, Research and Practice.](https://doi.org/10.1111/papt.12176)
 
 - [Curtiss, J., Ito, M., Takebayashi, Y., & Hofmann, S. G. (2017). Longitudinal Network Stability of the Functional Impairment of Anxiety and Depression. Clinical Psychological Science, 2167702617745640.](http://journals.sagepub.com/doi/abs/10.1177/2167702617745640)
 
@@ -88,9 +93,13 @@ opts_knit$set(width = 75)
 
 ---
 
+- 竹林由武: 幸せと心配の心理学: 明日から使えるテクニック, 上越教育大学心理教育相談研究, 17, 43-53.
+
 - 竹林由武・杉浦義典 (2015) 「PART II 第一章全般性不安症」，『こころの科学別冊「不安症の辞典」』，日本評論社, pp46-49.　
 - 竹林由武 (2014) 「観察研究の必須事項」，『行動療法研究』, 40, 167-175.
+
 - 竹林由武・杉浦義典 (2014) 「量的データの集め方・扱い方」，『臨床心理学』，増刊第6号．
+
 - 竹林由武 (2013)「この人をたずねて(富山大学人間発達科学部教授村上宣寛)」，『心理学ワールド』，64号，pp34-35．
 
 
