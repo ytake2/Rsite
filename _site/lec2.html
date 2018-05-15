@@ -23,11 +23,14 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/htmlwidgets-1.0/htmlwidgets.js"></script>
-<script src="site_libs/datatables-binding-0.2/datatables.js"></script>
-<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="site_libs/dt-core-1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.4/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
@@ -542,50 +545,47 @@ S_{xy}=(x_1-\bar{x})(y_1-\bar{y})+(x_2-\bar{x})(y_2-\bar{y})+\dots+(x_n-\bar{x})
 <p>正の相関の場合は, 第I象限と第III象限に属するデータが多い<br />
 負の相関の場合は, 第II象限と第IV象限に属するデータが多い</p>
 <p>#演習問題1.1 ##1.1 &gt; 4, 8,10,12,16の<strong><em>平均値<span class="math inline">\(\bar{x}\)</span></em></strong>分散</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">student &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">20</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">english &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">80</span>, <span class="dv">82</span>, <span class="dv">88</span>, <span class="dv">45</span>, <span class="dv">44</span>, <span class="dv">66</span>, <span class="dv">42</span>, <span class="dv">88</span>, <span class="dv">80</span>, <span class="dv">75</span>, <span class="dv">76</span>, <span class="dv">74</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">25</span>, <span class="dv">28</span>, </a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="dv">54</span>, <span class="dv">80</span>, <span class="dv">31</span>, <span class="dv">67</span>)</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">math &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">52</span>, <span class="dv">75</span>, <span class="dv">92</span>, <span class="dv">41</span>, <span class="dv">54</span>, <span class="dv">61</span>, <span class="dv">26</span>, <span class="dv">64</span>, <span class="dv">74</span>, <span class="dv">67</span>, <span class="dv">80</span>, <span class="dv">91</span>, <span class="dv">84</span>, <span class="dv">83</span>, <span class="dv">26</span>, <span class="dv">47</span>, <span class="dv">56</span>, </a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="dv">29</span>, <span class="dv">35</span>, <span class="dv">83</span>)</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(生徒番号 =<span class="st"> </span>student, 英語 =<span class="st"> </span>english, 数学 =<span class="st"> </span>math)</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="kw">library</span>(DT)</a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">datatable</span>(dat, <span class="dt">option =</span> <span class="kw">list</span>(<span class="dt">scrollY =</span> <span class="ot">TRUE</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">student&lt;-<span class="dv">1</span><span class="op">:</span><span class="dv">20</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">english&lt;-<span class="kw">c</span>(<span class="dv">80</span>,<span class="dv">82</span>,<span class="dv">88</span>,<span class="dv">45</span>,<span class="dv">44</span>,<span class="dv">66</span>,<span class="dv">42</span>,<span class="dv">88</span>,<span class="dv">80</span>,<span class="dv">75</span>,<span class="dv">76</span>,<span class="dv">74</span>,<span class="dv">63</span>,<span class="dv">92</span>,<span class="dv">25</span>,<span class="dv">28</span>,<span class="dv">54</span>,<span class="dv">80</span>,<span class="dv">31</span>,<span class="dv">67</span>)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">math&lt;-<span class="kw">c</span>(<span class="dv">52</span>,<span class="dv">75</span>,<span class="dv">92</span>,<span class="dv">41</span>,<span class="dv">54</span>,<span class="dv">61</span>,<span class="dv">26</span>,<span class="dv">64</span>,<span class="dv">74</span>,<span class="dv">67</span>,<span class="dv">80</span>,<span class="dv">91</span>,<span class="dv">84</span>,<span class="dv">83</span>,<span class="dv">26</span>,<span class="dv">47</span>,<span class="dv">56</span>,<span class="dv">29</span>,<span class="dv">35</span>,<span class="dv">83</span>)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">dat&lt;-<span class="kw">data.frame</span>(生徒番号=student,英語=english,数学=math)</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">library</span>(DT)</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">datatable</span>(dat,<span class="dt">option=</span><span class="kw">list</span>(<span class="dt">scrollY =</span> <span class="ot">TRUE</span>))</a></code></pre></div>
 <div id="htmlwidget-8299557df47be3ea9b69" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8299557df47be3ea9b69">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>生徒番号<\/th>\n      <th>英語<\/th>\n      <th>数学<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-8299557df47be3ea9b69">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[80,82,88,45,44,66,42,88,80,75,76,74,63,92,25,28,54,80,31,67],[52,75,92,41,54,61,26,64,74,67,80,91,84,83,26,47,56,29,35,83]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>生徒番号<\/th>\n      <th>英語<\/th>\n      <th>数学<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollY":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 <ul>
 <li><p>相関係数の算出に必要な情報</p></li>
 <li><p>各変数の平均, 標準偏差</p></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">英語平均 &lt;-<span class="st"> </span><span class="kw">mean</span>(dat<span class="op">$</span>英語)</a>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">英語平均&lt;-<span class="kw">mean</span>(dat<span class="op">$</span>英語)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">英語平均</a></code></pre></div>
 <pre><code>[1] 64</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">数学平均 &lt;-<span class="st"> </span><span class="kw">mean</span>(dat<span class="op">$</span>数学)</a>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">数学平均&lt;-<span class="kw">mean</span>(dat<span class="op">$</span>数学)</a>
 <a class="sourceLine" id="cb4-2" data-line-number="2">数学平均</a></code></pre></div>
 <pre><code>[1] 61</code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">英語分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat<span class="op">$</span>英語 <span class="op">-</span><span class="st"> </span>英語平均)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">20</span></a>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">英語分散&lt;-<span class="kw">sum</span>((dat<span class="op">$</span>英語<span class="op">-</span>英語平均)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">20</span></a>
 <a class="sourceLine" id="cb6-2" data-line-number="2">英語分散</a></code></pre></div>
 <pre><code>[1] 432.9</code></pre>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">数学分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat<span class="op">$</span>数学 <span class="op">-</span><span class="st"> </span>数学平均)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">20</span></a>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">数学分散&lt;-<span class="kw">sum</span>((dat<span class="op">$</span>数学<span class="op">-</span>数学平均)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">20</span></a>
 <a class="sourceLine" id="cb8-2" data-line-number="2">数学分散</a></code></pre></div>
 <pre><code>[1] 451.5</code></pre>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">英語標準偏差 &lt;-<span class="st"> </span><span class="kw">sqrt</span>(英語分散)</a>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">英語標準偏差&lt;-<span class="kw">sqrt</span>(英語分散)</a>
 <a class="sourceLine" id="cb10-2" data-line-number="2">英語標準偏差</a></code></pre></div>
 <pre><code>[1] 20.80625</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">数学標準偏差 &lt;-<span class="st"> </span><span class="kw">sqrt</span>(数学分散)</a>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">数学標準偏差&lt;-<span class="kw">sqrt</span>(数学分散)</a>
 <a class="sourceLine" id="cb12-2" data-line-number="2">数学標準偏差</a></code></pre></div>
 <pre><code>[1] 21.24853</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1">英語と数学の共分散 &lt;-<span class="st"> </span><span class="kw">sum</span>((dat<span class="op">$</span>英語 <span class="op">-</span><span class="st"> </span>英語平均) <span class="op">*</span><span class="st"> </span>(dat<span class="op">$</span>数学 <span class="op">-</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb14-2" data-line-number="2"><span class="st">    </span>数学平均))<span class="op">/</span><span class="dv">20</span></a>
-<a class="sourceLine" id="cb14-3" data-line-number="3">英語と数学の共分散</a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1">英語と数学の共分散&lt;-<span class="kw">sum</span>((dat<span class="op">$</span>英語<span class="op">-</span>英語平均)<span class="op">*</span>(dat<span class="op">$</span>数学<span class="op">-</span>数学平均))<span class="op">/</span><span class="dv">20</span></a>
+<a class="sourceLine" id="cb14-2" data-line-number="2">英語と数学の共分散</a></code></pre></div>
 <pre><code>[1] 297</code></pre>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">英語と数学の共分散<span class="op">/</span>(英語標準偏差 <span class="op">*</span><span class="st"> </span>数学標準偏差)</a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">英語と数学の共分散<span class="op">/</span>(英語標準偏差<span class="op">*</span>数学標準偏差)</a></code></pre></div>
 <pre><code>[1] 0.6717904</code></pre>
 <ul>
 <li>散布図</li>
 </ul>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb18-2" data-line-number="2"><span class="kw">qplot</span>(<span class="dt">data =</span> dat, <span class="dt">x =</span> 英語, <span class="dt">y =</span> 数学)</a></code></pre></div>
+<a class="sourceLine" id="cb18-2" data-line-number="2"><span class="kw">qplot</span>(<span class="dt">data=</span>dat,<span class="dt">x=</span>英語, <span class="dt">y=</span>数学)</a></code></pre></div>
 <p><img src="lec2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <hr />
 </div>
