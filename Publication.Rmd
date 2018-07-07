@@ -55,6 +55,10 @@ opts_knit$set(width = 75)
 
 ---
 
+- [Kokubo, N., Yokoi, Y., Saitoh, Y., Murata, M.,  Maruo, K., Takebayashi, Y., Shinmei, I.,  Yoshimoto, S., & Horikoshi, M., (2018) A new device-aided cognitive function test, User eXperience-Trail Making Test (UX-TMT), sensitively detects neuropsychological performance in patients with dementia and Parkinson’s disease, BMC psychiatry, 18:220](https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-018-1795-7)
+
+- [Suzuki, Y., Takebayashi, Y., Yasumura, S., Murakami, M., Harigane, M., Yabe, H., ... & Maeda, M. (2018). Changes in Risk Perception of the Health Effects of Radiation and Mental Health Status: The Fukushima Health Management Survey. International journal of environmental research and public health, 15(6).](http://www.mdpi.com/1660-4601/15/6/1219/htm)
+
 - [Hasegawa, M., Murakami, M., Takebayashi, Y., Suzuki, S., & Ohto, H. (2018). Social Capital Enhanced Disaster Preparedness and Health Consultations after the 2011 Great East Japan Earthquake and Nuclear Power Station Accident. International journal of environmental research and public health, 15(3), 516.](http://www.mdpi.com/1660-4601/15/3/516/htm)
 
 - [Yamaguchi, K., Ito, M., & Takebayashi, Y. (2018). Positive emotion in distress as a potentially effective emotion regulation strategy for depression: A preliminary investigation. Psychology and Psychotherapy: Theory, Research and Practice.](https://doi.org/10.1111/papt.12176)
