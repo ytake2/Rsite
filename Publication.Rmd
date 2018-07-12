@@ -33,7 +33,7 @@ opts_knit$set(width = 75)
 
 ---
 
-- 竹林由武 (in press)しなやかな臨床試験デザイン: 適応型デザインによる効率化, 心理学評論.
+- [竹林由武 (2018)しなやかな臨床試験デザイン: 適応型デザインによる効率化, 心理学評論, 61, 1, 86-100.](https://ytake2.github.io/Rsite/_site/img/takebayashi2018bayesianClinicalTrial.pdf)
 
 - [Takebayashi, Y., Lyamzina, Y., Suzuki, Y., & Murakami, M. (2017). Risk perception and anxiety regarding radiation after the 2011 Fukushima Nuclear Power Plant accident: a systematic qualitative review. International journal of environmental research and public health, 14(11), 1306.doi:10.3390/ijerph14111306](http://www.mdpi.com/1660-4601/14/11/1306)
 
