@@ -118,6 +118,11 @@ opts_knit$set(width = 75)
 ---
 
 ### 翻訳書
+
+- [『ウェルビーイング療法: 治療マニュアルと事例に合わせた使い方』 堀越勝 (監修), 杉浦義典•竹林由武 (監訳), 2018, 星和書店](http://www.seiwa-pb.co.jp/search/bo05/bn933.html)  
+  
+![](http://www.seiwa-pb.co.jp/search/bo05/bn933mov/imgs/000.jpg?1535503916613)  
+  
 - [翻訳章「第7章　マルコフ連鎖モンテカルロ法」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳), 2017, 共立出版](https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q)
 
 - [翻訳章「第13章　目標, 検定力, そしてサンプルサイズ」『ベイズ統計モデリング: R,JAGS, Stanによるチュートリアル 原著第2版』小杉考司•前田和寛 (監訳), 2017, 共立出版](https://www.amazon.co.jp/dp/4320113160/ref=cm_sw_r_tw_dp_x_--aIzbEBTS63Q)
