@@ -55,6 +55,8 @@ opts_knit$set(width = 75)
 
 ---
 
+- [Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., & Horikoshi, M. (2018).Factorial validity and invariance of the 7-item Generalized Anxiety Disorder Scale (GAD-7) among populations with and without self-reported psychiatric diagnostic status, Frontiers in Psychology](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01741/abstract)  
+  
 - [Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., & Horikoshi, M. (2018). Factorial validity and invariance of the Patient Health Questionnaire (PHQ)-9 among clinical and non-clinical populations. PLOS ONE, 13(7), e0199235.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199235)
 
 - [Kokubo, N., Yokoi, Y., Saitoh, Y., Murata, M.,  Maruo, K., Takebayashi, Y., Shinmei, I.,  Yoshimoto, S., & Horikoshi, M., (2018) A new device-aided cognitive function test, User eXperience-Trail Making Test (UX-TMT), sensitively detects neuropsychological performance in patients with dementia and Parkinson’s disease, BMC psychiatry, 18:220](https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-018-1795-7)
