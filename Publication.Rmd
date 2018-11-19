@@ -55,6 +55,8 @@ opts_knit$set(width = 75)
 
 ---
 
+- [Iwasa, H., Takebayashi, Y., Suzuki, Y., Yagi, A., Zhang, W., Harigane, M., Maeda, M., Ohira, T., Yabe, H., & Yasumura, S. on behalf of the Mental Health Group of the Fukushima Health Management (2018). Psychometric evaluation of the simplified Japanese version of the Athens Insomnia Scale: The Fukushima Health Management Survey. Journal of sleep research, e12771.](https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12771)
+
 - [Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., & Horikoshi, M. (2018).Factorial validity and invariance of the 7-item Generalized Anxiety Disorder Scale (GAD-7) among populations with and without self-reported psychiatric diagnostic status, Frontiers in Psychology](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01741/abstract)  
   
 - [Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., & Horikoshi, M. (2018). Factorial validity and invariance of the Patient Health Questionnaire (PHQ)-9 among clinical and non-clinical populations. PLOS ONE, 13(7), e0199235.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199235)
