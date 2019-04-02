@@ -23,9 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -85,6 +84,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -99,7 +101,6 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
-
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -119,6 +120,43 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -140,18 +178,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -373,9 +470,12 @@ div.tocify {
 <h1>B.共同研究論文 (共著)</h1>
 <hr />
 <ul>
+<li><p><a href="https://www.jstage.jst.go.jp/article/tjem/247/1/247_13/_html/-char/ja">Murakami, M., Takebayashi, Y., &amp; Tsubokura, M. (2019). Lower psychological distress levels among returnees compared with evacuees after the Fukushima nuclear accident. The Tohoku journal of experimental medicine, 247(1), 13-17.</a></p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S016503271831231X">Ito, M., Takebayashi, Y., Suzuki, Y., &amp; Horikoshi, M. (2019). Posttraumatic stress disorder checklist for DSM-5: Psychometric properties in a Japanese population. Journal of affective disorders, 247, 11-19.</a></p></li>
 <li><p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12771">Iwasa, H., Takebayashi, Y., Suzuki, Y., Yagi, A., Zhang, W., Harigane, M., Maeda, M., Ohira, T., Yabe, H., &amp; Yasumura, S. on behalf of the Mental Health Group of the Fukushima Health Management (2018). Psychometric evaluation of the simplified Japanese version of the Athens Insomnia Scale: The Fukushima Health Management Survey. Journal of sleep research, e12771.</a></p></li>
 <li><p><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01741/abstract">Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., &amp; Horikoshi, M. (2018).Factorial validity and invariance of the 7-item Generalized Anxiety Disorder Scale (GAD-7) among populations with and without self-reported psychiatric diagnostic status, Frontiers in Psychology</a></p></li>
 <li><p><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199235">Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., &amp; Horikoshi, M. (2018). Factorial validity and invariance of the Patient Health Questionnaire (PHQ)-9 among clinical and non-clinical populations. PLOS ONE, 13(7), e0199235.</a></p></li>
+<li><p><a href="http://mol.medicalonline.jp/library/journal/abstract?GoodsID=dr4jjbct/2018/004402/003&amp;name=0101-0113j&amp;UserID=202.251.224.100">井上和哉・佐藤健二・横光健吾・嶋　大樹・齋藤順一・竹林由武・熊野宏昭 (2018) 価値の意識化に創造的絶望を付加することがウィリングネスに与える影響―スピーチ場面に焦点を当てて― 認知行動療法研究, 44(2), 101-113.</a></p></li>
 <li><p><a href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-018-1795-7">Kokubo, N., Yokoi, Y., Saitoh, Y., Murata, M., Maruo, K., Takebayashi, Y., Shinmei, I., Yoshimoto, S., &amp; Horikoshi, M., (2018) A new device-aided cognitive function test, User eXperience-Trail Making Test (UX-TMT), sensitively detects neuropsychological performance in patients with dementia and Parkinson’s disease, BMC psychiatry, 18:220</a></p></li>
 <li><p><a href="http://www.mdpi.com/1660-4601/15/6/1219/htm">Suzuki, Y., Takebayashi, Y., Yasumura, S., Murakami, M., Harigane, M., Yabe, H., … &amp; Maeda, M. (2018). Changes in Risk Perception of the Health Effects of Radiation and Mental Health Status: The Fukushima Health Management Survey. International journal of environmental research and public health, 15(6).</a></p></li>
 <li><p><a href="http://www.mdpi.com/1660-4601/15/3/516/htm">Hasegawa, M., Murakami, M., Takebayashi, Y., Suzuki, S., &amp; Ohto, H. (2018). Social Capital Enhanced Disaster Preparedness and Health Consultations after the 2011 Great East Japan Earthquake and Nuclear Power Station Accident. International journal of environmental research and public health, 15(3), 516.</a></p></li>

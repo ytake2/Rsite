@@ -55,11 +55,18 @@ opts_knit$set(width = 75)
 
 ---
 
+
+- [Murakami, M., Takebayashi, Y., & Tsubokura, M. (2019). Lower psychological distress levels among returnees compared with evacuees after the Fukushima nuclear accident. The Tohoku journal of experimental medicine, 247(1), 13-17.](https://www.jstage.jst.go.jp/article/tjem/247/1/247_13/_html/-char/ja)
+
+- [Ito, M., Takebayashi, Y., Suzuki, Y., & Horikoshi, M. (2019). Posttraumatic stress disorder checklist for DSM-5: Psychometric properties in a Japanese population. Journal of affective disorders, 247, 11-19.](https://www.sciencedirect.com/science/article/pii/S016503271831231X)
+
 - [Iwasa, H., Takebayashi, Y., Suzuki, Y., Yagi, A., Zhang, W., Harigane, M., Maeda, M., Ohira, T., Yabe, H., & Yasumura, S. on behalf of the Mental Health Group of the Fukushima Health Management (2018). Psychometric evaluation of the simplified Japanese version of the Athens Insomnia Scale: The Fukushima Health Management Survey. Journal of sleep research, e12771.](https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12771)
 
 - [Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., & Horikoshi, M. (2018).Factorial validity and invariance of the 7-item Generalized Anxiety Disorder Scale (GAD-7) among populations with and without self-reported psychiatric diagnostic status, Frontiers in Psychology](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01741/abstract)  
   
 - [Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., & Horikoshi, M. (2018). Factorial validity and invariance of the Patient Health Questionnaire (PHQ)-9 among clinical and non-clinical populations. PLOS ONE, 13(7), e0199235.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199235)
+
+- [井上和哉・佐藤健二・横光健吾・嶋　大樹・齋藤順一・竹林由武・熊野宏昭 (2018) 価値の意識化に創造的絶望を付加することがウィリングネスに与える影響―スピーチ場面に焦点を当てて― 認知行動療法研究, 44(2), 101-113.](http://mol.medicalonline.jp/library/journal/abstract?GoodsID=dr4jjbct/2018/004402/003&name=0101-0113j&UserID=202.251.224.100)
 
 - [Kokubo, N., Yokoi, Y., Saitoh, Y., Murata, M.,  Maruo, K., Takebayashi, Y., Shinmei, I.,  Yoshimoto, S., & Horikoshi, M., (2018) A new device-aided cognitive function test, User eXperience-Trail Making Test (UX-TMT), sensitively detects neuropsychological performance in patients with dementia and Parkinson’s disease, BMC psychiatry, 18:220](https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-018-1795-7)
 

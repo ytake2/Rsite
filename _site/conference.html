@@ -23,9 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -85,6 +84,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -99,7 +101,6 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
-
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -119,6 +120,43 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -140,18 +178,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -369,6 +466,8 @@ div.tocify {
 <div id="poster-presentation" class="section level2">
 <h2>Poster presentation</h2>
 <hr />
+<p>Takebayashi, Y., Honda., K., &amp; Murakami, M. (2019). Structural topic modeling of risk communication research. The 3rd International Symposium of the network-type Joint Usage/Research Center for Radio Disaster Medical Science, Fukushima, JAPAN.</p>
+<p>Takebayashi, Y., Murakami, M., &amp; Suzuki, Y. (2017). Risk perception and anxiety regarding radiation after the 2011 Fukushima Nuclear Power Station Accident: A systematic review. The 1st International Symposium of the network-type Joint Usage/Research Center for Radio Disaster Medical Science, Hiroshima, JAPAN.</p>
 <p>Takebayashi, Y., Ito, M., Kato, N., Nakajima, S., Fujisato, H., Oe, Y., Miyamae, M., Kanie, A., &amp; Horikoshi, M. (2015). Cognitive behavioral factors that increase suicidal ideation among patients with depressive and anxiety disorders: Classification and Regression Tree Analysis. Association for Behavioral and Cognitive Therapy49th Annual Convention, Chicago, USA.</p>
 <p>Takebayashi, Y., &amp; Sugiura, Y. (2014). The Relationship between Self-Control and Psychological Well-Being: Moderation by Generalized Anxiety Symptoms. 8th International Congress of Cognitive Psychotherapy, Hong-Kong, China.</p>
 <p>Takebayashi, Y., Kunisato Y., &amp; Sugiura, Y. (2013). Delay and probability discounting in analogue generalized anxiety disorder sample. Association for Behavioral and Cognitive Therapy 47th Annual Convention, Nashville, USA.</p>
@@ -387,7 +486,12 @@ div.tocify {
 <div id="workshop-symposium" class="section level2">
 <h2>Workshop &amp; Symposium</h2>
 <hr />
-<p>竹林由武 (2017). 「マインドフルネス尺度のポテンシャルを高める統計手法」, シンポジウム2『マインドフルネスの測定尺度』, 日本マインドフルネス学会第4回大会,早稲田国際会議場,東京</p>
+<p>竹林由武 (2019). (セミナー講師)「時系列データのGranger因果」,日本社会心理学会春の方法論セミナー,明治学院大学, 東京</p>
+<p>竹林由武 (2018). (教育講演)「単一事例研究法と統計的推測：ベイズ流アプローチを架け橋として」,教育講演5,日本認知・行動療法学会第44回大会,明治学院大学, 東京</p>
+<p>竹林由武 (2018). (ワークショップ講師)「認知行動療法のエビデンス: 臨床に役立つ無作為化比較試験の読み方」,WS18,日本認知・行動療法学会第44回大会,明治学院大学, 東京</p>
+<p>竹林由武 (2018). (指定討論+ミニレクチャー)「実践からエビデンスを構築する：臨床疫学研究の動向」,パネルディスカッション,日本自律訓練学会第41回大会,筑波大学, 茨城</p>
+<p>竹林由武 (2018). (指定討論)『心理調査・測定データ分析に役立つベイズ的アプローチ』，日本心理学会第82回大会，SS049, (公募シンポジウム)，仙台国際センター, 仙台.</p>
+<p>竹林由武 (2017). (話題提供)「マインドフルネス尺度のポテンシャルを高める統計手法」, シンポジウム2『マインドフルネスの測定尺度』, 日本マインドフルネス学会第4回大会,早稲田国際会議場,東京</p>
 <p>竹林由武 (2017). (話題提供)「1事例研究における介入の有効性評価: 階層モデルを用いた効果量の推定」,自主企画シンポジウム, 杣取圭太 (主催)『臨床実践と研究に活かすベイズ統計学』, 日本認知・行動療法学会第43回大会,朱鷺プラザ, 新潟</p>
 <p>竹林由武 (2017). (話題提供)　 「ESMのデータ解析」，国里愛彦 (企画)『明日からできる経験サンプリング法 -効率的なデータ収集と洗練した解析で移ろう心を描き出す-』，日本心理学会第81回大会，SS008, (公募シンポジウム)，久留米シティプラザ, 久留米.</p>
 <p>竹林由武 (2017). (企画・話題提供) 「ウェルビーイング療法」，『ウェルビーイングの科学と実践：臨床ボジティブ心理学の展開(1)』，日本心理学会第81回大会，SS079, (公募シンポジウム)，久留米シティプラザ, 久留米.</p>
@@ -409,6 +513,8 @@ div.tocify {
 <div id="talk-session-1" class="section level2">
 <h2>Talk session</h2>
 <hr />
+<p>竹林由武・村上道夫・大平哲也・後藤あや・安村誠司・五十嵐泰正・佐藤映子・佐野和美・竹田宜人・内藤航・広田すみれ・保高徹 (2018). 「必要とされる健康情報の類型に基づく放射線のリスク認知と主観的ウェルビーイングの関連」, 第31回リスク研究学会年次大会, 福島</p>
+<p>竹林由武・坪倉正治・村上道夫 (2018). 「福島第一原発事故後の食品選択の経年変化: 南相馬市小学生の親を対象としたコホート研究」, 第77回日本公衆衛生学会,福島</p>
 <p>竹林由武 (2014). 「メンタルヘルス予防におけるウェルビーイングの役割」，『地域におけるメンタルヘルス対策シンポジウム』，多摩大学，東京．</p>
 <p>竹林由武 (2014). 「心理的ウェルビーイングの向上が全般性不安症状を緩和するプロセス」，日本心理学会第78回大会，L-008 (小講演)，同志社大学，京都．</p>
 <p>竹林由武・田中圭介・杉浦義典　(2012)　身体症状への注意と生理的反応に対するコントロール感の関連一非判断的態度と体験の描写による調整効果―，第53回日本心身医学会総会ならびに学術講演会プログラム，O1-D-9，鹿児島．</p>
@@ -418,6 +524,8 @@ div.tocify {
 <div id="poster-presentation-1" class="section level2">
 <h2>Poster presentation</h2>
 <hr />
+<p>山口慶子・竹林由武・伊藤正哉・堀越勝 (2019). 不安症に対する曝露療法の研究動向-トピックモデリングによる検討-, 第11回不安症学会学術大会, じゅうろくプラザ, 岐阜.</p>
+<p>竹林由武, 細越寛樹, 伊藤正哉, 藤里紘子, 加藤典子, 中島 俊, 大江悠樹, 宮前光宏, 蟹江絢子, 堀越 勝 (2015) 感情表出の抑制傾向が認知行動療法による不安症状の改善に及ぼす影響―単群パイロット試験データを用いた治療反応性の予備的検討―, 日本認知・行動療法学会第 41 回大会, 仙台国際センター, 仙台</p>
 <p>竹林由武, 細越寛樹, 伊藤正哉, 藤里紘子, 加藤典子, 中島 俊, 大江悠樹, 宮前光宏, 蟹江絢子, 堀越 勝 (2015) 感情表出の抑制傾向が認知行動療法による不安症状の改善に及ぼす影響―単群パイロット試験データを用いた治療反応性の予備的検討―, 日本認知・行動療法学会第 41 回大会, 仙台国際センター, 仙台</p>
 <p>田中圭介・竹林由武・杉浦義典 (2015). 活動量，マインドフルネス，幸福感の関連　日本心理学会第79回大会，2AM-035, 名古屋国際会議場，愛知</p>
 <p>高田圭二・田中圭介・竹林由武・田村紋女・杉浦義典 (2014). サイコパシーの他者に対する感情反応に及ぼす注意の影響　日本心理学会第78回大会，3PM-1-001，同志社大学，京都</p>
