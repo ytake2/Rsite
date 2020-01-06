@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -57,9 +57,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -73,7 +71,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -178,8 +175,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -224,6 +219,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -236,48 +232,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -291,6 +248,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -326,8 +289,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -336,6 +297,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -451,10 +422,12 @@ div.tocify {
 
 
 <hr />
-<div id="a.-" class="section level1">
+<div id="a.学術論文-筆頭著者査読あり" class="section level1">
 <h1>A.学術論文 (筆頭著者・査読あり)</h1>
 <hr />
 <ul>
+<li><p>Takebayashi et al. (inpress) 1編</p></li>
+<li><p>Takebayashi et al. (minor revision) 1編</p></li>
 <li><p><a href="https://ytake2.github.io/Rsite/_site/img/takebayashi2018bayesianClinicalTrial.pdf">竹林由武 (2018)しなやかな臨床試験デザイン: 適応型デザインによる効率化, 心理学評論, 61, 1, 86-100.</a></p></li>
 <li><p><a href="http://www.mdpi.com/1660-4601/14/11/1306">Takebayashi, Y., Lyamzina, Y., Suzuki, Y., &amp; Murakami, M. (2017). Risk perception and anxiety regarding radiation after the 2011 Fukushima Nuclear Power Plant accident: a systematic qualitative review. International journal of environmental research and public health, 14(11), 1306.doi:10.3390/ijerph14111306</a></p></li>
 <li><p><a href="https://link.springer.com/article/10.1007/s10902-017-9852-3">Takebayashi, Y., Tanaka, K., Sugiura, Y. &amp; Tomoko, Sugiura. (2017) Well-Being and Generalized Anxiety in Japanese Undergraduates: A Prospective Cohort Study, Jornal of Happiness Studies. doi:10.1007/s10902-017-9852-3</a></p></li>
@@ -466,13 +439,23 @@ div.tocify {
 </ul>
 <hr />
 </div>
-<div id="b.-" class="section level1">
+<div id="b.共同研究論文-共著" class="section level1">
 <h1>B.共同研究論文 (共著)</h1>
 <hr />
 <ul>
+<li><p><a href="https://casereports.bmj.com/content/12/12/e231960">Hori, A., Takebayashi, Y., Tsubokura, M., &amp; Kim, Y. (2019). Efficacy of prolonged exposure therapy for a patient with late-onset PTSD affected by evacuation due to the Fukushima nuclear power plant accident. BMJ Case Reports CP, 12(12).</a></p></li>
+<li><p><a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00932/abstract">Kobayashi, Y., Kanie, A., Nakagawa, A., Takebayashi, Y., Shinmei, I., Nakayama, N., … &amp; Horikoshi, M. (2019). An evaluation of family-based treatment for OCD in Japan: a pilot randomized controlled trial. Frontiers in Psychiatry, 10, 932.</a></p></li>
+<li><p><a href="https://iopscience.iop.org/article/10.1088/1361-6498/ab4e5a/meta">Murakami, M., Nomura, S., Tsubokura, M., Takebayashi, Y., Yamamoto, K., &amp; Oikawa, T. (2019). Radiation doses and decontamination effects in Minamisoma city: airborne and individual monitoring after the Fukushima nuclear accident. Journal of Radiological Protection, 39(4), N27.</a></p></li>
+<li><p><a href="https://www.tandfonline.com/doi/abs/10.1080/14397595.2019.1681583">Asanuma, Y. F., Aizaki, Y., Noma, H., Yokota, K., Matsuda, M., Kozu, N., … &amp; Mimura, T. (2019). Plasma pentraxin 3 is associated with progression of radiographic joint damage, but not carotid atherosclerosis, in female rheumatoid arthritis patients: 3-year prospective study. Modern Rheumatology, 1-8.</a></p></li>
+<li><p><a href="https://www.jstage.jst.go.jp/article/safety/58/6/58_387/_article/-char/ja/">小林智之, 吉田和樹, 熊谷敦史, 安井清孝, 後藤あや, 竹林由武, … &amp; 村上道夫. (2019). 災害関連健康リスクに対するコミュニケーションと協働. 安全工学, 58(6), 387-393.</a></p></li>
+<li><p><a href="https://iopscience.iop.org/article/10.1088/1361-6498/ab280e/meta">Tsubokura, M., Murakami, M., Takebayashi, Y., Nomura, S., Ono, K., Ozaki, A., … &amp; Oikawa, T. (2019). Impact of decontamination on individual radiation doses from external exposure among residents of Minamisoma City after the 2011 Fukushima Daiichi nuclear power plant incident in Japan: a retrospective observational study. Journal of Radiological Protection, 39(3), 854.</a></p></li>
+<li><p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6707550/">Shirai, K., Yoshizawa, N., Takebayashi, Y., &amp; Murakami, M. (2019). Modeling reconstruction-related behavior and evaluation of influences of major information sources. PloS one, 14(8).</a></p></li>
+<li><p><a href="https://www.jstage.jst.go.jp/article/tjem/248/4/248_261/_article/-char/ja/">Yumiya, Y., Murakami, M., Takebayashi, Y., Suzuki, S., &amp; Ohira, T. (2019). Unreliable information as a risk factor for worse mental fatigue among residents in Fukushima after the nuclear power station accident. The Tohoku journal of experimental medicine, 248(4), 261-272.</a></p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S2212420918312834">Kobayashi, T., Yoshida, K., Takebayashi, Y., Goto, A., Kumagai, A., &amp; Murakami, M. (2019). Social identity threats following the Fukushima nuclear accident and its influence on psychological distress. International Journal of Disaster Risk Reduction, 37, 101171.</a></p></li>
 <li><p><a href="https://www.jstage.jst.go.jp/article/tjem/247/1/247_13/_html/-char/ja">Murakami, M., Takebayashi, Y., &amp; Tsubokura, M. (2019). Lower psychological distress levels among returnees compared with evacuees after the Fukushima nuclear accident. The Tohoku journal of experimental medicine, 247(1), 13-17.</a></p></li>
+<li><p>吉田和樹・小林智之・後藤あや・竹林由武・熊谷敦史・安井清孝・黒田 佑次郎・末永 カツ子・小宮 ひろみ・前田 香 &amp; 村上道夫 (2019). 地域住民と健康リスクを考える 東日本大震災後の保健活動の向上を目指したリスクコミュニケーション支援事業. 保健師ジャーナル, 75(1), 54-59.</p></li>
 <li><p><a href="https://www.sciencedirect.com/science/article/pii/S016503271831231X">Ito, M., Takebayashi, Y., Suzuki, Y., &amp; Horikoshi, M. (2019). Posttraumatic stress disorder checklist for DSM-5: Psychometric properties in a Japanese population. Journal of affective disorders, 247, 11-19.</a></p></li>
-<li><p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12771">Iwasa, H., Takebayashi, Y., Suzuki, Y., Yagi, A., Zhang, W., Harigane, M., Maeda, M., Ohira, T., Yabe, H., &amp; Yasumura, S. on behalf of the Mental Health Group of the Fukushima Health Management (2018). Psychometric evaluation of the simplified Japanese version of the Athens Insomnia Scale: The Fukushima Health Management Survey. Journal of sleep research, e12771.</a></p></li>
+<li><p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12771">Iwasa, H., Takebayashi, Y., Suzuki, Y., Yagi, A., Zhang, W., Harigane, M., Maeda, M., Ohira, T., Yabe, H., &amp; Yasumura, S. on behalf of the Mental Health Group of the Fukushima Health Management (2018). Psychometric evaluation of the simplified Japanese version of the Athens Insomnia Scale: The Fukushima Health Management Survey. Journal of sleep research, 28(2), e12771.</a></p></li>
 <li><p><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01741/abstract">Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., &amp; Horikoshi, M. (2018).Factorial validity and invariance of the 7-item Generalized Anxiety Disorder Scale (GAD-7) among populations with and without self-reported psychiatric diagnostic status, Frontiers in Psychology</a></p></li>
 <li><p><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199235">Doi, S., Ito, M., Takebayashi, Y., Muramatsu, K., &amp; Horikoshi, M. (2018). Factorial validity and invariance of the Patient Health Questionnaire (PHQ)-9 among clinical and non-clinical populations. PLOS ONE, 13(7), e0199235.</a></p></li>
 <li><p><a href="http://mol.medicalonline.jp/library/journal/abstract?GoodsID=dr4jjbct/2018/004402/003&amp;name=0101-0113j&amp;UserID=202.251.224.100">井上和哉・佐藤健二・横光健吾・嶋　大樹・齋藤順一・竹林由武・熊野宏昭 (2018) 価値の意識化に創造的絶望を付加することがウィリングネスに与える影響―スピーチ場面に焦点を当てて― 認知行動療法研究, 44(2), 101-113.</a></p></li>
@@ -497,19 +480,19 @@ div.tocify {
 </ul>
 <hr />
 </div>
-<div id="c.-" class="section level1">
+<div id="c.学術論文-筆頭著者査読なし" class="section level1">
 <h1>C.学術論文 (筆頭著者・査読なし)</h1>
 <hr />
 <ul>
 <li><p>竹林由武: 幸せと心配の心理学: 明日から使えるテクニック, 上越教育大学心理教育相談研究, 17, 43-53.</p></li>
-<li>竹林由武・杉浦義典 (2015) 「PART II 第一章全般性不安症」，『こころの科学別冊「不安症の辞典」』，日本評論社, pp46-49.　</li>
+<li><p>竹林由武・杉浦義典 (2015) 「PART II 第一章全般性不安症」，『こころの科学別冊「不安症の辞典」』，日本評論社, pp46-49.　</p></li>
 <li><p>竹林由武 (2014) 「観察研究の必須事項」，『行動療法研究』, 40, 167-175.</p></li>
 <li><p>竹林由武・杉浦義典 (2014) 「量的データの集め方・扱い方」，『臨床心理学』，増刊第6号．</p></li>
 <li><p>竹林由武 (2013)「この人をたずねて(富山大学人間発達科学部教授村上宣寛)」，『心理学ワールド』，64号，pp34-35．</p></li>
 </ul>
 <hr />
 </div>
-<div id="d." class="section level1">
+<div id="d.著書" class="section level1">
 <h1>D.著書</h1>
 <hr />
 <ul>
@@ -533,7 +516,7 @@ div.tocify {
 <p><img src="https://images-na.ssl-images-amazon.com/images/I/81Cnv%2BR1x7L.jpg" /></p>
 <hr />
 </div>
-<div id="e." class="section level1">
+<div id="e.委託研究" class="section level1">
 <h1>E.委託研究</h1>
 <hr />
 <ul>
@@ -563,6 +546,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
